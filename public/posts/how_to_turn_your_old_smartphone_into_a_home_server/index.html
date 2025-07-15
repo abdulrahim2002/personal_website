@@ -66,9 +66,9 @@
     <meta property="article:modified_time" content="2024-02-20T01:04:38+00:00">
     <meta property="article:tag" content="Ssh">
     <meta property="article:tag" content="Server">
-      <meta property="og:image" content="http://localhost:1313/personal_website/images/papermod-cover.png">
+    <meta property="og:image" content="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/personal_website/images/papermod-cover.png">
+<meta name="twitter:image" content="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png">
 <meta name="twitter:title" content="How to turn your old smartphone into a home server">
 <meta name="twitter:description" content="Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...">
 
@@ -106,7 +106,7 @@
   "articleBody": " Introduction I had an unused phone lying around for some time, and I began contemplating how I could repurpose it. This led me to reflect on the impressive performance of modern smartphones and consider whether they could be utilized as servers.\nSmartphones are equipped with ARM-based processors and run on Android, which is itself built on the Linux kernel. ARM processors are renowned for their energy efficiency1 and have recently found applications in the server space2.\nAs someone who enjoys exploring the full potential of devices, I embarked on a journey to discover how I could leverage the full potential of smartphones.\nSetup Although, you would like to run your programs on phones, but programming on phones typing on screen is a horrifying idea. Fortunately, you dont have to type on your phone, what you can do is you can access its terminal, using protocols like ssh/telnet etc.\nSo, firstly you would need a terminal to control a machine remotely. Unfortunately, there are not, alot of choices available in phone space when it comes to terminal emulators. Termux is one of the few available options.\nAfter you manage to open a terminal remotely, then from there its pretty frictionless. You can install the software of your choice and write, compile and run your programs. You might also find it helpful to root your phone for root privilages, which will help you run all commands. But please beware that rooting can null your warrenty, check with local expert. If termux does’nt work for you then there are also other options like kali net hunter.\nSo, in total, we need to install termux, then we would setup ssh.\nTermux Termux is an open source terminal emulator for android. In essence, it provides you with a linux environment, within android, The only difference between actual linux environment and termex is that it is not FHS(File System Hierarcy) compliant, i.e. it does not strictly follow linux file system conventions. The consequences of that are that #! /usr/bin/sh may not work, so you have to watch out the paths. Other than that, it supports almost all commands on linux.\nMoreover, It is an app that does’nt interfere with your system so you can run your android as normal, moreover it runs without root privilages. It comes with a large repository of software found at packages.termux.dev.\nBelow are the steps to setup ssh in termux Step 1: Download texmux on playstore, f-droid or from github releases\nStep 2: Update using pkg:\npkg update # update the repositories pkg upgrade # upgrade all to latest versions Run this commands\nStep 3: Install ssh pkg install ssh install ssh\nStep 4: Set a password Setup a password that you will use to login\npasswd set password and note username\nStep 5: Note your username You will require username and ip address when logging in using ssh, hence note them. Run the command whoami the know your username. This will generally start with “a0_”\nwhoami Step 6: Note your IP address You can check your IP address in:\nsettings \u003e Wi-Fi \u003e click on the (i) button, on the wifi you are connected to and Look for IPv4 address Step 7: Run ssh doemon in termux On your phone, run the ssh daemon using\nsshd Step 8: Login form your computer On your computer, use the following command to login into your phone and access its terminal\nssh @ -p 8022 The username and IP address we already determined in step 5 and 6 resp. Note that it will promt you for password\nAftermath You can use scp command to transfer files between your computer and phone. In case you want to do development, there are a number of programming packages available in termux, you can find rust, nodejs, python, C/C++ and tools for many other programming languages.\nConclusion So, now you have successfully installed ssh in your android phone. You might find it useful to install vim, git, gcc etc. There is a large repository of packages in termux, which covers pretty much everything your would need.\nFurther Reads Simili, Emanuele, et al. “Power Efficiency in HEP (x86 vs. arm).” Power (W) 350.400 (2023): 450 ↩︎\narm_server ↩︎\n",
   "wordCount" : "698",
   "inLanguage": "en",
-  "image": "http://localhost:1313/personal_website/images/papermod-cover.png","datePublished": "2024-02-20T01:04:38Z",
+  "image":"https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png","datePublished": "2024-02-20T01:04:38Z",
   "dateModified": "2024-02-20T01:04:38Z",
   "author":{
     "@type": "Person",
@@ -221,7 +221,11 @@
     <div class="post-meta"><span title='2024-02-20 01:04:38 +0000 UTC'>February 20, 2024</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;abdulrahim&nbsp;|&nbsp;<a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content/posts/How_to_turn_your_old_smartphone_into_a_home_server.md" rel="noopener noreferrer edit" target="_blank">Suggest Changes</a>
 
 </div>
-  </header> <div class="toc">
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png" alt="Generated using [OG Image Playground by Vercel](https://og-playground.vercel.app/)">
+        <figcaption>Generated using <a href="https://og-playground.vercel.app/">OG Image Playground by Vercel</a></figcaption>
+</figure><div class="toc">
     <details >
         <summary accesskey="c" title="(Alt + C)">
             <span class="details">Table of Contents</span>
@@ -313,17 +317,17 @@ programming and development purposes.
 <p>Download texmux on <a href="https://play.google.com/store/apps/details?id=com.termux&amp;hl=en_US&amp;gl=US&amp;pli=1"><em>playstore</em></a>, <a href="https://f-droid.org/en/packages/com.termux/"><em>f-droid</em></a> or from <a href="https://github.com/termux/termux-app#github"><em>github releases</em></a></p>
 <h3 id="step-2">Step 2:<a hidden class="anchor" aria-hidden="true" href="#step-2">#</a></h3>
 <p>Update using pkg:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg update  <span class="c1"># update the repositories</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pkg update  <span class="c1"># update the repositories</span>
 </span></span><span class="line"><span class="cl">pkg upgrade <span class="c1"># upgrade all to latest versions</span>
 </span></span></code></pre></div><p><img alt="run these commands on phone" loading="lazy" src="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,h_780/v1720609372/update_upgrade_ncnwx1.jpg">
 <em>Run this commands</em></p>
 <h3 id="step-3-install-ssh">Step 3: Install ssh<a hidden class="anchor" aria-hidden="true" href="#step-3-install-ssh">#</a></h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pkg install ssh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pkg install ssh
 </span></span></code></pre></div><p><img loading="lazy" src="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,h_780/v1720609372/ssh_flhmpc.jpg">
 <em>install ssh</em></p>
 <h3 id="step-4-set-a-password">Step 4: Set a password<a hidden class="anchor" aria-hidden="true" href="#step-4-set-a-password">#</a></h3>
 <p>Setup a password that you will use to login</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">passwd
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">passwd
 </span></span></code></pre></div><p><img loading="lazy" src="https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_500/v1720610775/Screenshot_from_2024-07-10_16-55-56_wy3veq.png">
 <em>set password and note username</em></p>
 <h3 id="step-5-note-your-username">Step 5: Note your username<a hidden class="anchor" aria-hidden="true" href="#step-5-note-your-username">#</a></h3>
