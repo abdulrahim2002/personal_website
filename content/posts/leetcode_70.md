@@ -1,7 +1,7 @@
 ---
 date: '2025-07-16T00:41:07+05:30'
 draft: false
-title: 'Leetcode_70'
+title: 'Leetcode 70'
 author: abdul
 ---
 
