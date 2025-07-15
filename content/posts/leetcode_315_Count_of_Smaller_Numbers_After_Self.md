@@ -1,7 +1,7 @@
 ---
 date: '2025-07-16T00:53:03+05:30'
 draft: false
-title: 'Leetcode_315_Count_of_Smaller_Numbers_After_Self'
+title: 'Leetcode 315: Count of Smaller Numbers After Self'
 ---
 
 
