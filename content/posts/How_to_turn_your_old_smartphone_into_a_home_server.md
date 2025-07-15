@@ -9,10 +9,8 @@ image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v17205569
 # image should be 760, 399 and optimised should be 380, 200
 # ![placeholder](http://link//to//image "description text")
 optimized_image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_399/v1720556907/termux_bugka5.png
-category: dev
-tags:
-  - ssh
-  - server
+category: ["dev"]
+tags: ["ssh", "server"]
 author: abdulrahim
 ---
 
