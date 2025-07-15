@@ -86,7 +86,7 @@ Download texmux on [_playstore_](https://play.google.com/store/apps/details?id=c
 
 Update using pkg:
 
-```bash
+```sh
 pkg update  # update the repositories
 pkg upgrade # upgrade all to latest versions
 ```
@@ -96,7 +96,7 @@ pkg upgrade # upgrade all to latest versions
 
 ### Step 3: Install ssh
 
-```bash
+```sh
 pkg install ssh
 ```
 ![](https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,h_780/v1720609372/ssh_flhmpc.jpg)
@@ -106,7 +106,7 @@ pkg install ssh
 
 Setup a password that you will use to login
 
-```bash
+```sh
 passwd
 ```
 
