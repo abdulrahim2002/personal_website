@@ -8,11 +8,17 @@
     <loc>http://localhost:1313/personal_website/posts/papermod/papermod-features/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</loc>
-    <lastmod>2024-02-20T01:04:38+00:00</lastmod>
+    <loc>http://localhost:1313/personal_website/tags/comp-science/</loc>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/tags/dev/</loc>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</loc>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/</loc>
-    <lastmod>2024-02-20T01:04:38+00:00</lastmod>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -30,7 +36,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/personal_website/posts/</loc>
-    <lastmod>2024-02-20T01:04:38+00:00</lastmod>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -47,13 +53,16 @@
                 href="http://localhost:1313/personal_website/posts/"
                 />
   </url><url>
+    <loc>http://localhost:1313/personal_website/tags/</loc>
+    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</loc>
+    <lastmod>2024-02-20T01:04:38+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/personal_website/tags/server/</loc>
     <lastmod>2024-02-20T01:04:38+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/tags/ssh/</loc>
-    <lastmod>2024-02-20T01:04:38+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/personal_website/tags/</loc>
     <lastmod>2024-02-20T01:04:38+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/tags/docs/</loc>

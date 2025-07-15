@@ -8,16 +8,18 @@ description: One major problem with vim is the inability to copy from/to system 
 
 # host image at any image hosting service and paste url's here
 # image should be 760, 399
-image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720559138/default_bvrxw3.png
+
 
 # and optimised should be 380, 200
-optimized_image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720559138/default_bvrxw3.png
+# optimized_image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720559138/default_bvrxw3.png
 category: dev
 tags:
   - comp science
   - dev
 author: abdul
 ---
+
+![](image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720559138/default_bvrxw3.png)
 
 ## Introduction
 

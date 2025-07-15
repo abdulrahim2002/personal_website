@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Feb 2024 01:04:38 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2024 14:22:31 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to compile vim with clipboard support</title>
+      <link>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
+      <pubDate>Sat, 01 Jun 2024 14:22:31 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
+      <description>One major problem with vim is the inability to copy from/to system clipboard. In this article we discover how we can compile vim with clipboard support.</description>
+    </item>
     <item>
       <title>How to turn your old smartphone into a home server</title>
       <link>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
