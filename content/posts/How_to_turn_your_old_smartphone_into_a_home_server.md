@@ -4,7 +4,12 @@ layout: post
 title: "How to turn your old smartphone into a home server"
 subtitle: Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...
 description: Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...
-image: https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png
+image: "https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png"
+
+cover:
+  image: "https://res.cloudinary.com/dg6zyzzwr/image/upload/c_scale,w_760/v1720556907/termux_bugka5.png"
+  caption: "Generated using [OG Image Playground by Vercel](https://og-playground.vercel.app/)"
+
 
 # image should be 760, 399 and optimised should be 380, 200
 # ![placeholder](http://link//to//image "description text")
