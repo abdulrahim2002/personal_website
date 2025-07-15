@@ -3,21 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/personal_website/</loc>
-    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/tags/comp-science/</loc>
-    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/tags/dev/</loc>
-    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</loc>
-    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+    <loc>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</loc>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/posts/</loc>
-    <lastmod>2024-06-01T14:22:31+00:00</lastmod>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/tags/</loc>
+    <lastmod>2024-12-05T18:22:18+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/tags/file-system/</loc>
+    <lastmod>2024-07-08T17:17:28+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/tags/merkel-trees/</loc>
+    <lastmod>2024-07-08T17:17:28+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</loc>
+    <lastmod>2024-07-08T17:17:28+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/tags/security/</loc>
+    <lastmod>2024-07-08T17:17:28+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</loc>
     <lastmod>2024-06-01T14:22:31+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</loc>

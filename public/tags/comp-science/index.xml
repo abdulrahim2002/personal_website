@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2024 14:22:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Dec 2024 18:22:18 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/personal_website/tags/comp-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Highlights from Linux Kernel Mentorship Program 2024 by Abdul Rahim</title>
+      <link>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
+      <pubDate>Thu, 05 Dec 2024 18:22:18 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
+      <description>Linux Kernel Mentorhip Program (LKMP) or Linux Kernel Bug Fix Program provides an opportunity for aspiring kernel developers to get started in kernel development. In this post, I would discuss my experience with it and what I learned in the program</description>
+    </item>
     <item>
       <title>How to compile vim with clipboard support</title>
       <link>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
