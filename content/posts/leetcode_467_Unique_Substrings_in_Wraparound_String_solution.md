@@ -3,7 +3,7 @@ date: '2025-07-16T15:45:27+05:30'
 math: true
 author: abdul
 title: 'Leetcode 467: Unique Substrings in Wraparound String (Solution
-an intuition)'
+with intuition)'
 ---
 
 1. for each character, find the length of the longest continous substring that ends with that character
