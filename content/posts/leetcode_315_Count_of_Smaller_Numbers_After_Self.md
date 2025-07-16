@@ -2,6 +2,7 @@
 date: '2025-07-16T00:53:03+05:30'
 draft: false
 title: 'Leetcode 315: Count of Smaller Numbers After Self'
+math: true
 author: abdul
 ---
 
