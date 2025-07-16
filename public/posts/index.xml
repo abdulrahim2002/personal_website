@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Jul 2025 00:53:03 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jul 2025 15:24:12 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 154: Find minimum in rotated sorted array</title>
+      <link>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>
+      <pubDate>Wed, 16 Jul 2025 15:24:12 +0530</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</guid>
+      <description>&lt;p&gt;Below is my solution for the &lt;a href=&#34;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/&#34;&gt;leetcode 154: Find minimum in rotated
+sorted array problem&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;intuition&#34;&gt;Intuition&lt;/h1&gt;
+&lt;!-- Describe your first thoughts on how to solve this problem. --&gt;
+&lt;p&gt;Fact is, that you &lt;strong&gt;cannot&lt;/strong&gt; solve this question in &lt;strong&gt;O(log n)&lt;/strong&gt; time. The reason is because of duplicates.&lt;/p&gt;
+&lt;p&gt;Consider a situation like:&lt;/p&gt;
+&lt;p&gt;$$
+[2,2,2,2,1,2,2]
+$$&lt;/p&gt;
+&lt;p&gt;where mid is at 3 and the minium number here is clearly $$1$$. But our binary search algorithm will not be able to figure out in which direction it should go, since starting, ending and middle values are all same. In this case the best we can do is increment mid which makes the worst running time: &lt;strong&gt;O(n)&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Leetcode 315: Count of Smaller Numbers After Self</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</link>
