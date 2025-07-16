@@ -2,6 +2,7 @@
 date: '2025-07-16T00:37:54+05:30'
 draft: false
 title: 'Leetcode 135: Candy'
+math: true
 author: abdul
 ---
 

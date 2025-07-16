@@ -1,19 +1,20 @@
 ---
 date: '2025-07-16T00:50:40+05:30'
 draft: false
-title: 'Leetcode 306 additive number problem'
+title: 'Leetcode 306: Additive number'
 author: abdul
+math: true
 ---
 
 Here's my explanation for the [leetcode 306: Additive Number problem](https://leetcode.com/problems/additive-number/description/)
 
-# Additive Number Problem
+## Additive Number Problem
 
-## Problem Recap
+### Problem Recap
 
 An **additive number** is a string of digits where the sequence of numbers formed by splitting the string satisfies the condition that each number (after the first two) is the sum of the two preceding numbers. 
 
-### Examples:
+#### Examples:
 - `"112358"` is additive because the sequence is `1, 1, 2, 3, 5, 8`, and:
   - `1 + 1 = 2`
   - `1 + 2 = 3`
@@ -24,13 +25,13 @@ An **additive number** is a string of digits where the sequence of numbers forme
   - `1 + 99 = 100`
   - `99 + 100 = 199`
 
-## Solution Approach
+### Solution Approach
 
 The solution uses a **backtracking approach** to try all possible splits of the string into sequences of numbers and checks if any of these sequences form an additive sequence.
 
-## Detailed Explanation
+### Detailed Explanation
 
-### Helper Function `isValid`
+#### Helper Function `isValid`
 
 This recursive function checks if the remaining part of the string `s` forms a valid additive sequence given the first two numbers `a` and `b`.
 

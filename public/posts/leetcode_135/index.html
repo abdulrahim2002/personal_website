@@ -738,6 +738,29 @@ int candy(int* kid, int n)
 <main class="main">
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: false}, // All $$ are inline initially
+      {left: '\\n$$', right: '$$\\n', display: true} // Newline-wrapped = display
+    ],
+    output: 'html',
+    strict: false,
+    throwOnError: false
+  })"></script>
+
+<style>
+  [data-delimiter='$$'] {
+    visibility: hidden;
+  }
+  .katex-display > .katex {
+    display: inline-block;
+    white-space: normal;
+  }
+</style>
+
 
 <article class="post-single">
   <header class="post-header">
@@ -1036,7 +1059,7 @@ int candy(int* kid, int n)
   <a class="prev" href="http://localhost:1313/personal_website/posts/leetcode_70/">
     <span class="title">« Prev</span>
     <br>
-    <span>Leetcode 70</span>
+    <span>Leetcode 70: Climbing Stairs</span>
   </a>
   <a class="next" href="http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/">
     <span class="title">Next »</span>

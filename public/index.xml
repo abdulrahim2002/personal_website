@@ -28,15 +28,15 @@ count while merge procedure.&lt;/p&gt;
 &lt;p&gt;array = $$ [ [ 5, 0 ], [ 2, 1 ], [ 6, 2 ], [ 1, 3 ] ] $$&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 306 additive number problem</title>
+      <title>Leetcode 306: Additive number</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</link>
       <pubDate>Wed, 16 Jul 2025 00:50:40 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s my explanation for the &lt;a href=&#34;https://leetcode.com/problems/additive-number/description/&#34;&gt;leetcode 306: Additive Number problem&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;additive-number-problem&#34;&gt;Additive Number Problem&lt;/h1&gt;
-&lt;h2 id=&#34;problem-recap&#34;&gt;Problem Recap&lt;/h2&gt;
+&lt;h2 id=&#34;additive-number-problem&#34;&gt;Additive Number Problem&lt;/h2&gt;
+&lt;h3 id=&#34;problem-recap&#34;&gt;Problem Recap&lt;/h3&gt;
 &lt;p&gt;An &lt;strong&gt;additive number&lt;/strong&gt; is a string of digits where the sequence of numbers formed by splitting the string satisfies the condition that each number (after the first two) is the sum of the two preceding numbers.&lt;/p&gt;
-&lt;h3 id=&#34;examples&#34;&gt;Examples:&lt;/h3&gt;
+&lt;h4 id=&#34;examples&#34;&gt;Examples:&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;&amp;quot;112358&amp;quot;&lt;/code&gt; is additive because the sequence is &lt;code&gt;1, 1, 2, 3, 5, 8&lt;/code&gt;, and:&lt;/p&gt;
@@ -72,7 +72,7 @@ the current element. This is important to maintain
 the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 70</title>
+      <title>Leetcode 70: Climbing Stairs</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_70/</link>
       <pubDate>Wed, 16 Jul 2025 00:41:07 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_70/</guid>

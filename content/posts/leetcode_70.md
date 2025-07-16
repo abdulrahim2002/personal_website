@@ -1,7 +1,6 @@
 ---
 date: '2025-07-16T00:41:07+05:30'
-draft: false
-title: 'Leetcode 70'
+title: 'Leetcode 70: Climbing Stairs'
 author: abdul
 math: true
 ---
