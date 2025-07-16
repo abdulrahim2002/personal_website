@@ -181,7 +181,7 @@ credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt
 &lt;p&gt;Now let&amp;rsquo;s insert &lt;code&gt;&amp;quot;app&amp;quot;&lt;/code&gt; with &lt;code&gt;value=2&lt;/code&gt;. Please note that we shall increase the value of intermediate nodes while inserting app. Therefore, the first 3 nodes will have &lt;code&gt;value=5&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode_564_find_the_closest_palindrome</title>
+      <title>Leetcode 564: Find the closest palindrome</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</link>
       <pubDate>Wed, 16 Jul 2025 16:06:55 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</guid>
@@ -575,7 +575,7 @@ $$&lt;/p&gt;</description>
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>Leetcode_525_contiguous_array</title>
+      <title>Leetcode 525: Contiguous array</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</link>
       <pubDate>Wed, 16 Jul 2025 15:48:46 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</guid>

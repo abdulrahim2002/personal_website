@@ -2,7 +2,7 @@
 date: '2025-07-16T16:06:55+05:30'
 math: true
 author: abdul
-title: 'Leetcode_564_find_the_closest_palindrome'
+title: 'Leetcode 564: Find the closest palindrome'
 ---
 
 We are given a number `n`. On the number line, there are infinite numbers on the right of `n` and left of `n` that are palindromes. 
