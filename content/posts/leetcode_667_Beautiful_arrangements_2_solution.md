@@ -2,7 +2,7 @@
 date: '2025-07-16T16:15:18+05:30'
 math: true
 author: abdul
-title: 'Leetcode 667: Beautiful arrangements 2 solution'
+title: 'Leetcode 667: Beautiful arrangements 2'
 ---
 
 ## Problem definition:
