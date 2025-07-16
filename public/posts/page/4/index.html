@@ -131,6 +131,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://localhost:1313/personal_website/docs/resume.pdf" title="Resume">
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
                 <a href="http://localhost:1313/personal_website/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
@@ -172,7 +177,7 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode_525_contiguous_array
+    <h2 class="entry-hint-parent">Leetcode 525: Contiguous array
     </h2>
   </header>
   <div class="entry-content">
@@ -185,19 +190,19 @@ $$ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=0}^{j} nums\ [k] - \sum_{k=0}^{i-1} n
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-07-16 15:48:46 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode_525_contiguous_array" href="http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/"></a>
+  <a class="entry-link" aria-label="post link to Leetcode 525: Contiguous array" href="http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 467: Unique Substrings in Wraparound String (Solution an intuition)
+    <h2 class="entry-hint-parent">Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)
     </h2>
   </header>
   <div class="entry-content">
     <p> for each character, find the length of the longest continous substring that ends with that character for each character the number of continous substrings that end in that character = length of the longest continous substring that ends in that character ( as obtained in step 1 ) Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 function findSubstringInWraproundString(s: string): number { let curStreak = -1, lenMap = new Array(26).fill(0); for ( let i=0; i &lt; s.length; i&#43;&#43; ) { if ( i &gt; 0 &amp;&amp; isContinous( s[i-1], s[i] ) ) curStreak&#43;&#43;; else curStreak = 1; lenMap[ CODE(s[i]) ] = Math.max( lenMap[ CODE( s[i] ) ], curStreak ); } return lenMap.reduce( (sum, curLen) =&gt; sum &#43;= curLen, 0 ); }; function isContinous( c1: string, c2: string ) { return ( CODE(c2) - CODE(c1) &#43; 26 ) % 26 == 1; } function CODE( c: string ) { return c.charCodeAt(0) - &#39;a&#39;.charCodeAt(0); } </p>
   </div>
   <footer class="entry-footer"><span title='2025-07-16 15:45:27 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 467: Unique Substrings in Wraparound String (Solution an intuition)" href="http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/"></a>
+  <a class="entry-link" aria-label="post link to Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)" href="http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/"></a>
 </article>
 
 <article class="post-entry"> 

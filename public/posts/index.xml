@@ -43,7 +43,7 @@ $$&lt;/p&gt;
 &lt;p&gt;My idea is to structure this as multi-level recursion. We first try to find the $$k^{th}$$ subset, then $$(k-1)^{th}$$, then $$(k-2)^{th} &amp;hellip;$$ until there is only one subset left. The last subset will naturally sum to &lt;code&gt;target&lt;/code&gt;. You can only go to $$(k-1)^{th}$$ level when you are able to successfully find $$k^{th}$$ level subset,&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 745: prefix and suffix search solution</title>
+      <title>Leetcode 745: Prefix and suffix search solution</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</link>
       <pubDate>Wed, 16 Jul 2025 16:30:15 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</guid>
@@ -115,7 +115,7 @@ The kth largest element = 6th largest element = smallest element in above list.&
 &lt;p&gt;The basic idea behind this solution is that we try to identify such partitions, where all elements required to be sorted in &lt;code&gt;[i, j]&lt;/code&gt; are available in current partition.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 676: magic dictionary</title>
+      <title>Leetcode 676: Magic dictionary</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</link>
       <pubDate>Wed, 16 Jul 2025 16:17:29 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</guid>
@@ -141,7 +141,7 @@ The kth largest element = 6th largest element = smallest element in above list.&
 &lt;/div&gt;&lt;p&gt;We can store: &lt;code&gt;wordAfterRemoval,indexOfRemoval&lt;/code&gt; in hashmap. So whenever we search for a word like: &lt;code&gt;hexlo&lt;/code&gt; then we can try removing it&amp;rsquo;s 2nd index and search: &lt;code&gt;helo,2&lt;/code&gt; in the map, which we will find.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 667: Beautiful arrangements 2 solution</title>
+      <title>Leetcode 667: Beautiful arrangements 2</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</link>
       <pubDate>Wed, 16 Jul 2025 16:15:18 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</guid>
@@ -181,7 +181,7 @@ credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt
 &lt;p&gt;Now let&amp;rsquo;s insert &lt;code&gt;&amp;quot;app&amp;quot;&lt;/code&gt; with &lt;code&gt;value=2&lt;/code&gt;. Please note that we shall increase the value of intermediate nodes while inserting app. Therefore, the first 3 nodes will have &lt;code&gt;value=5&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode_564_find_the_closest_palindrome</title>
+      <title>Leetcode 564: Find the closest palindrome</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</link>
       <pubDate>Wed, 16 Jul 2025 16:06:55 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</guid>
@@ -575,7 +575,7 @@ $$&lt;/p&gt;</description>
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>Leetcode_525_contiguous_array</title>
+      <title>Leetcode 525: Contiguous array</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</link>
       <pubDate>Wed, 16 Jul 2025 15:48:46 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</guid>
@@ -591,7 +591,7 @@ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=i}^{j} nums\ [k]
 $$&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Leetcode 467: Unique Substrings in Wraparound String (Solution an intuition)</title>
+      <title>Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</link>
       <pubDate>Wed, 16 Jul 2025 15:45:27 +0530</pubDate>
       <guid>http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</guid>
