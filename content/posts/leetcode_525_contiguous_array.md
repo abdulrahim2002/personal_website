@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T15:48:46+05:30'
-draft: true
 title: 'Leetcode_525_contiguous_array'
 author: abdul
 math: true

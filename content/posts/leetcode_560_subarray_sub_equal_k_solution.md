@@ -1,6 +1,6 @@
 ---
 date: '2025-07-16T15:54:08+05:30'
-draft: true
+draft: false
 math: true
 author: abdul
 title: 'Leetcode 560: Subarray sum equals k'

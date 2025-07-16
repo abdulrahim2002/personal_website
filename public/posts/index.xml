@@ -11,8 +11,71 @@
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Jul 2025 15:24:12 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jul 2025 16:24:22 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solution to Leetcode 687: Longest Univalue Path</title>
+      <link>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</link>
+      <pubDate>Wed, 16 Jul 2025 16:24:22 +0530</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</guid>
+      <description>&lt;p&gt;This problem is very similar to
+&lt;a href=&#34;https://leetcode.com/problems/diameter-of-binary-tree/solutions/6824338/solution-for-dummies-by-abdulrahim2002-yzrs/&#34;&gt;lc543&lt;/a&gt;,
+which is about finding the longest edge path in a tree. You can just
+copy over that code, and add 2 lines in it.&lt;/p&gt;
+&lt;p&gt;Here we are doing the same thing as in lc543, however, when we encounter a non-matching child. We treat it as null.&lt;/p&gt;
+&lt;p&gt;For example, here the longest path at root node is highlighted below in red with 6 edges.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/148ffbfd-0ead-48cd-b45d-8c2575bafd11_1751999234.494938.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode 703: kth largest element in a stream solution in python</title>
+      <link>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</link>
+      <pubDate>Wed, 16 Jul 2025 16:22:08 +0530</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</guid>
+      <description>&lt;p&gt;I keep track of the top k elements in sorted list.
+The kth largest element is the &lt;strong&gt;smallest of the top k elements&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;e.g. top k(=6) elements: &lt;code&gt;[3,5,7,10,42,56]&lt;/code&gt; in sorted order.
+The kth largest element = 6th largest element = smallest element in above list.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/070564ea-afa3-4108-92e6-7fa76c2fb981_1752504996.0140414.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When I insert an element, I simply check if it can make it&amp;rsquo;s place among k largest elements already present in the list. Which it can, if it can defeat the smallest element in our list.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode 769: Max chunks to make sorted solution</title>
+      <link>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</link>
+      <pubDate>Wed, 16 Jul 2025 16:20:16 +0530</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</guid>
+      <description>&lt;p&gt;When numbers from $$\in$$ &lt;code&gt;[0,n-1]&lt;/code&gt; are sorted in an array of size n. Their sorted position is equal to their index.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/07a3b1d2-9478-486f-9f62-3a67e6dde1b3_1752513551.205261.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Subset of numbers in &lt;code&gt;array[i:j]&lt;/code&gt; can form a partition, if all elements in &lt;code&gt;[i,j)&lt;/code&gt; are available in &lt;code&gt;array[i:j]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example &lt;code&gt;[2,0,1]&lt;/code&gt; can form a partition, since they are at index &lt;code&gt;0, 1, 2&lt;/code&gt; respectively. Sorted will involving swapping them at their correct position.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/77d9235f-d72a-416a-bd77-d8802d7567b0_1752513786.651974.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The basic idea behind this solution is that we try to identify such partitions, where all elements required to be sorted in &lt;code&gt;[i, j]&lt;/code&gt; are available in current partition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode 676: magic dictionary</title>
+      <link>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</link>
+      <pubDate>Wed, 16 Jul 2025 16:17:29 +0530</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</guid>
+      <description>&lt;p&gt;For each word, we basically store all versions of it after removal of 1 character. For example,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello -&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ello -&amp;gt; removed h@0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hllo -&amp;gt; removed e@1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helo -&amp;gt; removed l@2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;helo -&amp;gt; removed l@3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hell -&amp;gt; removed o@4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;We can store: &lt;code&gt;wordAfterRemoval,indexOfRemoval&lt;/code&gt; in hashmap. So whenever we search for a word like: &lt;code&gt;hexlo&lt;/code&gt; then we can try removing it&amp;rsquo;s 2nd index and search: &lt;code&gt;helo,2&lt;/code&gt; in the map, which we will find.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Leetcode 154: Find minimum in rotated sorted array</title>
       <link>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>

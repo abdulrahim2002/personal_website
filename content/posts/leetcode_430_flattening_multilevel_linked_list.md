@@ -1,6 +1,6 @@
 ---
 date: '2025-07-16T15:42:17+05:30'
-draft: true
+draft: false
 math: true
 author: abdul
 title: 'Leetcode 430: Flattening a multilevel linked list'

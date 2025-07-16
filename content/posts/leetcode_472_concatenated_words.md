@@ -1,6 +1,6 @@
 ---
 date: '2025-07-16T15:59:09+05:30'
-draft: true
+draft: false
 math: true
 author: abdul
 title: 'Leetcode 472: Concatenated words'
