@@ -2,73 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/personal_website/</loc>
+    <loc>http://localhost:45763/personal_website/</loc>
+    <lastmod>2025-07-16T16:30:15+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</loc>
+    <lastmod>2025-07-16T16:30:15+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/</loc>
+    <lastmod>2025-07-16T16:30:15+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</loc>
+    <lastmod>2025-07-16T16:24:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</loc>
+    <lastmod>2025-07-16T16:22:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</loc>
+    <lastmod>2025-07-16T16:20:16+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_676_magic_dictionary/</loc>
+    <lastmod>2025-07-16T16:17:29+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_472_concatenated_words/</loc>
+    <lastmod>2025-07-16T15:59:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</loc>
+    <lastmod>2025-07-16T15:54:08+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_525_contiguous_array/</loc>
+    <lastmod>2025-07-16T15:48:46+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</loc>
+    <lastmod>2025-07-16T15:42:17+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</loc>
+    <lastmod>2025-07-16T15:24:12+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</loc>
     <lastmod>2025-07-16T00:53:03+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</loc>
-    <lastmod>2025-07-16T00:53:03+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/personal_website/posts/</loc>
-    <lastmod>2025-07-16T00:53:03+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</loc>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_306_additive_number/</loc>
     <lastmod>2025-07-16T00:50:40+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</loc>
+    <loc>http://localhost:45763/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</loc>
     <lastmod>2025-07-16T00:44:05+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/leetcode_70/</loc>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_70/</loc>
     <lastmod>2025-07-16T00:41:07+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/leetcode_135/</loc>
+    <loc>http://localhost:45763/personal_website/posts/leetcode_135/</loc>
     <lastmod>2025-07-16T00:37:54+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/comp-science/</loc>
+    <loc>http://localhost:45763/personal_website/tags/comp-science/</loc>
     <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/dev/</loc>
+    <loc>http://localhost:45763/personal_website/tags/dev/</loc>
     <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</loc>
+    <loc>http://localhost:45763/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</loc>
     <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/</loc>
+    <loc>http://localhost:45763/personal_website/tags/</loc>
     <lastmod>2024-12-05T18:22:18+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/file-system/</loc>
+    <loc>http://localhost:45763/personal_website/tags/file-system/</loc>
     <lastmod>2024-07-08T17:17:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/merkel-trees/</loc>
+    <loc>http://localhost:45763/personal_website/tags/merkel-trees/</loc>
     <lastmod>2024-07-08T17:17:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</loc>
+    <loc>http://localhost:45763/personal_website/posts/merkel_trees_and_computer_memory/</loc>
     <lastmod>2024-07-08T17:17:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/security/</loc>
+    <loc>http://localhost:45763/personal_website/tags/security/</loc>
     <lastmod>2024-07-08T17:17:28+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</loc>
+    <loc>http://localhost:45763/personal_website/posts/how_to_compile_vim_with_clipboard_support/</loc>
     <lastmod>2024-06-01T14:22:31+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</loc>
+    <loc>http://localhost:45763/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</loc>
     <lastmod>2024-02-20T01:04:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/server/</loc>
+    <loc>http://localhost:45763/personal_website/tags/server/</loc>
     <lastmod>2024-02-20T01:04:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/tags/ssh/</loc>
+    <loc>http://localhost:45763/personal_website/tags/ssh/</loc>
     <lastmod>2024-02-20T01:04:38+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/personal_website/archives.fr/</loc>
+    <loc>http://localhost:45763/personal_website/archives.fr/</loc>
   </url><url>
-    <loc>http://localhost:1313/personal_website/archives/</loc>
+    <loc>http://localhost:45763/personal_website/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/personal_website/categories/</loc>
+    <loc>http://localhost:45763/personal_website/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/personal_website/search/</loc>
+    <loc>http://localhost:45763/personal_website/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/personal_website/search.fr/</loc>
+    <loc>http://localhost:45763/personal_website/search.fr/</loc>
   </url><url>
-    <loc>http://localhost:1313/personal_website/series/</loc>
+    <loc>http://localhost:45763/personal_website/series/</loc>
   </url>
 </urlset>

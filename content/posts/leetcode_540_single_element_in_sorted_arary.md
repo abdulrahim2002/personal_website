@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T15:51:01+05:30'
-draft: true
 math: true
 author: abdul
 title: 'Leetcode 540: Single element in sorted array'

@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T15:57:05+05:30'
-draft: true
 math: true
 author: abdul
 title: 'Leetcode 623: Add one row to the tree'

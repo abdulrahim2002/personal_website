@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T16:02:05+05:30'
-draft: true
 math: true
 author: abdul
 title: 'Leetcode 653: 2 sum with a BST'

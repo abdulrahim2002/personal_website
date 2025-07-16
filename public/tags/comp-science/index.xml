@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Comp Science on Abdul Rahim</title>
-    <link>http://localhost:1313/personal_website/tags/comp-science/</link>
+    <link>http://localhost:45763/personal_website/tags/comp-science/</link>
     <description>Recent content in Comp Science on Abdul Rahim</description>
     <image>
       <title>Abdul Rahim</title>
-      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
-      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
+      <url>http://localhost:45763/personal_website/images/papermod-cover.png</url>
+      <link>http://localhost:45763/personal_website/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Dec 2024 18:22:18 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/personal_website/tags/comp-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:45763/personal_website/tags/comp-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Highlights from Linux Kernel Mentorship Program 2024 by Abdul Rahim</title>
-      <link>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
+      <link>http://localhost:45763/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
       <pubDate>Thu, 05 Dec 2024 18:22:18 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
+      <guid>http://localhost:45763/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
       <description>Linux Kernel Mentorhip Program (LKMP) or Linux Kernel Bug Fix Program provides an opportunity for aspiring kernel developers to get started in kernel development. In this post, I would discuss my experience with it and what I learned in the program</description>
     </item>
     <item>
       <title>How to compile vim with clipboard support</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
+      <link>http://localhost:45763/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
       <pubDate>Sat, 01 Jun 2024 14:22:31 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
+      <guid>http://localhost:45763/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
       <description>One major problem with vim is the inability to copy from/to system clipboard. In this article we discover how we can compile vim with clipboard support.</description>
     </item>
   </channel>

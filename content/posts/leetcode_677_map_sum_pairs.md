@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T16:09:06+05:30'
-draft: true
 math: true
 author: abdul
 title: 'Leetcode 677: Map sum pairs solution'

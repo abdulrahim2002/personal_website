@@ -1,6 +1,5 @@
 ---
 date: '2025-07-16T16:06:55+05:30'
-draft: true
 math: true
 author: abdul
 title: 'Leetcode_564_find_the_closest_palindrome'

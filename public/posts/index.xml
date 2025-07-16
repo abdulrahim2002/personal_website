@@ -2,22 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Abdul Rahim</title>
-    <link>http://localhost:1313/personal_website/posts/</link>
+    <link>http://localhost:45763/personal_website/posts/</link>
     <description>Recent content in Posts on Abdul Rahim</description>
     <image>
       <title>Abdul Rahim</title>
-      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
-      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
+      <url>http://localhost:45763/personal_website/images/papermod-cover.png</url>
+      <link>http://localhost:45763/personal_website/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Jul 2025 16:24:22 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Jul 2025 16:30:15 +0530</lastBuildDate>
+    <atom:link href="http://localhost:45763/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 745: prefix and suffix search solution</title>
+      <link>http://localhost:45763/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</link>
+      <pubDate>Wed, 16 Jul 2025 16:30:15 +0530</pubDate>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</guid>
+      <description>&lt;p&gt;For each possible word, we ask the question: &lt;strong&gt;What possible queries can lead to this word?&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example consider the word: &lt;code&gt;abd&lt;/code&gt;. Below are the possible (prefix, suffix) queries that can return &lt;code&gt;abd&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;(prefix, suffix)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a    abd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a    bd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a    d
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ab  abd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ab  bd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ab  d
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;abd  abd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;abd  bd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;abd  d
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Now, given word.length &amp;lt;= 7. Each word can at maximum generate &lt;code&gt;7*7=49&lt;/code&gt; such pairs. Can we store all of them in a hashmap? Yes, because the total storage = &lt;code&gt;49 * number of words = O(n)&lt;/code&gt; Which is acceptable for this problem.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Solution to Leetcode 687: Longest Univalue Path</title>
-      <link>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</link>
+      <link>http://localhost:45763/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</link>
       <pubDate>Wed, 16 Jul 2025 16:24:22 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</guid>
+      <guid>http://localhost:45763/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</guid>
       <description>&lt;p&gt;This problem is very similar to
 &lt;a href=&#34;https://leetcode.com/problems/diameter-of-binary-tree/solutions/6824338/solution-for-dummies-by-abdulrahim2002-yzrs/&#34;&gt;lc543&lt;/a&gt;,
 which is about finding the longest edge path in a tree. You can just
@@ -28,9 +63,9 @@ copy over that code, and add 2 lines in it.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 703: kth largest element in a stream solution in python</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</link>
       <pubDate>Wed, 16 Jul 2025 16:22:08 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</guid>
       <description>&lt;p&gt;I keep track of the top k elements in sorted list.
 The kth largest element is the &lt;strong&gt;smallest of the top k elements&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;e.g. top k(=6) elements: &lt;code&gt;[3,5,7,10,42,56]&lt;/code&gt; in sorted order.
@@ -40,9 +75,9 @@ The kth largest element = 6th largest element = smallest element in above list.&
     </item>
     <item>
       <title>Leetcode 769: Max chunks to make sorted solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</link>
       <pubDate>Wed, 16 Jul 2025 16:20:16 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</guid>
       <description>&lt;p&gt;When numbers from $$\in$$ &lt;code&gt;[0,n-1]&lt;/code&gt; are sorted in an array of size n. Their sorted position is equal to their index.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/07a3b1d2-9478-486f-9f62-3a67e6dde1b3_1752513551.205261.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Subset of numbers in &lt;code&gt;array[i:j]&lt;/code&gt; can form a partition, if all elements in &lt;code&gt;[i,j)&lt;/code&gt; are available in &lt;code&gt;array[i:j]&lt;/code&gt;.&lt;/p&gt;
@@ -52,9 +87,9 @@ The kth largest element = 6th largest element = smallest element in above list.&
     </item>
     <item>
       <title>Leetcode 676: magic dictionary</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_676_magic_dictionary/</link>
       <pubDate>Wed, 16 Jul 2025 16:17:29 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_676_magic_dictionary/</guid>
       <description>&lt;p&gt;For each word, we basically store all versions of it after removal of 1 character. For example,&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -77,10 +112,128 @@ The kth largest element = 6th largest element = smallest element in above list.&
 &lt;/div&gt;&lt;p&gt;We can store: &lt;code&gt;wordAfterRemoval,indexOfRemoval&lt;/code&gt; in hashmap. So whenever we search for a word like: &lt;code&gt;hexlo&lt;/code&gt; then we can try removing it&amp;rsquo;s 2nd index and search: &lt;code&gt;helo,2&lt;/code&gt; in the map, which we will find.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Leetcode 472: Concatenated words</title>
+      <link>http://localhost:45763/personal_website/posts/leetcode_472_concatenated_words/</link>
+      <pubDate>Wed, 16 Jul 2025 15:59:09 +0530</pubDate>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_472_concatenated_words/</guid>
+      <description>&lt;p&gt;consider the word &amp;ldquo;catsdogcats&amp;rdquo;. We have the dictionary: &lt;code&gt;[&amp;quot;cat&amp;quot;,&amp;quot;cats&amp;quot;,&amp;quot;catsdogcats&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;dogcatsdog&amp;quot;,&amp;quot;hippopotamuses&amp;quot;,&amp;quot;rat&amp;quot;,&amp;quot;ratcatdogcat&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;We iterate over the word: &lt;code&gt;catsdogcats&lt;/code&gt; and at each iteration, we ask if the prefix is contained in dictionary.&lt;/p&gt;
+&lt;p&gt;If the prefix is in the dictionary, we recursively call the function on the remaining word (excluding matched prefix)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;is &lt;code&gt;c&lt;/code&gt; in dictionary ?&lt;/li&gt;
+&lt;li&gt;is &lt;code&gt;ca&lt;/code&gt; in dictionary ?&lt;/li&gt;
+&lt;li&gt;is &lt;code&gt;cat&lt;/code&gt; in dictionary ? -&amp;gt; YES       call( &lt;code&gt;sdogcats&lt;/code&gt; ) &amp;ndash;[1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Prefix &lt;code&gt;cat&lt;/code&gt; matched so recursively call with &lt;code&gt;sdogcats&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode 560: Subarray sum equals k</title>
+      <link>http://localhost:45763/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</link>
+      <pubDate>Wed, 16 Jul 2025 15:54:08 +0530</pubDate>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</guid>
+      <description>&lt;p&gt;The task is to find a subarray with &lt;code&gt;sum of elements = k&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To do this, we can build the prefix array with: $$ prefix\ [x] = \sum_{k=0}^x nums\ [k] $$&lt;/p&gt;
+&lt;p&gt;The sum of elements between subarray indices $$[i, j]$$ where $$j &amp;gt; i$$ is defined as:&lt;/p&gt;
+&lt;p&gt;$$
+prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=0}^{j} nums\ [k] - \sum_{k=0}^{i-1} nums\ [k]\
+prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=i}^{j} nums\ [k]
+$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode_525_contiguous_array</title>
+      <link>http://localhost:45763/personal_website/posts/leetcode_525_contiguous_array/</link>
+      <pubDate>Wed, 16 Jul 2025 15:48:46 +0530</pubDate>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_525_contiguous_array/</guid>
+      <description>&lt;p&gt;Consider the array: &lt;code&gt;[0,1,1,0,0,1,1,0,1,1] &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The idea is to turn the 0&amp;rsquo;s into -1&amp;rsquo;s&lt;/p&gt;
+&lt;p&gt;array: &lt;code&gt;[-1,1,1,-1,-1,1,1,-1,1,1]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now, the task is to find a subarray with &lt;code&gt;sum of elements = 0&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To do this, we can build the prefix array with: $$ prefix\ [x] = \sum_{k=0}^x nums\ [k] $$&lt;/p&gt;
+&lt;p&gt;The sum of elements between subarray indices $$[i, j]$$ where $$j &amp;gt; i$$ is defined as:&lt;/p&gt;
+&lt;p&gt;$$
+prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=0}^{j} nums\ [k] - \sum_{k=0}^{i-1} nums\ [k]\
+prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=i}^{j} nums\ [k]
+$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leetcode 430: Flattening a multilevel linked list</title>
+      <link>http://localhost:45763/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</link>
+      <pubDate>Wed, 16 Jul 2025 15:42:17 +0530</pubDate>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</guid>
+      <description>&lt;p&gt;The idea is to keep 2 pointers. &lt;code&gt;trail&lt;/code&gt; pointer and &lt;code&gt;cur&lt;/code&gt; pointer. The
+list is build in recursive function &lt;code&gt;build(trail, cur)&lt;/code&gt; which returns
+last node of the list we build.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;build&lt;/code&gt; works as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;when there is no &lt;code&gt;child&lt;/code&gt; node: simply connect &lt;code&gt;trail&lt;/code&gt; and &lt;code&gt;cur&lt;/code&gt; and advance both&lt;/li&gt;
+&lt;li&gt;when there is a &lt;code&gt;child&lt;/code&gt; node, then recursively call itself with &lt;code&gt;build( trail = cur, cur = cur.child )&lt;/code&gt;. The call would connect &lt;code&gt;cur&lt;/code&gt; node with the &lt;code&gt;list in the next level&lt;/code&gt;. It would return the last node in next level. Then we assign &lt;code&gt;trail = last node in next level&lt;/code&gt; and &lt;code&gt;cur = cur.next in current level&lt;/code&gt;. This ensures that the next iteration would connect &lt;code&gt;last node in next level&lt;/code&gt; to &lt;code&gt;next node in current level&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;when &lt;code&gt;cur&lt;/code&gt; becomes &lt;code&gt;null&lt;/code&gt; &lt;code&gt;trail&lt;/code&gt; is the last node in current level. &lt;code&gt;return trail&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;flatten&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;head&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt;   &lt;span class=&#34;nx&#34;&gt;save&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;_Node&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;head&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;prev&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;save&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;: &lt;span class=&#34;kt&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;_Node&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;child&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;prev&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;prev&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;saveNext&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;lastNodeFromChildList&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;child&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;child&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;cur&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;saveNext&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;lastNodeFromChildList&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;trail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;complexity&#34;&gt;Complexity&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Time complexity:  $$O(n)$$&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Leetcode 154: Find minimum in rotated sorted array</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>
       <pubDate>Wed, 16 Jul 2025 15:24:12 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</guid>
       <description>&lt;p&gt;Below is my solution for the &lt;a href=&#34;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/&#34;&gt;leetcode 154: Find minimum in rotated
 sorted array problem&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;intuition&#34;&gt;Intuition&lt;/h1&gt;
@@ -94,9 +247,9 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 315: Count of Smaller Numbers After Self</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</link>
       <pubDate>Wed, 16 Jul 2025 00:53:03 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s my solution to the &lt;a href=&#34;https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/&#34;&gt;Leetcode 315: Count of Smaller Numbers After
 Self problem&lt;/a&gt; using standard merge sort. I just change one line to
 count while merge procedure.&lt;/p&gt;
@@ -108,9 +261,9 @@ count while merge procedure.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 306: Additive number</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_306_additive_number/</link>
       <pubDate>Wed, 16 Jul 2025 00:50:40 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_306_additive_number/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s my explanation for the &lt;a href=&#34;https://leetcode.com/problems/additive-number/description/&#34;&gt;leetcode 306: Additive Number problem&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;additive-number-problem&#34;&gt;Additive Number Problem&lt;/h2&gt;
 &lt;h3 id=&#34;problem-recap&#34;&gt;Problem Recap&lt;/h3&gt;
@@ -131,9 +284,9 @@ count while merge procedure.&lt;/p&gt;
     </item>
     <item>
       <title>All possible solutions to longest increasing subsequence problem: leetcode 300</title>
-      <link>http://localhost:1313/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</link>
+      <link>http://localhost:45763/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</link>
       <pubDate>Wed, 16 Jul 2025 00:44:05 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</guid>
+      <guid>http://localhost:45763/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</guid>
       <description>&lt;p&gt;Here are all possible solutions I could come up with for the longest
 increasing subsequence problem. &lt;a href=&#34;https://leetcode.com/problems/factorial-trailing-zeroes/description/&#34;&gt;leetcode
 300&lt;/a&gt;&lt;/p&gt;
@@ -152,9 +305,9 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 70: Climbing Stairs</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_70/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_70/</link>
       <pubDate>Wed, 16 Jul 2025 00:41:07 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_70/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_70/</guid>
       <description>&lt;p&gt;Problem link: &lt;a href=&#34;https://leetcode.com/problems/climbing-stairs/description/&#34;&gt;leetcode 70: climbing stairs&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;intuition&#34;&gt;Intuition&lt;/h1&gt;
 &lt;!-- Describe your first thoughts on how to solve this problem. --&gt;
@@ -174,9 +327,9 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 135: Candy</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_135/</link>
+      <link>http://localhost:45763/personal_website/posts/leetcode_135/</link>
       <pubDate>Wed, 16 Jul 2025 00:37:54 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_135/</guid>
+      <guid>http://localhost:45763/personal_website/posts/leetcode_135/</guid>
       <description>&lt;p&gt;Below is my C solution for the Leetcode problem &lt;a href=&#34;https://leetcode.com/problems/climbing-stairs/description/&#34;&gt;candy&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -456,30 +609,30 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Highlights from Linux Kernel Mentorship Program 2024 by Abdul Rahim</title>
-      <link>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
+      <link>http://localhost:45763/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
       <pubDate>Thu, 05 Dec 2024 18:22:18 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
+      <guid>http://localhost:45763/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
       <description>Linux Kernel Mentorhip Program (LKMP) or Linux Kernel Bug Fix Program provides an opportunity for aspiring kernel developers to get started in kernel development. In this post, I would discuss my experience with it and what I learned in the program</description>
     </item>
     <item>
       <title>Merkel Trees and computer memory</title>
-      <link>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</link>
+      <link>http://localhost:45763/personal_website/posts/merkel_trees_and_computer_memory/</link>
       <pubDate>Mon, 08 Jul 2024 17:17:28 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</guid>
+      <guid>http://localhost:45763/personal_website/posts/merkel_trees_and_computer_memory/</guid>
       <description>Merkel trees are data structures which store hashes insted of data. Can we use them in file systems</description>
     </item>
     <item>
       <title>How to compile vim with clipboard support</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
+      <link>http://localhost:45763/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
       <pubDate>Sat, 01 Jun 2024 14:22:31 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
+      <guid>http://localhost:45763/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
       <description>One major problem with vim is the inability to copy from/to system clipboard. In this article we discover how we can compile vim with clipboard support.</description>
     </item>
     <item>
       <title>How to turn your old smartphone into a home server</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
+      <link>http://localhost:45763/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
       <pubDate>Tue, 20 Feb 2024 01:04:38 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
+      <guid>http://localhost:45763/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
       <description>Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...</description>
     </item>
   </channel>
