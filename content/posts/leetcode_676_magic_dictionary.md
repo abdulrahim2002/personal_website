@@ -3,7 +3,7 @@ date: '2025-07-16T16:17:29+05:30'
 draft: false
 math: true
 author: abdul
-title: 'Leetcode 676: magic dictionary'
+title: 'Leetcode 676: Magic dictionary'
 ---
 
 For each word, we basically store all versions of it after removal of 1 character. For example,
