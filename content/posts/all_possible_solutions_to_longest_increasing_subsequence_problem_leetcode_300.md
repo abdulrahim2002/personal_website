@@ -3,15 +3,19 @@ date: '2025-07-16T00:44:05+05:30'
 draft: false
 title: 'All possible solutions to longest increasing subsequence problem: leetcode 300'
 author: abdul
+math: true
 ---
 
 Here are all possible solutions I could come up with for the longest
-increasing subsequence problem. [leetcode 300](https://leetcode.com/problems/factorial-trailing-zeroes/description/)
+increasing subsequence problem. [leetcode
+300](https://leetcode.com/problems/factorial-trailing-zeroes/description/)
 
 
 # Approach 1: Generate all possible increasing subsequences
 
-We will keep track of a subsequence in an array named `cur_subsequence` or `cur_sub`. For each element (`a[i]`)  we have the following 2 options:
+We will keep track of a subsequence in an array named `cur_subsequence`
+or `cur_sub`. For each element (`a[i]`)  we have the following 2
+options:
 
 1. Add the element to the end of current subsequence.
 
@@ -25,7 +29,7 @@ We will keep track of a subsequence in an array named `cur_subsequence` or `cur_
 - Time complexity: $$ O(2^N) $$
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
-- Space complexity: $$O(N)$$ *recursion stack + auxilary array*
+- Space complexity: $$ O(N) $$ // *recursion stack + auxilary array*
 <!-- Add your space complexity here, e.g. $$O(n)$$ -->
 
 ```javascript []

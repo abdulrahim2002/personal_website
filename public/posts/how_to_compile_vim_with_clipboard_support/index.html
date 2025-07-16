@@ -103,8 +103,8 @@
   "keywords": [
     "comp science", "dev"
   ],
-  "articleBody": "Introduction When you install vim, a usual requirement as with all text editors is the ability to copy to/from system clipboard so you can lets say, copy something into your vim session from firefox or vice versa, however copy pasting in terminal editors is not as straight forward as with GUI editors. In vim if you want to copy something into an auxilary space (anticipating it would be used later, so you can paste from this auxilary space) is achieved by registers.\nThe register that represents system clipboard is + register. Anything that you copy into this register is available in system clipboard.\nHow to use registers to copy/paste To copy a text into a register, select it in visual mode and press \"y to yank the contents into the given register. And to paste the contents of a particular register at current position, use \"p.\nTo use system clipboard, you just have to substitute “+” for register name in the above commands.\nclipboard support But the + register wont work unless you have clipboard support with your vim installation. By default there is no clipboard support in vim.\nTo check if your vim installation has clipboard support use:\n$ vim --version | grep clipboard +clipboard +keymap +printer +vertsplit +ex_extra +mouse_netterm +syntax +xterm_clipboard or inside of vim, you can run the command:\n:echo has('clipboard') If the output is 0, your installation doesnt have clipboard support.\nCompiling vim Now there are 2 solutions to this problem:\nEither install gvim: Or compile vim from sources with clipboard support Let’s see how each of them can be done.\nInstall gvim To install gvim run:\nOn Debian:\nsudo apt install vim-gtk On Fedora\nsudo dnf install gvim To compile vim with clipboard support Below are the simple steps:\nStep 1: Grab the sources Clone the repository:\ngit clone https://github.com/vim/vim.git vim cd vim Step 2: Install dependencies Install the required libraries and tools to build vim, for example gcc, x11 etc. Note that you only need them to compile vim and you are free to delete them once you are done.\nOn Debian:\nsudo apt install build-essential libx11-dev libncurses5-dev On Fedora:\nsudo dnf groupinstall \"Development Tools\" sudo yum install gcc sudo yum groupinstall \"X Software Development\" sudo dnf install libX11-devel ncurses-devel Also, you need to remove the existing installation(if any).\nOn Debian\nsudo apt remove vim On Fedora\nsudo dnf remove vim gvim Step 3: Configure and Compile Configure vim with features of your choice\n./configure \\\\ --enable-cscope \\\\ --enable-gui=auto \\\\ --enable-gtk2-check \\\\ --enable-gnome-check \\\\ --with-features=huge \\\\ --with-x Then compile and install with:\nmake sudo make install Conclusion In this article we learned how can we compile vim with clipboard support, you can also tweak configuration according to your requirements. There are many configuration options available.\n",
-  "wordCount" : "461",
+  "articleBody": "Introduction When you install vim, a usual requirement as with all text editors is the ability to copy to/from system clipboard so you can lets say, copy something into your vim session from firefox or vice versa, however copy pasting in terminal editors is not as straight forward as with GUI editors. In vim if you want to copy something into an auxilary space (anticipating it would be used later, so you can paste from this auxilary space) is achieved by registers.\nThe register that represents system clipboard is + register. Anything that you copy into this register is available in system clipboard.\nHow to use registers to copy/paste To copy a text into a register, select it in visual mode and press \"y to yank the contents into the given register. And to paste the contents of a particular register at current position, use \"p.\nTo use system clipboard, you just have to substitute “+” for register name in the above commands.\nclipboard support But the + register wont work unless you have clipboard support with your vim installation. By default there is no clipboard support in vim.\nTo check if your vim installation has clipboard support use:\n1 2 3 $ vim --version | grep clipboard +clipboard +keymap +printer +vertsplit +ex_extra +mouse_netterm +syntax +xterm_clipboard or inside of vim, you can run the command:\n1 :echo has('clipboard') If the output is 0, your installation doesnt have clipboard support.\nCompiling vim Now there are 2 solutions to this problem:\nEither install gvim: Or compile vim from sources with clipboard support Let’s see how each of them can be done.\nInstall gvim To install gvim run:\nOn Debian:\n1 sudo apt install vim-gtk On Fedora\n1 sudo dnf install gvim To compile vim with clipboard support Below are the simple steps:\nStep 1: Grab the sources Clone the repository:\n1 2 git clone https://github.com/vim/vim.git vim cd vim Step 2: Install dependencies Install the required libraries and tools to build vim, for example gcc, x11 etc. Note that you only need them to compile vim and you are free to delete them once you are done.\nOn Debian:\n1 sudo apt install build-essential libx11-dev libncurses5-dev On Fedora:\n1 2 3 4 sudo dnf groupinstall \"Development Tools\" sudo yum install gcc sudo yum groupinstall \"X Software Development\" sudo dnf install libX11-devel ncurses-devel Also, you need to remove the existing installation(if any).\nOn Debian\n1 sudo apt remove vim On Fedora\n1 sudo dnf remove vim gvim Step 3: Configure and Compile Configure vim with features of your choice\n1 2 3 4 5 6 7 ./configure \\\\ --enable-cscope \\\\ --enable-gui=auto \\\\ --enable-gtk2-check \\\\ --enable-gnome-check \\\\ --with-features=huge \\\\ --with-x Then compile and install with:\n1 2 make sudo make install Conclusion In this article we learned how can we compile vim with clipboard support, you can also tweak configuration according to your requirements. There are many configuration options available.\n",
+  "wordCount" : "485",
   "inLanguage": "en",
   "image": "http://localhost:1313/personal_website/images/papermod-cover.png","datePublished": "2024-06-01T14:22:31Z",
   "dateModified": "2024-06-01T14:22:31Z",
@@ -188,6 +188,8 @@
 </header>
 <main class="main">
 
+
+
 <article class="post-single">
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/personal_website/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/personal_website/posts/">Posts</a></div>
@@ -256,12 +258,28 @@ name in the above commands.</p>
 <p>But the <code>+</code> register wont work unless you have clipboard support with
 your vim installation. By default there is no clipboard support in vim.</p>
 <p>To check if your vim installation has clipboard support use:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim --version <span class="p">|</span> grep clipboard
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ vim --version <span class="p">|</span> grep clipboard
 </span></span><span class="line"><span class="cl">+clipboard         +keymap            +printer           +vertsplit
 </span></span><span class="line"><span class="cl">+ex_extra          +mouse_netterm     +syntax            +xterm_clipboard
-</span></span></code></pre></div><p>or inside of vim, you can run the command:</p>
-<pre tabindex="0"><code>:echo has(&#39;clipboard&#39;)
-</code></pre><p>If the output is <strong>0</strong>, your installation doesnt have clipboard support.</p>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>or inside of vim, you can run the command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">:echo has(&#39;clipboard&#39;)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If the output is <strong>0</strong>, your installation doesnt have clipboard support.</p>
 <h2 id="compiling-vim">Compiling vim<a hidden class="anchor" aria-hidden="true" href="#compiling-vim">#</a></h2>
 <p>Now there are 2 solutions to this problem:</p>
 <ol>
@@ -272,44 +290,118 @@ your vim installation. By default there is no clipboard support in vim.</p>
 <h2 id="install-gvim">Install gvim<a hidden class="anchor" aria-hidden="true" href="#install-gvim">#</a></h2>
 <p>To install <code>gvim</code> run:</p>
 <p>On Debian:</p>
-<pre tabindex="0"><code>sudo apt install vim-gtk
-</code></pre><p>On Fedora</p>
-<pre tabindex="0"><code>sudo dnf install gvim
-</code></pre><h2 id="to-compile-vim-with-clipboard-support">To compile vim with clipboard support<a hidden class="anchor" aria-hidden="true" href="#to-compile-vim-with-clipboard-support">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install vim-gtk
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>On Fedora</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo dnf install gvim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="to-compile-vim-with-clipboard-support">To compile vim with clipboard support<a hidden class="anchor" aria-hidden="true" href="#to-compile-vim-with-clipboard-support">#</a></h2>
 <p>Below are the simple steps:</p>
 <h3 id="step-1-grab-the-sources">Step 1: Grab the sources<a hidden class="anchor" aria-hidden="true" href="#step-1-grab-the-sources">#</a></h3>
 <p>Clone the repository:</p>
-<pre tabindex="0"><code>git clone https://github.com/vim/vim.git vim
-cd vim
-</code></pre><h3 id="step-2-install-dependencies">Step 2: Install dependencies<a hidden class="anchor" aria-hidden="true" href="#step-2-install-dependencies">#</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/vim/vim.git vim
+</span></span><span class="line"><span class="cl">cd vim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="step-2-install-dependencies">Step 2: Install dependencies<a hidden class="anchor" aria-hidden="true" href="#step-2-install-dependencies">#</a></h3>
 <p>Install the required libraries and tools to build vim, for example gcc,
 x11 etc. Note that you only need them to compile vim and you are free to
 delete them once you are done.</p>
 <p>On Debian:</p>
-<pre tabindex="0"><code>sudo apt install build-essential libx11-dev libncurses5-dev
-</code></pre><p>On Fedora:</p>
-<pre tabindex="0"><code>sudo dnf groupinstall &#34;Development Tools&#34;
-sudo yum install gcc
-sudo yum groupinstall &#34;X Software Development&#34;
-sudo dnf install libX11-devel ncurses-devel 
-</code></pre><p>Also, you need to remove the existing installation(if any).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install build-essential libx11-dev libncurses5-dev
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>On Fedora:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo dnf groupinstall &#34;Development Tools&#34;
+</span></span><span class="line"><span class="cl">sudo yum install gcc
+</span></span><span class="line"><span class="cl">sudo yum groupinstall &#34;X Software Development&#34;
+</span></span><span class="line"><span class="cl">sudo dnf install libX11-devel ncurses-devel 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Also, you need to remove the existing installation(if any).</p>
 <p>On Debian</p>
-<pre tabindex="0"><code>sudo apt remove vim
-</code></pre><p>On Fedora</p>
-<pre tabindex="0"><code>sudo dnf remove vim gvim
-</code></pre><h3 id="step-3-configure-and-compile">Step 3: Configure and Compile<a hidden class="anchor" aria-hidden="true" href="#step-3-configure-and-compile">#</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt remove vim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>On Fedora</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo dnf remove vim gvim
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="step-3-configure-and-compile">Step 3: Configure and Compile<a hidden class="anchor" aria-hidden="true" href="#step-3-configure-and-compile">#</a></h3>
 <p>Configure vim with features of your choice</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure <span class="se">\\</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./configure <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--enable-cscope <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--enable-gui<span class="o">=</span>auto <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--enable-gtk2-check <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--enable-gnome-check <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--with-features<span class="o">=</span>huge <span class="se">\\</span>
 </span></span><span class="line"><span class="cl">--with-x 
-</span></span></code></pre></div><p>Then compile and install with:</p>
-<pre tabindex="0"><code>make
-sudo make install
-</code></pre><h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then compile and install with:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">make
+</span></span><span class="line"><span class="cl">sudo make install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
 <p>In this article we learned how can we compile vim with clipboard
 support, you can also tweak configuration according to your
 requirements. There are many configuration options available.</p>
