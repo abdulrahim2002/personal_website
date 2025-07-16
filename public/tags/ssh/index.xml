@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ssh on Abdul Rahim</title>
-    <link>http://localhost:45763/personal_website/tags/ssh/</link>
+    <link>http://localhost:1313/personal_website/tags/ssh/</link>
     <description>Recent content in Ssh on Abdul Rahim</description>
     <image>
       <title>Abdul Rahim</title>
-      <url>http://localhost:45763/personal_website/images/papermod-cover.png</url>
-      <link>http://localhost:45763/personal_website/images/papermod-cover.png</link>
+      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
+      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
     <lastBuildDate>Tue, 20 Feb 2024 01:04:38 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45763/personal_website/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/personal_website/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to turn your old smartphone into a home server</title>
-      <link>http://localhost:45763/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
+      <link>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
       <pubDate>Tue, 20 Feb 2024 01:04:38 +0000</pubDate>
-      <guid>http://localhost:45763/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
+      <guid>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
       <description>Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...</description>
     </item>
   </channel>

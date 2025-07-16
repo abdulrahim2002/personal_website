@@ -1,6 +1,6 @@
 ---
 date: '2025-07-16T16:30:15+05:30'
-title: 'Leetcode 745: prefix and suffix search solution'
+title: 'Leetcode 745: Prefix and suffix search solution'
 author: abdul
 math: true
 ---

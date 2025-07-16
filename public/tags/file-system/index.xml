@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>File System on Abdul Rahim</title>
-    <link>http://localhost:45763/personal_website/tags/file-system/</link>
+    <link>http://localhost:1313/personal_website/tags/file-system/</link>
     <description>Recent content in File System on Abdul Rahim</description>
     <image>
       <title>Abdul Rahim</title>
-      <url>http://localhost:45763/personal_website/images/papermod-cover.png</url>
-      <link>http://localhost:45763/personal_website/images/papermod-cover.png</link>
+      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
+      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Jul 2024 17:17:28 +0000</lastBuildDate>
-    <atom:link href="http://localhost:45763/personal_website/tags/file-system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/personal_website/tags/file-system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Merkel Trees and computer memory</title>
-      <link>http://localhost:45763/personal_website/posts/merkel_trees_and_computer_memory/</link>
+      <link>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</link>
       <pubDate>Mon, 08 Jul 2024 17:17:28 +0000</pubDate>
-      <guid>http://localhost:45763/personal_website/posts/merkel_trees_and_computer_memory/</guid>
+      <guid>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</guid>
       <description>Merkel trees are data structures which store hashes insted of data. Can we use them in file systems</description>
     </item>
   </channel>
