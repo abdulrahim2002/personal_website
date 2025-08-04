@@ -1,5 +1,4 @@
 ---
-date: '2025-07-16T00:23:54+05:30'
 date: '2025-08-04T23:00:00+05:30'
 draft: false
 title: 'How to deply a postgresql server'
