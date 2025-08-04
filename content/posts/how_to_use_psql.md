@@ -17,7 +17,7 @@ To launch the `psql` terminal interface, you need to log into the
 `postgres` user or the `username` that created the `postgresql server`.
 This can be done using the `su` command.
 
-```sh
+```sql
 {04 Aug 23:33}~ ➭ su postgres
 Password: 
 bash-5.2$ psql
@@ -41,7 +41,7 @@ By default there are 3 databases that are already created by the default
 installation and you are connected to `postgres` database. You can
 change the database using the command:
 
-```sh
+```sql
 postgres=# \connect template1
 You are now connected to database "template1" as user "postgres".
 template1=#
@@ -52,7 +52,7 @@ You might be curious, what's inside of "template1". Let's try listing
 it's tables:
 
 
-```sh
+```sql
 template1-# \dt
 Did not find any relations.
 ```
@@ -60,7 +60,7 @@ Did not find any relations.
 We see that there's nothing in "template1" database. No worries, let's
 create our own database called test database.
 
-```sh
+```sql
 template1=# CREATE DATABASE test_database;
 template1=# \connect test_database
 You are now connected to database "test_database" as user "postgres".
@@ -68,7 +68,7 @@ You are now connected to database "test_database" as user "postgres".
 
 Create some tables, and insert data.
 
-```sh
+```sql
 test_database=# CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -115,7 +115,7 @@ Here we created 2 tables: "users" and "products" and inserted data into
 them. Now let's see, what are the tables available inside of our
 `test_database` from `psql` terminal.
 
-```sh
+```sql
 test_database=# \dt
           List of relations
  Schema |   Name   | Type  |  Owner
@@ -127,7 +127,7 @@ test_database=# \dt
 
 Now let's try to check which columns are available in the users table.
 
-```sh
+```sql
 test_database-# \d users
                                        Table "public.users"
    Column   |           Type           | Collation | Nullable |              Default
