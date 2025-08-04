@@ -125,7 +125,7 @@ postgres=#
 You are now logged into the `psql` shell. Use `\l` to see available
 databases.
 
-```sh
+```sql
 postgres=# \l
                                                        List of databases
    Name    |  Owner   | Encoding | Locale Provider |   Collate   |    Ctype    | ICU Locale | ICU Rules |   Access privileges
