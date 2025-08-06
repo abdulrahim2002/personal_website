@@ -103,10 +103,8 @@ params:
 
   homeInfoParams:
     Title: "Abdul Rahim's Portfolio and Blog website"
-    Content: >
-      - My name is Abdul Rahim. I am a Computer Science Engineer from India.
-      - I love tech, and I love to talk about tech. Below, you fill find some of my blogs and articles. 
-
+    Content: "- My name is Abdul Rahim. I am a Computer Science Engineer from India.
+      - I love tech, and I love to talk about tech. Below, you fill find some of my blogs and articles."
   socialIcons:
     - name: github
       title: My Github account
