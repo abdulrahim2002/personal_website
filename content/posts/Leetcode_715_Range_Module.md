@@ -1,5 +1,5 @@
 ---
-date: '2025-08-08T00:37:54+05:30'
+date: '2025-08-08T00:07:54+05:30'
 draft: false
 title: 'Leetcode 715: Range Module in 6 line python. The epitome of
 python sorcery demystified'
