@@ -75,4 +75,10 @@ and returns the data from it.
 
 ![](https://i.ibb.co/7tZcrW7W/Screenshot-from-2025-09-24-20-03-02.png)
 
+Another interesting point to note is that EV cache is built on top of
+[memcached](https://en.wikipedia.org/wiki/Memcached). And usually,
+caching systems store data in RAM.
 
+However, netflix caches store data not in RAM, but SSD hard disks. SSD's
+are faster than traditional hard drives (HDD's) but still slower than
+RAM. This setup allows them to reduce the costs.
