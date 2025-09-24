@@ -84,7 +84,8 @@ multiple places.
 
 ![](https://i.ibb.co/ZRWwc4Mr/Screenshot-from-2025-09-24-20-15-03.png)
 
-
+The Open connect nodes use consistent hashing to store/cache data
+efficiently.
 
 ## Caching layer
 
