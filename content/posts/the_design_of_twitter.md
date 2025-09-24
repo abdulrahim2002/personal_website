@@ -302,6 +302,21 @@ it](https://i.ibb.co/mFvWB658/Screenshot-from-2025-09-24-15-23-32.png)
 feed](https://i.ibb.co/W4d3bX1Q/Screenshot-from-2025-09-24-15-27-06.png)
 
 
+But even with this approach, there is one problem. Consider a famous
+user who has 100 million followers. Now when he tweets, the fanout
+service needs to update the timeline of 100 million users. This is an
+increadibly expensive operation.
+
+The solution is to segregate users into regular users and famous users.
+The fanout method should only run with regular users. To collate the
+tweets by famous users, we should `fetch them on the fly`. Therefore,
+the home timeline generation service would typically keep a seperate
+list for famous followees for a given user. And the tweets from famous
+users is fetched on the fly combined with precomputed home feed from
+redis (which only contains tweets from regular users).
+
+This approach, also enables us to distribute the tweets of famous users
+using a more optimal method, for example through CDN.
 
 ## How to generate search timeline/feed
 
