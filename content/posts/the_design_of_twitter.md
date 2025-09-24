@@ -318,6 +318,30 @@ redis (which only contains tweets from regular users).
 This approach, also enables us to distribute the tweets of famous users
 using a more optimal method, for example through CDN.
 
+Lastly, I would like to note that publisher/subscriber model of
+communication, is probably a more natural approach to solve these kind
+of problems.
+
+- each user is a publisher
+- and his followers are his subscribers
+- when alice follows bob. She is subscribing to bob. Therefore:
+    - bob -> publisher
+    - alice -> subscriber
+- when bob makes a post. All subscribers that subscriber to bob's post
+  immediately take some action
+- For example, when bob makes a post, alice can store the post in her
+  timeline
+
+Since, we will be handling 300 million users, we potentially have 300
+million publisher streams and 300 million subscriber streams. Hence, a
+huge pub/sub system is required.
+
+We can think of using something like apache kafka. Which is a production
+grade pub/sub system. But even with kafka, this might be a challenge,
+given the number of publisher stremas we need to maintain.  So as a home
+work, read more about kafka.
+
+
 ## How to generate search timeline/feed
 
 Twitter uses something called inverted full text search. Here's how it
