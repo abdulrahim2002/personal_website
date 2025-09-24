@@ -170,3 +170,36 @@ Response:
 ```
 
 
+
+## Inverted full text index (algorithm behind twitter search)
+
+When you make a tweet. Twitter does the following:
+
+- identify the terms within your tweet, that can be used to index your
+  tweet. For example, I you tweet:
+
+  ```
+    I am supporing manchester united this season.
+  ```
+
+- Then twitter parser may identify "manchester united" as the main
+  search key for this tweet. Note that there may be multiple search
+  keys.
+
+- Then it stores the `search_key : tweet` mapping, into a key value
+  store.
+
+  For each `search_key` there is a list of tweets that contain that
+  search key. Similarly, your tweet will be appended to the list of
+  tweets, under the search key "manchester united"
+
+```
+// key value store
+"machester united": [123, 321, 422, ... /* other tweet id's that talk about manchester united*/ ]
+// other search_keys along with thir tweets
+```
+
+Now whenever, a user searches for "manchester united". Twitter can just
+fetch the list of tweets from the above key value store. And your tweet
+will be displayed in the results (based on some raking)
+
