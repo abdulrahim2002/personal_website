@@ -193,9 +193,10 @@ to use the following algorithm:
 3. Sort the agreegated tweets from bob and charlie and return top 20
    tweets.
 
-In fact, I previously implemented a [similar problem on
-leetcode](https://leetcode.com/problems/design-twitter/descript). And
-this was the solution I came up with (which follows the above algorithm):
+In fact, I previously solved a [similar problem on
+leetcode](https://leetcode.com/problems/design-twitter/description). And
+this was the solution I came up with (which follows the above
+algorithm):
 
 ```
 interface Post {
@@ -296,6 +297,11 @@ the new tweet and populates it in alice's home feed.
 ![When bob posts a tweet. Fanout service automatically populates alice's
 feed with
 it](https://i.ibb.co/mFvWB658/Screenshot-from-2025-09-24-15-23-32.png)
+
+![Similarly, tweet made by charlie is populated in alice's home
+feed](https://i.ibb.co/W4d3bX1Q/Screenshot-from-2025-09-24-15-27-06.png)
+
+
 
 ## How to generate search timeline/feed
 
