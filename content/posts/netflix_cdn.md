@@ -112,3 +112,6 @@ caching systems store data in RAM.
 However, netflix caches store data not in RAM, but SSD hard disks. SSD's
 are faster than traditional hard drives (HDD's) but still slower than
 RAM. This setup allows them to reduce the costs.
+
+
+> Note: the matter of this post is based on [this video](https://www.youtube.com/watch?v=psQzyFfsUGU)
