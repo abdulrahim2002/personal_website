@@ -56,3 +56,23 @@ multiple nodes with a particular availability zone.
 ![](https://i.ibb.co/JW1P6Kr9/Screenshot-from-2025-09-24-19-16-12.png)
 
 
+
+## Caching layer
+
+Netflix is a read heavy system because it does not contain user
+generated content. Also the write frequency is much less than read
+frequency. Keeping this in mind, netflix has implemented a write through
++ read through catching layer.
+
+Netflix's caching layer is called "EV cache". Each read/write request
+goes through one of many cache clients in an availability zones.
+Whenever a write request is received. All clusters/nodes/replication
+groups are updated simoultaniously along with the cache.
+
+However, when a read request is received. It is allocated to a
+particular cache client, which then talks to the nearest convinent node
+and returns the data from it.
+
+![](https://i.ibb.co/7tZcrW7W/Screenshot-from-2025-09-24-20-03-02.png)
+
+
