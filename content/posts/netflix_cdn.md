@@ -56,6 +56,23 @@ multiple nodes with a particular availability zone.
 ![](https://i.ibb.co/JW1P6Kr9/Screenshot-from-2025-09-24-19-16-12.png)
 
 
+## Databases used
+
+Netflix uses MySQL and cassandra to store user data. All the basic user
+information like name, age etc. are stored in MySQL while big data and
+analytics related data like watch history, search history, which might
+be useful for recommendation engines are stored in Cassandra.
+
+For the MySQL database layer, netflix uses a multi master architecture.
+Where, when a write request is received. All masters are synchorinazed
+and written to simultaniously. 
+
+Each master has multiple read replicas which are replicated across
+multiple places.
+
+![](https://i.ibb.co/ZRWwc4Mr/Screenshot-from-2025-09-24-20-15-03.png)
+
+
 
 ## Caching layer
 
