@@ -56,6 +56,18 @@ multiple nodes with a particular availability zone.
 ![](https://i.ibb.co/JW1P6Kr9/Screenshot-from-2025-09-24-19-16-12.png)
 
 
+## Open Connect
+
+Open Connect is a globally distributed CDN of netflix. Open connect
+works at the ISP level so the user does not need to make a request
+through the internet, if the requested resource is available in Open
+connect node.
+
+![](https://i.ibb.co/SDCpPnPN/Screenshot-from-2025-09-24-22-00-48.png)
+
+Open connect servers are provided free of cost to the internet service
+providers.
+
 ## Databases used
 
 Netflix uses MySQL and cassandra to store user data. All the basic user
