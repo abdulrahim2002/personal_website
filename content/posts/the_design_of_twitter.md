@@ -94,9 +94,13 @@ response would look like:
     "user_id": 1231231,
     "email": "sample@example.com",
     "name": "sample",
+    "followees": [
+        123, 321, 321,
+        // a list of users, current user follows
+    ],
+    // other metadata
     "phone": "+12 123124214",
     "created_at": 2143124214124,
-    // other metadata
 }
 ```
 
@@ -202,4 +206,16 @@ When you make a tweet. Twitter does the following:
 Now whenever, a user searches for "manchester united". Twitter can just
 fetch the list of tweets from the above key value store. And your tweet
 will be displayed in the results (based on some raking)
+
+You might have already observed, that such a key-value store needs to be
+of massive scale considering we are dealing with 300 million users. And
+that's why, this key-value store is not located in a single place. This
+is probably spread across multiple nodes and data centres.
+
+Therefore, twitter uses an approch of scatter and gather when writing
+and reading from this distributed key-value store.
+
+For a given query, each datacenter is asked to provide a list of
+relavant tweets from it's databases. These are merged together and
+finally shown to the user after being ranked.
 
