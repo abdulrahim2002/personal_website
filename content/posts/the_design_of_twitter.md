@@ -150,6 +150,7 @@ Response:
 ```json
 {
     "123123": {
+        "tweet_id": 123123,
         "text": "some text of tweet 1",
         "images": [
             // list of paths to images
@@ -159,6 +160,7 @@ Response:
         ]
     },
     "321321": {
+        "tweet_id": 321321,
         "text": "some text of tweet 2",
         "images": [
             // list of paths to images
@@ -173,11 +175,136 @@ Response:
 }
 ```
 
+## How to generate home page timeline/feed
+
+Suppose we need to generate the feed for alice. Support alice follows
+bob and charlie. Therefore, in our simplified twitter, alice should see
+more recent (say 20) posts from bob and charlie.
+
+![Alice follows bob and charlie](https://i.ibb.co/5WvZWw27/Screenshot-from-2025-09-24-14-51-23.png)
+
+When we need to generate the home feed for alice, the simplest option is
+to use the following algorithm:
+
+1. Find the friends of `alice`, using the "followees" field. This will
+   provide us user id's of `bob` and `charlie`
+2. Now get all the tweets from `bob` and `charlie` using their user
+   timelines respectively (this will involve a database call)
+3. Sort the agreegated tweets from bob and charlie and return top 20
+   tweets.
+
+In fact, I previously implemented a [similar problem on
+leetcode](https://leetcode.com/problems/design-twitter/descript). And
+this was the solution I came up with (which follows the above algorithm):
+
+```
+interface Post {
+    // each post has an id and timestamp
+    id: number,
+    sno: number,
+}
+
+interface User {
+    // store ID's of users this user follows
+    followees: Set<number>,
+    // store tweetID's of tweets made by user
+    posts: Post[],
+}
+
+class Twitter {
+    // to be able to get User object from UserID
+    private usersList: Map<number, User> = new Map();
+    private postSerialNumber: number = 0;
+
+    postTweet(userId: number, tweetId: number): void {
+        if ( !this.usersList.has( userId ) )
+            this.createUser( userId );
+        
+        const curUser: User = this.usersList.get( userId );
+        
+        const tweet: Post = {
+            id: tweetId,
+            sno: this.postSerialNumber++,
+        }
+
+        curUser.posts.push( tweet );
+    }
+
+    getNewsFeed(userId: number): number[] {
+        if ( !this.usersList.has( userId ) ) 
+            return [];
+
+        const feed: Post[] = [];
+        
+        const curUser: User = this.usersList.get( userId );
+
+        curUser.followees.forEach( (followeeId) => {
+            // the the posts of this followee and add that to feed
+            const followee: User = this.usersList.get( followeeId );
+            feed.push( ...followee.posts );
+        } );
+
+        // sort the posts by serial no. and return the top 10 posts
+        feed.sort( (a,b) => b.sno - a.sno );
+        return feed.slice( 0, 10 ).map( x => x.id );
+    }
+
+    follow(followerId: number, followeeId: number): void {
+        if ( !this.usersList.has(followerId) )
+            this.createUser( followerId );
+
+        if ( !this.usersList.has(followeeId) )
+            this.createUser( followeeId );
+
+        const curUser: User = this.usersList.get( followerId );
+        curUser.followees.add( followeeId );
+    }
+
+    unfollow(followerId: number, followeeId: number): void {
+        const curUser: User = this.usersList.get( followerId );
+        curUser.followees.delete( followeeId );
+    }
+
+    createUser( userId: number ) {
+        const newUser: User = {
+            followees: new Set( [userId] ),
+            posts: [],
+        }
+        this.usersList.set( userId, newUser );
+    }
+}
+```
+
+The problem with this approach is that:
+
+1. this is an expensive operation. For a user with 30 followees, we are
+   making 30 expensive database calls. And then we also need to sort the
+   tweets.
+2. it generates the home feed on the fly (expensive operation -> will
+   make user wait)
 
 
-## Inverted full text index (algorithm behind twitter search)
+To improve the performance of the above approach, the idea is to keep
+each user's timeline (both home timeline and user tiemline) in a redis. 
+
+![All home/user timelines/feeds are redis
+instances](https://i.ibb.co/93VmrnYB/Screenshot-from-2025-09-24-15-18-45.png)
+
+Whenever, bob or charlie post a new tweet. A **fanout** service picks up
+the new tweet and populates it in alice's home feed.
+
+![When bob posts a tweet. Fanout service automatically populates alice's
+feed with
+it](https://i.ibb.co/mFvWB658/Screenshot-from-2025-09-24-15-23-32.png)
+
+## How to generate search timeline/feed
+
+Twitter uses something called inverted full text search. Here's how it
+works:
+
 
 When you make a tweet. Twitter does the following:
+
 
 - identify the terms within your tweet, that can be used to index your
   tweet. For example, I you tweet:
