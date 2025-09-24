@@ -38,3 +38,21 @@ typically located across many geographies so as to provide data to end
 user as fast as possibel across multiple locations.
 
 ![](https://i.ibb.co/WNKZmFny/Screenshot-from-2025-09-24-19-06-41.png)
+
+## Load balancing
+
+In each country, usually, there are mulitple availability zones. For
+example, amazon web services operate az-east, az-west and other
+availability zones with the US. And for each country, there may be
+multiple availability zones.
+
+Requests are load balanced across 2 layers. First, for each geography,
+there may be multiple availability zones that the current client can
+fetch data from. Hence, the first layer of load balancer operates among
+availability zones. The second layer of load balancer, operates among
+multiple nodes with a particular availability zone.
+
+
+![](https://i.ibb.co/JW1P6Kr9/Screenshot-from-2025-09-24-19-16-12.png)
+
+
