@@ -3,7 +3,9 @@ date: 2025-09-25T07:01:18.924Z
 layout: post
 title: "The design of a Search Engine"
 
-subtitle: Google indexes millions of web pages, and collates the search results over milliseconds while searching all these millions of web pages...
+subtitle: "Google indexes millions of web pages, and collates the search
+results over milliseconds while searching all these millions of web
+pages..."
 
 description: In this article, lets take a deep dive into how a system like google search actually works
 
