@@ -147,3 +147,11 @@ with spark, we can also use [hadoop](https://hadoop.apache.org/) in
 conjunction. Hadoop provides the low level utilities like HDFS (a
 distributed file system) that enable us to run a large number of
 analytics jobs  in parallel.
+
+## Order placing
+
+The flow of placing an order can be described in the following diagram:
+
+![](https://i.ibb.co/yBFZ4T2L/Screenshot-from-2025-09-25-23-36-39.png)
+
+
