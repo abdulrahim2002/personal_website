@@ -124,3 +124,26 @@ relevant metadata.  It determines weather the product can be delivered.
 It should also provide us with the time by which we can deliver the item
 to the user. This will be useful in displaying something like "delivery
 in 2 days" etc.
+
+## Recommendations
+
+Each time a user searches a particular item, or view a particular item,
+order an item, etc. We can use these user interations to infer what the
+user is looking for. For example, if the user searches for different
+mobile phone models, views some of them, then the user probably is
+looking to buy a mobile phone. And this information can be used by the
+recommendation engine to show appropriate products on the user's home
+feed.
+
+The idea is, that all the events that can be an input to the
+recommendation engine, we put them in Kafka. Now, there will be services
+that will fetch these events from kafka, and feed them into machine
+learning models, and generate predictions.
+
+We can use [spark](https://spark.apache.org/) to user activity from
+kafka, and then run analytics on it. We can use spark for both stream
+processing and batch processing. It can run ML jobs in parallel.  Along
+with spark, we can also use [hadoop](https://hadoop.apache.org/) in
+conjunction. Hadoop provides the low level utilities like HDFS (a
+distributed file system) that enable us to run a large number of
+analytics jobs  in parallel.
