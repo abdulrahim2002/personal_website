@@ -100,3 +100,27 @@ search](https://www.elastic.co/elasticsearch). It is increadibly
 versatile search solution which provides full text search capabilities.
 We can run various algorithms like fuzzy search or vector embeddings
 based search.
+
+## Serviciability
+
+An ecommerce platform depends on many intermediaries for delivering the
+product to the customer. For example, we might need a courier service
+like fedex to transport goods from one place to another.
+
+Given a product and a user's location, we might not be able to deliver
+the product to the user. May be the user is located in a remote location
+where, we do not have coverage from any courier service. In that case we
+need to let the user know that they cannot order the product in
+question.
+
+To answer questions like, "weather product X can be delivered to product
+Y" we need to implement a servicability endpoint which:
+
+Given the vendor location (location from where to pick up the product),
+user location (location where the product needs to be delivered), type
+of product (e.g. refigrated items, eatables with expiry etc.) and other
+relevant metadata.  It determines weather the product can be delivered. 
+
+It should also provide us with the time by which we can deliver the item
+to the user. This will be useful in displaying something like "delivery
+in 2 days" etc.
