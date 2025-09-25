@@ -61,7 +61,7 @@ Bob will send a POST request to an endpoint like `add-product`:
 POST /register-product
 
 {
-    "name": "KUHL Laptop",
+    "name": "Lenovo Laptop",
     "description": "A gaming laptop with 10 GB ram and 256 GB SSD ...",
     "price_usd": 200,
     "remaining_supply": 30
@@ -78,4 +78,25 @@ in the database, etc.
 
 ## Database
 
-How will me model the item data.
+How will me model an item. For example, a product item. We need to
+consider that we are selling disparate items, for example a t-shirt item
+will have size, color. In contrast, a phone will have RAM, camera pixel
+as its attributes.
+
+What we are dealing here is unstructured data. Therefore, we cannot use
+a SQL database. Instead, we shall use something like mongoDB, or
+cassandra which store data in semi-structured format.
+
+## Searching
+
+We are going to support, millions of items. Therefore, we need to index
+these items such that they can be searched quickly. It is also necessary
+to pre-compute results or store metadata about items. For more
+information on such systems, see [design of a search engine
+blog](https://abdulrahim.space/posts/design_of_youtube/).
+
+In our e-commerce platform, we are going to use [elasti
+search](https://www.elastic.co/elasticsearch). It is increadibly
+versatile search solution which provides full text search capabilities.
+We can run various algorithms like fuzzy search or vector embeddings
+based search.
