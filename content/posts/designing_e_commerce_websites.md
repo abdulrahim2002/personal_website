@@ -76,3 +76,6 @@ in the database, etc.
 
 ![](https://i.ibb.co/m5cLtJYm/Screenshot-from-2025-09-25-22-00-11.png)
 
+## Database
+
+How will me model the item data.
