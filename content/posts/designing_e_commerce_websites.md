@@ -16,7 +16,7 @@ author: abdulrahim
 ## Introduction
 
 
-## Functional Requiremenets
+## Functional requirements
 
 1. search: The search functionality provides users with the ability to
    list all products that best match their query. We should also be able
@@ -28,4 +28,22 @@ author: abdulrahim
 4. checkout + payment
 5. view orders: users should be able to track their active orders
 
+## Non functional requirements
 
+Imagine there is a sale on an item with 50% off. And everybody is
+waiting for 12:00 so they can order. In such situation, we do not want 2
+users to order the same product. Hence, the system should be highly
+consistent.  Secondly, the system should have low latency, therefore,
+they can book as fast as possiblem, when there is a sale. 
+
+The system should be highly available. You almost never want to show
+"Something went wrong" errors or at least reduce them as much as
+possible.
+
+But given the constrains of CAP theorom, we cannot achieve high
+availability and consistency at the same time. Therefore, we need to
+segregate endpoints as per availability and consistency requirements. 
+
+For example, endpoints dealing with payments, inventory counting, order
+booking need to be highly available.  On the contrary, endpoints dealing
+with search, product showcase, etc. need to be highly available.
