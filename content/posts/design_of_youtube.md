@@ -32,27 +32,8 @@ obtained, then add this file to the output list.
 
 Typically, this is how the result would look like:
 
-```bash
-{25 Sep 12:43}~/Desktop/open-pocket-backend-server/src:main ✓ ➭ grep -r "interface"
-commons/IJwtPayload.ts:export default interface JwtPayload {
-commons/fastifyPassport.ts:    interface PassportUser extends IUserShape {}
-commons/IDbControllerResponse.ts:interface IDbControllerResponse<T=any> {
-commons/houndError.ts: * interface.
-api/v1/actions/delete.action.ts:interface IDeleteAction {
-api/v1/actions/archive.action.ts:interface IArchiveAction {
-api/v1/actions/tag_delete.action.ts:interface ITagDelete {
-api/v1/actions/tags_clear.action.ts:interface ITagsClear {
-api/v1/actions/tags_replace.action.ts:interface ITagsReplace {
-api/v1/actions/favorite.action.ts:interface IFavoriteAction {
-api/v1/actions/tags_add.action.ts:interface ITagsAddAction {
-api/v1/actions/unfavorite.action.ts:interface IUnfavoriteAction {
-api/v1/actions/add.action.ts:interface IaddActionParams {
-api/v1/actions/tags_remove.ts:interface ITagsRemove {
-api/v1/actions/readd.action.ts:interface IReaddAction {
-api/v1/actions/tag_rename.action.ts:interface ITagRename {
-configs/main.config.ts:// define the interface/contract for mainConfig
-configs/main.config.ts:interface IMainConfig {
-```
+![](https://i.ibb.co/LzF2kqv2/Screenshot-from-2025-09-25-13-49-46.png)
+
 
 Now how does this problem relate to search engines?
 
@@ -125,3 +106,5 @@ You can also build an advanced version of this "term document matrix",
 for example by also considering the frequency of the particular term.
 This will allow you to figure out, weather the term is the main subject
 of the article or is it just mentioned breiefly.
+
+
