@@ -3,7 +3,10 @@ date: 2025-09-25T07:01:18.924Z
 layout: post
 title: "The design of a Search Engine"
 
-subtitle: Google indexes millions of web pages, and collates the search results over milliseconds while searching all these millions of web pages...
+subtitle: Google indexes millions of web pages, and collates the search
+results over milliseconds while searching all these millions of web
+pages...
+
 description: In this article, lets take a deep dive into how a system
 like google search actually works
 
@@ -80,5 +83,46 @@ results need to be pre-fetched and cached.
 ## Google crawler
 
 Google has a massive web crawler that is responsible for crawling the
-internet and find web pages.
+internet and find web pages. The idea is to keep on crawling to internet
+and build a metadata database.  When you receive a query, search from
+the metadata database instead of the actual web pages.
 
+Also, note that with this approach, google does not actually need to
+store the actual webpages. The google crawler can just fetch the web
+page and build the metadata out of it.
+
+Google builds an index out of the metadata it collects from web pages.
+Think of this as similar to how indexes work in databases.
+
+![](https://i.ibb.co/67Ty8Ggd/Screenshot-from-2025-09-25-13-27-27.png)
+
+## Inverted index
+
+Suppose we have a large hash table where keys are "terms" and values are
+"documents in which these terms appear", then it is called a **Term
+document matrix**.
+
+For example, suppose we have 2 documents:
+
+```
+doc1: "MySQL is a consisten database system ..."
+doc2: "PostgresSQL is a highly consistent database ..."
+```
+
+Then, for a few terms, the term document matrix would look like:
+
+```
+key : value
+MySQL : [ doc1 ]
+PostgresSQL: [ doc2 ]
+database: [ doc1, doc2 ]
+// other terms ...
+```
+
+This kind of table is usually build after pre-processing the text. For
+example, removing stop words, stemming, lemmization etc.
+
+You can also build an advanced version of this "term document matrix",
+for example by also considering the frequency of the particular term.
+This will allow you to figure out, weather the term is the main subject
+of the article or is it just mentioned breiefly.
