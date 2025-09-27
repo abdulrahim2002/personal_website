@@ -70,3 +70,20 @@ particular prefix in `O(length of prefix)` time.
 
 For example, if i need to look up top k words for prefix "be" then I can
 quickly iterate through the Tri to get the node that represents prefix "be".
+
+But you might quickly figure out, that maintaining such a Tri across
+millions of words will require a humoungous Tri and it is true.
+
+We cannot reduce the space requirements of the Tri, but we can shard the
+system so that we can store it across multiple nodes or data centres
+for that matter.
+
+
+For example, we can distribute Tri across 2 clusters. This way, all
+queries with prefix="a" will be routed to first cluster. And all queries
+with prefix="b" will be routed to second cluster.
+
+Extending this approach, you can indefinately divide the Tri across
+multiple nodes/clusters/availability zones/data centres etc.
+
+
