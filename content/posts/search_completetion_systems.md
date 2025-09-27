@@ -14,7 +14,6 @@ tags: ["software engineering", "design"]
 author: abdulrahim
 ---
 
-
 ## Introduction
 
 When you type something on a search engine like google. You are
@@ -22,4 +21,41 @@ continously shown search suggestions, as you type.
 
 ![](https://i.ibb.co/Dhvj4z7/Screenshot-from-2025-09-27-14-31-20.png)
 
+## API
 
+As you type in the search box, behind the scenes, google continously
+sends request to the backend. The requests might look like this:
+
+```
+GET /autocomplete?q=be
+
+{
+  // metadata such as user id etc for personalized suggestion
+}
+```
+
+The backend responds with a list of suggestions, which might look something like:
+
+```
+200 OK
+
+{
+  "suggestions": [
+    "best hotels near me",
+    "beach destinations",
+    "bears",
+    "beauty products",
+    "behavioral psychology",
+    "bitcoin",
+    "beetlejuice",
+    "best laptop 2025"
+  ]
+}
+```
+
+These are then populated in a box on the user interface.
+
+
+## How does it work exactly
+
+This type of functionality can be implemented as a Tri. 
