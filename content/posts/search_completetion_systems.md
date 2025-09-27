@@ -55,9 +55,7 @@ The backend responds with a list of suggestions, which might look something like
 
 These are then populated in a box on the user interface.
 
-
 ## How does it work
-
 
 This kind of functionality can be implemented with a Tri. The idea is
 that at each node in the Tri, we keep a list of top k most frequest
@@ -87,3 +85,29 @@ Extending this approach, you can indefinately divide the Tri across
 multiple nodes/clusters/availability zones/data centres etc.
 
 
+![](https://i.ibb.co/h1snfgfY/Screenshot-from-2025-09-27-15-03-27.png)
+
+
+
+## How are top k words populated in the Tri
+
+Now the question is, how can we populate the top k words in the Tri for
+each word. There are many approaches by which it can be done.
+
+As a simple example, we could monitor queries in given intervals of time
+(say 1 hour) and for each hour. We find, what are the most common words.
+We can then regenerate/update the Tri with the new data. This allows the
+system to be aware of real time events.
+
+Machine learning approaches can also be applied in this context. For ML
+perspective, this problem can be viewed as a next token prediction
+problem. Hence, we can use transformer models which are known to excel
+in this tasks.
+
+
+## Conclusion
+
+A search completetion, whilst looks simple, is an increadibly
+complicated system under the hood. There are many methods that can be
+employed to develop such a system, in this article, we just touched the
+surface of what might an implementation look like.
