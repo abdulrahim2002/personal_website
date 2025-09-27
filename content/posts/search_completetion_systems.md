@@ -56,6 +56,17 @@ The backend responds with a list of suggestions, which might look something like
 These are then populated in a box on the user interface.
 
 
-## How does it work exactly
+## How does it work
 
-This type of functionality can be implemented as a Tri. 
+
+This kind of functionality can be implemented with a Tri. The idea is
+that at each node in the Tri, we keep a list of top k most frequest
+words having the prefix.
+
+![](https://i.ibb.co/VYnt3qGB/Screenshot-from-2025-09-27-14-53-13.png)
+
+This approach allows us to look up top k most frequest words with a
+particular prefix in `O(length of prefix)` time.
+
+For example, if i need to look up top k words for prefix "be" then I can
+quickly iterate through the Tri to get the node that represents prefix "be".
