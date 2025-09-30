@@ -22,7 +22,22 @@ tags: ["software engineering", "design"]
 author: abdulrahim
 ---
 
-# Introduction
+## Introduction
+
+To ensure scalability, reliability and fault tolerance, web applications
+replicate data across multiple database nodes/clusters/availability
+zones/regions and cloud providers. However, replicating data introduces
+the challenge of keeping the copies in sync. In this article, we
+contemplate weather quantum entanglement can enable data copies to
+instantinously replicate data across nodes.  The ideas behind
+entanglement stem from quantum mechanics, a subfield of physics which
+describes the behaviour of sub atomic particles.
+
+In this post, we first describe the basics of database replication, then
+we move on the show the theoritical application of quantum entanglement
+in database replication.
+
+## Basics of data replication
 
 The figure below shows a simplified setup of client-server web
 applications. The user would send requests to the backend. Then this
@@ -65,7 +80,6 @@ A simple implementation of the above scheme would look like:
 
 ![](https://i.ibb.co/tpqDCPpy/Screenshot-from-2025-09-30-22-17-35.png)
 
-
 Suppose, we need to update a piece of data. Now we would route the write
 request to the master replica. The master replica will update it's own
 database. However, the master replica is no longer in sync with read
@@ -73,6 +87,28 @@ replicas (in that the read replicas still show an outdated version of
 the data). Therefore, we need to communicate the newly  updated data
 across read replicas. This can be easily achieved by making an update
 request synchronously/asynchronously from master replica to slave
-replicas.
+replicas.  The time it takes for data to travel from master replica to
+all slave replicas is called replication lag.
 
 ![](https://i.ibb.co/8L9LvnV9/Screenshot-from-2025-09-30-22-26-01.png)
+
+However, during this procedure, there is still a short duration in which
+read replicas hold inconsistent data. You can either block or allow
+incoming read requests on slave replicas depending on weather you are
+optimizing for consistency or availability.
+
+If you allow the read requests during updation of slave replicas, then
+you allow the user to read stale data, hence your system is not
+consisten (in that the read requests is not returning the latest data),
+however, your system is available (the user is returned with some
+response instead of error).
+
+On the other hand, if you block read requests in this duration, then you
+are basically returning the user with an error response. You system is
+hence less available, but more consistent (in that if a user reads data,
+it is guaranted that it is latest).
+
+The tradeoff's are based on requirements of your system and the nature
+of application at hand.
+
+
