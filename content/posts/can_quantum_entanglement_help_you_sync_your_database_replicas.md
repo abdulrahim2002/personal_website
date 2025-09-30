@@ -21,4 +21,12 @@ author: abdulrahim
 
 # Introduction
 
+The figure below shows a simplified setup of a client-server web
+applications. The user would send requests to the backend. There are
+several components like load balancers, app servers, caching servers
+etc. involved in receiving, validating, responding to the user's
+request. We have abstracted them in a black box for now.  These
+components need communicate with a database system to manipulate user
+data.
 
+![](https://i.ibb.co/WN8CjXFt/Screenshot-from-2025-09-30-21-37-32.png)
