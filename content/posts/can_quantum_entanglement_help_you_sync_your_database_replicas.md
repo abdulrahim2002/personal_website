@@ -28,10 +28,10 @@ To ensure scalability, reliability and fault tolerance, web applications
 replicate data across multiple database nodes/clusters/availability
 zones/regions and cloud providers. However, replicating data introduces
 the challenge of keeping the copies in sync. In this article, we
-contemplate weather quantum entanglement can enable data copies to
-instantinously replicate data across nodes.  The ideas behind
-entanglement stem from quantum mechanics, a subfield of physics which
-describes the behaviour of sub atomic particles.
+contemplate weather quantum entanglement can enable database replicas to
+sync instantinously. The ideas behind entanglement stem from quantum
+mechanics, a subfield of physics which describes the behaviour of sub
+atomic particles.
 
 In this post, we first describe the basics of database replication, then
 we move on the show the theoritical application of quantum entanglement
