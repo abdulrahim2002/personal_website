@@ -111,6 +111,18 @@ it is guaranted that it is latest).
 The tradeoff's are based on requirements of your system and the nature
 of application at hand.
 
+Current approaches of database replication rely on communication between
+replicas. The inconsistencies are resolved using distributed consensus
+mechanisms such as Paxos or Raft.
+
+[Conflict-free replicated data
+type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+are used in some schemes. Using CRDT's data is replicated across
+multiple data centres. Each data center operates on its own data which
+is non overlapping with any other data centres. This way, updates can be
+made at multiple locations, since their merge is guaranteed to cause no
+conflicts (because the data updated was independent).
+
 ## Quantum entanglement
 
 Quantum physics is the subfield of physics that describes the behaviour
@@ -175,7 +187,7 @@ We have 2 electrons in quantum entanglement. These 2 electrons act as
 computer memory. Suppose, these 2 electrons represent the same variable.
 
 ```
-int x = 1;
+bool x = 1;
 ```
 
 Suppose, The variable `x` is stored as "spin up" state in electron 1 and
@@ -208,3 +220,6 @@ example, quantum computers can manipulate qubits on will using magnetic
 fields.  Also, quantum computing technology has enabled us to use sub
 atomic particles as pieces of information.
 
+This kind of setup achives replication lag of 0. This has real
+implications for systems that require strong consistency and high
+availability. Interestingly, it also violates the CAP theorm.
