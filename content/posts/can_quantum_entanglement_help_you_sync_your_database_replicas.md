@@ -2,11 +2,13 @@
 date: 2025-09-30T14:45:02.633Z
 layout: post
 title: "Can quantum entanglement help you sync your database replicas?"
+
 subtitle: "Replicating data across multiple locations (nodes/datacenters
 etc.) is a common practice in modern applications that operate at scale.
 However, with data replication, keeping multiple replicas in sync
 becomes a challenge. In this post, lets look at a unique approach
 originating in quantum mechanics that might help tackle this issue."
+
 description: "Replicating data across multiple nodes/clusters/data
 centres is a common approach among applications that need to support
 scalability/fault tolerance/disaster managemenet. However, this approach
@@ -14,6 +16,7 @@ also introduces the problem of keeping the replicas in sync. Existing
 methods use distributed consensus mechanisms to keep replicas in sync,
 with the latest write. In this approach, we explore an approach based on
 quantum mechanics that has the potential to revolutnize the field."
+
 category: ["system design"]
 tags: ["software engineering", "design"]
 author: abdulrahim
@@ -39,5 +42,27 @@ will be lost and there's no way we can recover it back. Also, consider
 what would happen when there are much more users than the capacity of
 the database server. In this case, the queries will become slow and
 user's will experience higher latency.
+
+To solve these problems, we can replicate the data across multiple
+nodes. Each such node (or database server) is called a replica. In a
+simple scheme, we have a single master replica and multiple slave
+replicas.  The write requests are handled by master replicate, while
+read requests are handled by slave replicas.
+
+This architecture introduces the following features into our system:
+
+1. scalability: read requests can be distributed among read replicas
+   allowing the system to handle more number of read requests compared
+   to previous approach
+2. availability: if one of the replica goes down, the system will remain
+   functional since others can handle the request
+3. redundancy: since we are storing the same data at multiple places,
+   we no longer keep a single copy of user's data i.e. we store the data
+   redundantly
+4. fault tolerance: the system is more tolerant to node failures
+
+A simple implementation of the above scheme would look like:
+
+![](https://i.ibb.co/tpqDCPpy/Screenshot-from-2025-09-30-22-17-35.png)
 
 
