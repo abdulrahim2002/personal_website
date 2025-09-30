@@ -152,4 +152,59 @@ Quantum entanglement is known to be true and has been proved
 experimentally by bell in 1960s. Now if we consider this fact at face
 value, we can build some really cool applications out of it.
 
+## Data syncing using Quantum entanglement
+
+In computers, information is represented in bits. A bit can hold 2
+values, either 0 or 1. Computers are agnostic of the underlying
+mechanism on which bits are stored. For example, modern computers use
+Metal Oxide Field Effect Transistors (MOSFETS) for representing
+information. These transistors, act like switches where absence or
+presents of electricity determins the value of the bit.
+
+An electron's spin can take 2 values "up" or "down". The value of an
+electron's spin determines its angular momentum. 
+
+
+Assuming that we have
+the technology to use an electron's spin as a bit of computer memory.
+Consider the following thought experiment:
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d6/CPdiagram.png)
+
+We have 2 electrons in quantum entanglement. These 2 electrons act as
+computer memory. Suppose, these 2 electrons represent the same variable.
+
+```
+int x = 1;
+```
+
+Suppose, The variable `x` is stored as "spin up" state in electron 1 and
+"spin down" state in electron2. Note that quantum entangled particles
+usually have opposite properties.
+
+Now suppose, we seperate these electrons to 2 locations far apart.
+Suppose, electron1 is in India and electron2 is in Russia. Now we update
+the variable x as follows:
+
+```
+x = 0;
+```
+
+Please note that the update is only made at electron1 located in
+India, however, by virtue of the fact that the 2 particles are quantum
+entangled, the second particle will be in a flipped state upon
+measurement automatically. Hence, we have updated the variable to `x=0`
+at both locations instantinously eventhough we never made an update in
+second location.
+
+Hence, we synced data copies across 2 locations instantinously.
+
+## Conclusion
+
+Through the thought experiment above, we've shown how quantum
+entanglement can be used to sync data instantinously. Most of the
+technology required to implement such a system is already present. For
+example, quantum computers can manipulate qubits on will using magnetic
+fields.  Also, quantum computing technology has enabled us to use sub
+atomic particles as pieces of information.
 
