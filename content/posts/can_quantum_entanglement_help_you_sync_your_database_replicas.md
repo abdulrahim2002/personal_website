@@ -190,13 +190,10 @@ computer memory. Suppose, these 2 electrons represent the same variable.
 bool x = 1;
 ```
 
-Suppose, The variable `x` is stored as "spin up" state in electron 1 and
-"spin down" state in electron2. Note that quantum entangled particles
-usually have opposite properties.
-
-Now suppose, we seperate these electrons to 2 locations far apart.
-Suppose, electron1 is in India and electron2 is in Russia. Now we update
-the variable x as follows:
+Suppose, The variable `x` is stored as "spin up" state in electron1 and
+electron2.  Now suppose, we seperate these electrons to 2 locations far
+apart.  Suppose, electron1 is in India and electron2 is in Russia. Now
+we update the variable x as follows:
 
 ```
 x = 0;
