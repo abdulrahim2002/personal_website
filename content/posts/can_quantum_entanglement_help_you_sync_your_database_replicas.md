@@ -111,4 +111,45 @@ it is guaranted that it is latest).
 The tradeoff's are based on requirements of your system and the nature
 of application at hand.
 
+## Quantum entanglement
+
+Quantum physics is the subfield of physics that describes the behaviour
+of subatomic particles. This field was introduced, after it was
+discovered that classical mechanics cannot be used to describe the
+behaviour of subatomic particles.
+
+Subatomic particles like electrons and photons exhibit what is called
+wave-particle duality. It means that they act as a wave as well as
+particles depending on how it is observed or measured.
+
+Acording to quantum mechanics, the complete state of a subatomic
+particle like electron, photon etc. can be described by its wave
+function. It encodes information such as its position, momentum, spin,
+etc. For a single particle, this wavefunction can be spread out in
+space, indicating a superposition of many possible states. This is known
+as superposition: the particle doesn’t have a definite state until
+measured.
+
+Quantum entanglement is a phenomena in quantum mechanics, where two or
+more particles become correlated in such a way that the quantum state of
+one particle cannot be described independently of the quantum state of
+the other(s), no matter how far apart they are.
+
+This means that if 2 particles are entangled, and we measure the state
+of one particle. Then the state of the second particle is guaranteed to
+be same, irrespective of the distance between these 2 particles.
+
+This has serious implications in physics, since it appears to violate
+the principle of locality which states that information cannot travel
+faster than light. However, this is not the case, since there is no
+tranfer of information. It is not as if, when the first particle was
+measured, it transmitted its state information across to its entangled
+counter part instantinously so it can take adjusts its state. Instead,
+the 2 particles have corellated wave function. Measurement of one's
+state instaniously determines the state of the other.
+
+Quantum entanglement is known to be true and has been proved
+experimentally by bell in 1960s. Now if we consider this fact at face
+value, we can build some really cool applications out of it.
+
 
