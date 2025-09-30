@@ -66,3 +66,13 @@ A simple implementation of the above scheme would look like:
 ![](https://i.ibb.co/tpqDCPpy/Screenshot-from-2025-09-30-22-17-35.png)
 
 
+Suppose, we need to update a piece of data. Now we would route the write
+request to the master replica. The master replica will update it's own
+database. However, the master replica is no longer in sync with read
+replicas (in that the read replicas still show an outdated version of
+the data). Therefore, we need to communicate the newly  updated data
+across read replicas. This can be easily achieved by making an update
+request synchronously/asynchronously from master replica to slave
+replicas.
+
+![](https://i.ibb.co/8L9LvnV9/Screenshot-from-2025-09-30-22-26-01.png)
