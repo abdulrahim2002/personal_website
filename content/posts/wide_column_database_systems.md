@@ -39,6 +39,79 @@ partition keys and zero or more clustering keys (or sorting keys).
 
 ![](https://i.ibb.co/WWdnh1KD/Screenshot-from-2025-10-01-18-52-38.png)
 
+Wide column databases allow horizontal partitioning of data among
+multiple nodes enabling horizontal scalability.
 
 
+One important point to consider is that wide column databases store data
+in denormalized form. This means, that all data related to an object is
+stored along with that object at the same place. 
 
+![](https://i.ibb.co/Ngph8qDr/Screenshot-from-2025-10-01-19-07-23.png)
+
+For example, in a traditional relational database schema. Consider an
+entity user:
+
+```
+User:
+
+Attributes: user_id (primary key), user_name
+```
+
+And an entity called comments:
+
+```
+Comments:
+
+Attributes: comment_id (primary key), comment_text, user_id (Foreign key)
+```
+
+In this scheme, we can retrieve the comments made by a particular user using the
+following query:
+
+```sql
+SELECT * FROM comments, user WHERE user_id = <given_id>
+```
+
+However, this does not work in wide column databases like cassandra.
+This is because, they **do not support joins.**
+
+We need to redefine the schema as follows:
+
+```
+Cassandra Schema for the above relations:
+
+
+User:
+
+Attributes:
+    user_id,
+    user_name,
+    comments // all comments made by the current user in an appropriate data type
+```
+
+Now we should be able to retrieve the comments using the following
+query:
+
+```sql
+SELECT comments from table_name with user_id = <given_user_id>
+```
+
+Since we no longer need to perform joins, retrieving data in wide column
+databases is much faster and efficient.  However, storing data in a
+denormalized form has its own problems. For example we  usually need to
+store duplicate data when modeling data in denormalized form. This makes
+it hard to keep copies in sync leading to data inconsistencies.
+
+![](https://i.ibb.co/MxRjR2k7/Screenshot-from-2025-10-01-19-19-19.png)
+
+Also, you need to model you data such that the column you want to search
+over for a record (say user\_id) needs to be the partition key. For
+example, suppose you need to run the following query:
+
+```sql
+SELECT * FROM table WHERE search_column = <value>
+```
+
+Now, you need to model your data such that search\_column is the
+partition key.
