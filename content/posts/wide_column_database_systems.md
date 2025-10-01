@@ -115,3 +115,13 @@ SELECT * FROM table WHERE search_column = <value>
 
 Now, you need to model your data such that search\_column is the
 partition key.
+
+But what if you need to search over multiple columns?
+
+In that case, you would need to create another table which is campatible
+with your query pattern. Below is a simple example illustrating this:
+
+![](https://i.ibb.co/1fJRsgpF/Screenshot-from-2025-10-01-19-26-32.png)
+
+Lastly, wide column databases provide much better write performance than
+relational databases.
