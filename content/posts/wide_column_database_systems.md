@@ -158,7 +158,7 @@ reasons:
 
 ![](https://i.ibb.co/s9cvRjYL/Screenshot-from-2025-10-01-19-51-57.png)
 
-2. Since, data is stored partined in multiple nodes. Writes can be
+2. Since, data is stored partioned in multiple nodes. Writes can be
    executed in parallel improving performance.
 
 > Note: The content of this article is based on [this
