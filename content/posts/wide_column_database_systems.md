@@ -126,9 +126,6 @@ with your query pattern. Below is a simple example illustrating this:
 
 ![](https://i.ibb.co/1fJRsgpF/Screenshot-from-2025-10-01-19-26-32.png)
 
-Wide column databases provide much better write performance than
-relational databases.
-
 ## Data partioning
 
 Since partitioning is embeded into the data model through partition
@@ -141,5 +138,29 @@ nodes.
 But what happens, when a node is added or removed. Is the data
 redistributed across all nodes? No. This is not the case. For example,
 cassandra uses consistent hashing technique to minimize the data
-transfer in case of addition/removal of nodes.
+transfer in case of addition/removal of nodes. Each node also has a
+doppelganger (german for identical double), on the hash ring. The
+duplicate representations of a node on the hash ring are called virtual
+nodes.
 
+## Write performance
+
+Widecolumn databases provide much better write performance compared to
+traditional relational databases. This is primarily because of 2
+reasons:
+
+1. Write optimized storage mechanisms: Wide column databases are
+   optimized for writes. They use special data structures to achieve
+   this. For example, cassandra uses Log Structured Merge Trees
+   (commonly called LSM trees) and SStables. These data structures delay
+   the `flush` system calls, combining multiple writes and improving
+   performance.
+
+![](https://i.ibb.co/s9cvRjYL/Screenshot-from-2025-10-01-19-51-57.png)
+
+2. Since, data is stored partined in multiple nodes. Writes can be
+   executed in parallel improving performance.
+
+> Note: The content of this article is based on [this
+> video](https://www.youtube.com/watch?v=9mdadNspP_M&t=707s) which is
+> also a great resource to learn about other types of database systems
