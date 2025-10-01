@@ -25,6 +25,8 @@ small example of a NoSQL database:
 ![](https://i.ibb.co/63Z3pgf/Screenshot-from-2025-10-01-15-02-33.png)
 
 
+## Characterstics
+
 Although, these relations look like tables, but they're not actually
 tables. This is because, we cannot make arbitrary selections based on
 non-primary columns. For example, the following query will fail:
@@ -42,6 +44,7 @@ partition keys and zero or more clustering keys (or sorting keys).
 Wide column databases allow horizontal partitioning of data among
 multiple nodes enabling horizontal scalability.
 
+## Data modeling
 
 One important point to consider is that wide column databases store data
 in denormalized form. This means, that all data related to an object is
@@ -123,5 +126,20 @@ with your query pattern. Below is a simple example illustrating this:
 
 ![](https://i.ibb.co/1fJRsgpF/Screenshot-from-2025-10-01-19-26-32.png)
 
-Lastly, wide column databases provide much better write performance than
+Wide column databases provide much better write performance than
 relational databases.
+
+## Data partioning
+
+Since partitioning is embeded into the data model through partition
+keys. Horizontal scalability is natural to wide column databases. We can
+scale up or down depending on the demand simply by adding removing
+nodes.
+
+![](https://i.ibb.co/hJDFT4kH/Screenshot-from-2025-10-01-19-37-19.png)
+
+But what happens, when a node is added or removed. Is the data
+redistributed across all nodes? No. This is not the case. For example,
+cassandra uses consistent hashing technique to minimize the data
+transfer in case of addition/removal of nodes.
+
