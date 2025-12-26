@@ -165,83 +165,85 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 564: Find the closest palindrome
+    <h2 class="entry-hint-parent">How to use psql
     </h2>
   </header>
   <div class="entry-content">
-    <p>We are given a number n. On the number line, there are infinite numbers on the right of n and left of n that are palindromes.
-The question is asking us to find a number that is a palindrome and has the minimum distance from n on the number line.
-We break the problem into 2 parts:
-find the next element on the number line after n that is a palindrome. find the previous element on the number line before n that is a palindrome. Suppose i and j are numbers such that i &lt; n &lt; j and i and j are both palindromes. And i and j are the nearest numbers to n on the number line We just find which of i and j is the nearer one to n on the number line and return it The simplest way of doing this is:
+    <p>Launching psql session In my previous blog, I described how you can set up a postgresql server. In this post, we will learn, what are some of the basic commands in psql and how can we efficiently interact with it.
+To launch the psql terminal interface, you need to log into the postgres user or the username that created the postgresql server. This can be done using the su command.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:06:55 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 564: Find the closest palindrome" href="http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/"></a>
+  <footer class="entry-footer"><span title='2025-08-05 00:00:00 +0530 +0530'>August 5, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to How to use psql" href="http://localhost:1313/personal_website/posts/how_to_use_psql/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 653: 2 sum with a BST
+    <h2 class="entry-hint-parent">How to deply a postgresql server
     </h2>
   </header>
   <div class="entry-content">
-    <p>I use hcreate(), hdestroy() and hsearch() from C standard library for hashmap implementation.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 #define _GNU_SOURCE #include &lt;search.h&gt; #include &lt;errno.h&gt; #define MAX_SIZE 1e4 #define KEY_SIZE 20 ENTRY* create_entry_set_number( int data ); bool dfs( struct TreeNode*, int ); bool findTarget(struct TreeNode* root, int k) { hcreate( MAX_SIZE ); const bool res = dfs( root, k ); hdestroy(); return res; } bool dfs( struct TreeNode* node, int target ) { if ( !node ) return false; const ENTRY* required = create_entry_set_number( target - node -&gt; val ); const ENTRY* cur_node = create_entry_set_number( node -&gt; val ); if ( hsearch( *required, FIND ) ) return true; else hsearch( *cur_node, ENTER ); return dfs( node -&gt; left, target ) || dfs( node -&gt; right, target ); } ENTRY* create_entry_set_number( int data ) { ENTRY* item = ( ENTRY* ) malloc( sizeof(ENTRY) ); if ( !item ) exit(-ENOMEM); *item = ( ENTRY ) { .key = NULL, .data = NULL }; item -&gt; key = (char*) reallocarray( item-&gt;key, KEY_SIZE, sizeof(char) ); sprintf( item -&gt; key, &#34;%d&#34;, data ); return item; } </p>
+    <p>Database Cluster A database cluster is a collection of databases that is managed by a single instance of a running database server. In this post, we will talk about how to create a database cluster.
+Prerequisites The data created by postgresql is stored on the host file system in a directory called data directory. You can choose any directory to be data directory for example: /usr/local/pgsql/data or /var/lib/pgsql/data. The data directory is initialized using a program called initdb which comes with standard postgresql-server installation.
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:02:05 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 653: 2 sum with a BST" href="http://localhost:1313/personal_website/posts/leetcode_653_2_sum_with_bst/"></a>
+  <footer class="entry-footer"><span title='2025-08-04 23:00:00 +0530 +0530'>August 4, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to How to deply a postgresql server" href="http://localhost:1313/personal_website/posts/how_to_deploy_a_postgersql_server/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 472: Concatenated words
+    <h2 class="entry-hint-parent">Leetcode 775: Global and local inversions solution
     </h2>
   </header>
   <div class="entry-content">
-    <p>consider the word “catsdogcats”. We have the dictionary: [&#34;cat&#34;,&#34;cats&#34;,&#34;catsdogcats&#34;,&#34;dog&#34;,&#34;dogcatsdog&#34;,&#34;hippopotamuses&#34;,&#34;rat&#34;,&#34;ratcatdogcat&#34;]
-We iterate over the word: catsdogcats and at each iteration, we ask if the prefix is contained in dictionary.
-If the prefix is in the dictionary, we recursively call the function on the remaining word (excluding matched prefix)
-is c in dictionary ? is ca in dictionary ? is cat in dictionary ? -&gt; YES call( sdogcats ) –[1] Prefix cat matched so recursively call with sdogcats
+    <p>When nums[i] &gt; nums[j], it is global inversion. Local inversion is special case of global inversion with j=i&#43;1
+Consider the array: [0,1,2,3,4,5]
+If i swap a random element by 2 positions (either to left or right). I will always create 2 inversions.
+Likewise, if I swap a random element by 3 positions. I end up creating 3 inversions.
+Similarly if I swap an element by 4 positions. I end up creating 4 inversions.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:59:09 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 472: Concatenated words" href="http://localhost:1313/personal_website/posts/leetcode_472_concatenated_words/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:40:08 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 775: Global and local inversions solution" href="http://localhost:1313/personal_website/posts/leetcode_775_global_and_local_inversions_solution/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 623: Add one row to the tree
+    <h2 class="entry-hint-parent">Leetcode 698: Partition into k equal sum subsets: The art of recursion: mastering double recursion in a single function
     </h2>
   </header>
   <div class="entry-content">
-    <p>Level order traversal traverse down the levels until we are 1 level above the level to be replaced. for each node in the level obtained above, set left and right node value to val, and the original leftSubtree and rightSubtree become left and right links of newly inserted left and right node respectively 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 function addOneRow( root: TreeNode|null, val: number, depth: number): TreeNode|null { if ( depth &lt;= 1 ) { return new TreeNode( val, root, null ); } let que = [ root ]; for ( let d=1; que.length &amp;&amp; d &lt; depth-1; d&#43;&#43; ) { const LVL = que.length; for ( let j=0; j &lt; LVL; j&#43;&#43; ) { const node = que.shift(); if ( node.left ) que.push( node.left ); if ( node.right ) que.push( node.right ); } } while ( que.length ) { const node = que.shift(), leftSubtree = node.left, rightSubtree = node.right; node.left = new TreeNode( val, leftSubtree, null ); node.right = new TreeNode( val, null, rightSubtree ); } return root; }; Time: $$ O(n) $$ Space: $$ O(n) $$ Recursive delegation The idea here is that if we need to update the dth level at node, then we need to update the (d-1)th level from node.left and node.right.
+    <p>We need to divide the array nums into k subsets such that the sum of each subset is same.
+$$ k \times sum\ of\ each\ subset = total\ sum\ sum\ of\ each\ subset = total\ sum\ \div k\ target = total\ sum\ \div k $$
+Now our task is to find all the k subsets in nums whose sum is target.
+My idea is to structure this as multi-level recursion. We first try to find the $$k^{th}$$ subset, then $$(k-1)^{th}$$, then $$(k-2)^{th} …$$ until there is only one subset left. The last subset will naturally sum to target. You can only go to $$(k-1)^{th}$$ level when you are able to successfully find $$k^{th}$$ level subset,
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:57:05 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 623: Add one row to the tree" href="http://localhost:1313/personal_website/posts/leetcode_623_add_one_row_to_tree/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:37:44 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 698: Partition into k equal sum subsets: The art of recursion: mastering double recursion in a single function" href="http://localhost:1313/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 560: Subarray sum equals k
+    <h2 class="entry-hint-parent">Leetcode 745: Prefix and suffix search solution
     </h2>
   </header>
   <div class="entry-content">
-    <p>The task is to find a subarray with sum of elements = k
-To do this, we can build the prefix array with: $$ prefix\ [x] = \sum_{k=0}^x nums\ [k] $$
-The sum of elements between subarray indices $$[i, j]$$ where $$j &gt; i$$ is defined as:
-$$ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=0}^{j} nums\ [k] - \sum_{k=0}^{i-1} nums\ [k]\ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=i}^{j} nums\ [k] $$
+    <p>For each possible word, we ask the question: What possible queries can lead to this word?.
+For example consider the word: abd. Below are the possible (prefix, suffix) queries that can return abd
+1 2 3 4 5 6 7 8 9 10 (prefix, suffix) a abd a bd a d ab abd ab bd ab d abd abd abd bd abd d Now, given word.length &lt;= 7. Each word can at maximum generate 7*7=49 such pairs. Can we store all of them in a hashmap? Yes, because the total storage = 49 * number of words = O(n) Which is acceptable for this problem.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:54:08 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 560: Subarray sum equals k" href="http://localhost:1313/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:30:15 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 745: Prefix and suffix search solution" href="http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/personal_website/posts/page/2/">
-      «&nbsp;Prev&nbsp;2/6
+      «&nbsp;Prev&nbsp;2/9
     </a>
-    <a class="next" href="http://localhost:1313/personal_website/posts/page/4/">Next&nbsp;4/6&nbsp;»
+    <a class="next" href="http://localhost:1313/personal_website/posts/page/4/">Next&nbsp;4/9&nbsp;»
     </a>
   </nav>
 </footer>

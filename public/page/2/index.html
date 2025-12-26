@@ -2,7 +2,7 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.148.1"><script src="/personal_website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=personal_website/livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.148.0"><script src="/personal_website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=personal_website/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -152,84 +152,79 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 769: Max chunks to make sorted solution
+    <h2 class="entry-hint-parent">Designing an E commerce platform
     </h2>
   </header>
   <div class="entry-content">
-    <p>When numbers from $$\in$$ [0,n-1] are sorted in an array of size n. Their sorted position is equal to their index.
-Subset of numbers in array[i:j] can form a partition, if all elements in [i,j) are available in array[i:j].
-For example [2,0,1] can form a partition, since they are at index 0, 1, 2 respectively. Sorted will involving swapping them at their correct position.
-The basic idea behind this solution is that we try to identify such partitions, where all elements required to be sorted in [i, j] are available in current partition.
+    <p>Functional requirements search: The search functionality provides users with the ability to list all products that best match their query. We should also be able to tell weather we are able to deliver a product to the users location or not. For example, if a product cannot be shipped to the user, it should be communicated to the user. cart: users should be able to add items into their cart. wishlist: users should be able to add items to their wishlist. checkout &#43; payment view orders: users should be able to track their active orders Non functional requirements Imagine there is a sale on an item with 50% off. And everybody is waiting for 12:00 so they can order. In such situation, we do not want 2 users to order the same product. Hence, the system should be highly consistent. Secondly, the system should have low latency, therefore, they can book as fast as possiblem, when there is a sale.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:20:16 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 769: Max chunks to make sorted solution" href="http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/"></a>
+  <footer class="entry-footer"><span title='2025-09-25 15:48:12.309 +0000 UTC'>September 25, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to Designing an E commerce platform" href="http://localhost:1313/personal_website/posts/designing_e_commerce_websites/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 676: Magic dictionary
+    <h2 class="entry-hint-parent">The design of a Search Engine
     </h2>
   </header>
   <div class="entry-content">
-    <p>For each word, we basically store all versions of it after removal of 1 character. For example,
-1 2 3 4 5 6 hello -&gt; ello -&gt; removed h@0 hllo -&gt; removed e@1 helo -&gt; removed l@2 helo -&gt; removed l@3 hell -&gt; removed o@4 We can store: wordAfterRemoval,indexOfRemoval in hashmap. So whenever we search for a word like: hexlo then we can try removing it’s 2nd index and search: helo,2 in the map, which we will find.
+    <p>Introduction First let’s start with a similar problem akin to web search. Imagine you have 100 files in your current directory, and you do something like:
+1 grep &#34;Abdul&#34; . The grep program will return you a list of files which contain the given string or pattern. But how do you think does that works under the hood.
+In a naive approach, the grep program would open each file in the directory, search for the given string/pattern and if any result is obtained, then add this file to the output list.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:17:29 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 676: Magic dictionary" href="http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/"></a>
+  <footer class="entry-footer"><span title='2025-09-25 07:01:18.924 +0000 UTC'>September 25, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to The design of a Search Engine" href="http://localhost:1313/personal_website/posts/design_of_youtube/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 667: Beautiful arrangements 2
+    <h2 class="entry-hint-parent">Netflix CDN
     </h2>
   </header>
   <div class="entry-content">
-    <p>Problem definition: For the output array, you need to calculate the absolute difference of each adjacent items. The number of unique absolute differences needs to be exactly k. For example in [1,3,2]: abs(1-3) = 2 abs(3-2) = 1 Thus [2,1] with 2 unique values as in example 2. credits: @Frans Valli
-Approach: Divide the array into 2 halves. The left half will contain numbers continously increasing by 1. The right half will contain numbers, such that the differences are continously decreasing by 1.
+    <p>Introduction You are netflix. Now your main servers are hosted in the USA, however, you have users all over the world. Now suppose, a user from India request a video (movie/TV etc.) that is hosted in a USA data center. To serve the request, you need to transmit data all across the world, which increases the users latency and makes up for a bad user experience. And if there are millions of users in India, requesting data from USA, then the network will become like red hot steel.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:15:18 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 667: Beautiful arrangements 2" href="http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/"></a>
+  <footer class="entry-footer"><span title='2025-09-24 13:24:34.935 +0000 UTC'>September 24, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to Netflix CDN" href="http://localhost:1313/personal_website/posts/netflix_cdn/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 665: Non decreasing array solution
+    <h2 class="entry-hint-parent">The design of twitter
     </h2>
   </header>
   <div class="entry-content">
-    <p>Suppose, while traversing the array you encounter a 132 pattern that violates the non-decreasing property. Now you have 2 options to fix this anomaly.
-a=1, b=3, c=2
-Either we decrease b and make it equal to c i.e.b=c=2. Or we increase c to make it equal to b i.e. c=b=3. I would argue that we should always try to decrease b. Since, it enables us to have lower last value i.e. c. It decreases the chance of next number in the sequence violating the non-decreasing property.
+    <p>Introduction Firstly I would like to talk about the scale of twitter, which will help us to understand the requirements of a system like twitter.
+Twitter handles about 600 tweets per second. Which means that approximately 600 tweets are made each second. On the contrary, approximately 60,000 tweets are read each second. This clearly shows that twitter is a read heavy system.
+There are approximately 300 million users of twitter. Some of them are active users (users who frequently visit twitter), while most of them are passive users (i.e. users who’d only visit once in a while, say 1 month).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:11:00 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 665: Non decreasing array solution" href="http://localhost:1313/personal_website/posts/leetcode_665_non_decreasing_array/"></a>
+  <footer class="entry-footer"><span title='2025-09-24 06:55:19.889 +0000 UTC'>September 24, 2025</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to The design of twitter" href="http://localhost:1313/personal_website/posts/the_design_of_twitter/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 677: Map sum pairs solution
+    <h2 class="entry-hint-parent">Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified
     </h2>
   </header>
   <div class="entry-content">
-    <p>We build a simple Tri where each node’s value is the sum of all words in the Tri that have same prefix as current node.
-Let me explain with a simple example. Suppose, we have an empty Tri. Insert &#34;apple&#34; with value=3. While inserting a key, we shall increase values of all intermediate nodes.
-Here’s how to Tri looks like after insertion:
-Now let’s insert &#34;app&#34; with value=2. Please note that we shall increase the value of intermediate nodes while inserting app. Therefore, the first 3 nodes will have value=5.
+    <p>Leetcode 715. Range Module is one of the most convoluted problems on leetcode. And your confidence is further shattered when you find out, that it can be solved in just 6 lines of code. Upon seeing these 6 lines, you realize that this is nothing less than a rosetta stone. In this blog post, I will run the code through all possible edge cases by hand.
+Range Module A Range Module is a data structure that tracks intervals of numbers using half-open ranges [left, right). It supports adding, querying, and removing ranges efficiently.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:09:06 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 677: Map sum pairs solution" href="http://localhost:1313/personal_website/posts/leetcode_677_map_sum_pairs/"></a>
+  <footer class="entry-footer"><span title='2025-08-08 00:07:54 +0530 +0530'>August 8, 2025</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified" href="http://localhost:1313/personal_website/posts/leetcode_715_range_module/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/personal_website/">
-      «&nbsp;Prev&nbsp;1/6
+      «&nbsp;Prev&nbsp;1/9
     </a>
-    <a class="next" href="http://localhost:1313/personal_website/page/3/">Next&nbsp;3/6&nbsp;»
+    <a class="next" href="http://localhost:1313/personal_website/page/3/">Next&nbsp;3/9&nbsp;»
     </a>
   </nav>
 </footer>

@@ -165,81 +165,83 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 540: Single element in sorted array
+    <h2 class="entry-hint-parent">Solution to Leetcode 687: Longest Univalue Path
     </h2>
   </header>
   <div class="entry-content">
-    <p>Explanation 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 Consider the number: [1(0), 1(1), 2(2), 3(3), 3(4), 4(5), 4(6), 8(7), 8(8)] , number(index) Here, the single number is 2, let&#39;s call it SN Note that: - For each duplicate pair that appears to the left of SN, the first occurence appears at even index and second occurence appears at odd index - For each duplicate pair that appears to the right of SN, the first occurence appears at odd index and second occurence appears at even index Now to easily detect weather we are to the left or right of SN, we can employ XOR with 1 operator. Property of XOR with 1 operator: XOR_1(x) = x ^ 1 = x &#43; 1 , when x is even XOR_1(x) = x ^ 1 = x - 1 , when x is odd From this knowledge, it can be infered that for each index i: number[ i ] = number[ XOR_1(i) ] ,when i is to left of SN number[ i ] != number[ XOR_1(i) ] ,when i is at SN or to the right of SN For example, at i=1, i is to left of SN number[i] = number[1] = 1 == number[ XOR_1(1) ] = number[ 1-1 ] = number[0] = 1 at i=2, i is at Single Number (SN) number[2] = 2 != number[XOR_1(2)] = number[3] = 3 at i=6, i is to right of SN number[6] = 4 != number[XOR_1(6)] = number[7] = 8 You can verify this for any i Now our job is to find the minimum valud of i such that number[i] != number[XOR_1(i)] This can be done using binary search. It is worth mentioning that at i=8 in the above example number[ XOR_1(8) ] = number[ 9 ] which is out of bonds We avoid this situation by using ( i &lt; j ) as loop condition. Which implies that i will never reach the end to make mid = 9 The binary search is designed such that j always takes valid values, where valid means nums[j] != nums[j^1] When i == j, we are at the leftmost valid index, which is exactly what we require Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 function singleNonDuplicate(nums: number[]): number { const N = nums.length; let i = 0, j = N-1; while ( i &lt; j ) { const mid = i &#43; Math.floor( (j-i) / 2 ); if ( nums[mid] != nums[mid^1] ) j = mid; else i = mid &#43; 1; } return nums[j]; }; </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:51:01 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 540: Single element in sorted array" href="http://localhost:1313/personal_website/posts/leetcode_540_single_element_in_sorted_arary/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 525: Contiguous array
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Consider the array: [0,1,1,0,0,1,1,0,1,1] The idea is to turn the 0’s into -1’s
-array: [-1,1,1,-1,-1,1,1,-1,1,1]
-Now, the task is to find a subarray with sum of elements = 0
-To do this, we can build the prefix array with: $$ prefix\ [x] = \sum_{k=0}^x nums\ [k] $$
-The sum of elements between subarray indices $$[i, j]$$ where $$j &gt; i$$ is defined as:
-$$ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=0}^{j} nums\ [k] - \sum_{k=0}^{i-1} nums\ [k]\ prefix\ [j]\ -\ prefix\ [i-1] = \sum_{k=i}^{j} nums\ [k] $$
+    <p>This problem is very similar to lc543, which is about finding the longest edge path in a tree. You can just copy over that code, and add 2 lines in it.
+Here we are doing the same thing as in lc543, however, when we encounter a non-matching child. We treat it as null.
+For example, here the longest path at root node is highlighted below in red with 6 edges.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:48:46 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 525: Contiguous array" href="http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:24:22 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Solution to Leetcode 687: Longest Univalue Path" href="http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)
+    <h2 class="entry-hint-parent">Leetcode 703: kth largest element in a stream solution in python
     </h2>
   </header>
   <div class="entry-content">
-    <p> for each character, find the length of the longest continous substring that ends with that character for each character the number of continous substrings that end in that character = length of the longest continous substring that ends in that character ( as obtained in step 1 ) Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 function findSubstringInWraproundString(s: string): number { let curStreak = -1, lenMap = new Array(26).fill(0); for ( let i=0; i &lt; s.length; i&#43;&#43; ) { if ( i &gt; 0 &amp;&amp; isContinous( s[i-1], s[i] ) ) curStreak&#43;&#43;; else curStreak = 1; lenMap[ CODE(s[i]) ] = Math.max( lenMap[ CODE( s[i] ) ], curStreak ); } return lenMap.reduce( (sum, curLen) =&gt; sum &#43;= curLen, 0 ); }; function isContinous( c1: string, c2: string ) { return ( CODE(c2) - CODE(c1) &#43; 26 ) % 26 == 1; } function CODE( c: string ) { return c.charCodeAt(0) - &#39;a&#39;.charCodeAt(0); } </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:45:27 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)" href="http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 430: Flattening a multilevel linked list
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>The idea is to keep 2 pointers. trail pointer and cur pointer. The list is build in recursive function build(trail, cur) which returns last node of the list we build.
-build works as follows:
-when there is no child node: simply connect trail and cur and advance both when there is a child node, then recursively call itself with build( trail = cur, cur = cur.child ). The call would connect cur node with the list in the next level. It would return the last node in next level. Then we assign trail = last node in next level and cur = cur.next in current level. This ensures that the next iteration would connect last node in next level to next node in current level. when cur becomes null trail is the last node in current level. return trail Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 function flatten(head: _Node | null): _Node | null { const save: _Node = new _Node( -1 ); build( save, head ); if ( save.next ) save.next.prev = null; return save.next; }; function build( trail: _Node | null, cur: _Node | null ): _Node | null { while ( cur ) { if ( !cur.child ) { trail.next = cur; cur.prev = trail; trail = trail.next; cur = cur.next; } else { trail.next = cur; cur.prev = trail; const saveNext = cur.next; const lastNodeFromChildList = build( cur, cur.child ); cur.child = null; cur = saveNext; trail = lastNodeFromChildList; } } return trail; } Complexity Time complexity: $$O(n)$$
+    <p>I keep track of the top k elements in sorted list. The kth largest element is the smallest of the top k elements.
+e.g. top k(=6) elements: [3,5,7,10,42,56] in sorted order. The kth largest element = 6th largest element = smallest element in above list.
+When I insert an element, I simply check if it can make it’s place among k largest elements already present in the list. Which it can, if it can defeat the smallest element in our list.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:42:17 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 430: Flattening a multilevel linked list" href="http://localhost:1313/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:22:08 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 703: kth largest element in a stream solution in python" href="http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 332: Reconstruct Itinerary. Eulerian path and Dfs
+    <h2 class="entry-hint-parent">Leetcode 769: Max chunks to make sorted solution
     </h2>
   </header>
   <div class="entry-content">
-    <p>DFS intuition First we must build a graph where airports are vertices and an edge airport1 -&gt; airport2 denotes that the person travelled from airport1 -&gt; airport2
-To find a valid sequence of vertices/airports that covers all the edges/tickets, we traverse the graph using depth first search like traversal. The idea is:
-At each vertex, move to the next lexicographically smallest vertex. delete the edge used To maintain lexicographical order, we sort the neighbours of each vertex lexicographically.
+    <p>When numbers from $$\in$$ [0,n-1] are sorted in an array of size n. Their sorted position is equal to their index.
+Subset of numbers in array[i:j] can form a partition, if all elements in [i,j) are available in array[i:j].
+For example [2,0,1] can form a partition, since they are at index 0, 1, 2 respectively. Sorted will involving swapping them at their correct position.
+The basic idea behind this solution is that we try to identify such partitions, where all elements required to be sorted in [i, j] are available in current partition.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 15:35:54 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 332: Reconstruct Itinerary. Eulerian path and Dfs" href="http://localhost:1313/personal_website/posts/leetcode_332_reconstruct_itenary/"></a>
+  <footer class="entry-footer"><span title='2025-07-16 16:20:16 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 769: Max chunks to make sorted solution" href="http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Leetcode 676: Magic dictionary
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>For each word, we basically store all versions of it after removal of 1 character. For example,
+1 2 3 4 5 6 hello -&gt; ello -&gt; removed h@0 hllo -&gt; removed e@1 helo -&gt; removed l@2 helo -&gt; removed l@3 hell -&gt; removed o@4 We can store: wordAfterRemoval,indexOfRemoval in hashmap. So whenever we search for a word like: hexlo then we can try removing it’s 2nd index and search: helo,2 in the map, which we will find.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-16 16:17:29 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 676: Magic dictionary" href="http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Leetcode 667: Beautiful arrangements 2
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Problem definition: For the output array, you need to calculate the absolute difference of each adjacent items. The number of unique absolute differences needs to be exactly k. For example in [1,3,2]: abs(1-3) = 2 abs(3-2) = 1 Thus [2,1] with 2 unique values as in example 2. credits: @Frans Valli
+Approach: Divide the array into 2 halves. The left half will contain numbers continously increasing by 1. The right half will contain numbers, such that the differences are continously decreasing by 1.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-16 16:15:18 +0530 +0530'>July 16, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;abdul</footer>
+  <a class="entry-link" aria-label="post link to Leetcode 667: Beautiful arrangements 2" href="http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="prev" href="http://localhost:1313/personal_website/posts/page/3/">
-      «&nbsp;Prev&nbsp;3/6
+      «&nbsp;Prev&nbsp;3/9
     </a>
-    <a class="next" href="http://localhost:1313/personal_website/posts/page/5/">Next&nbsp;5/6&nbsp;»
+    <a class="next" href="http://localhost:1313/personal_website/posts/page/5/">Next&nbsp;5/9&nbsp;»
     </a>
   </nav>
 </footer>

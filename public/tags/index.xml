@@ -9,10 +9,24 @@
       <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
       <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.148.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 18:22:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Oct 2025 09:26:49 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/personal_website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Design</title>
+      <link>http://localhost:1313/personal_website/tags/design/</link>
+      <pubDate>Wed, 01 Oct 2025 09:26:49 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/tags/design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Engineering</title>
+      <link>http://localhost:1313/personal_website/tags/software-engineering/</link>
+      <pubDate>Wed, 01 Oct 2025 09:26:49 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/tags/software-engineering/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Comp Science</title>
       <link>http://localhost:1313/personal_website/tags/comp-science/</link>

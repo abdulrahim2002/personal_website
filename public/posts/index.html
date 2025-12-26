@@ -165,84 +165,89 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 775: Global and local inversions solution
+    <h2 class="entry-hint-parent">How Does Retrieval Augmented Generation Work
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h2>
   </header>
   <div class="entry-content">
-    <p>When nums[i] &gt; nums[j], it is global inversion. Local inversion is special case of global inversion with j=i&#43;1
-Consider the array: [0,1,2,3,4,5]
-If i swap a random element by 2 positions (either to left or right). I will always create 2 inversions.
-Likewise, if I swap a random element by 3 positions. I end up creating 3 inversions.
-Similarly if I swap an element by 4 positions. I end up creating 4 inversions.
+    <p>Introduction RAG (Retrieval-Augmented Generation) is a technique where a model can generate text based on external information retrieved from a knowledge base, rather than relying solely on its pre-trained knowledge.
+The knowledge base is a collection of documents
+$$ D = { d_1, d_2, \dots, d_n } $$
+such that, whenever text is generated, the information is based on the knowledge base as much as possible.
+There are two components to a RAG model:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:40:08 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 775: Global and local inversions solution" href="http://localhost:1313/personal_website/posts/leetcode_775_global_and_local_inversions_solution/"></a>
+  <footer class="entry-footer"><span title='2025-12-26 20:58:56 +0100 CET'>December 26, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Abdul</footer>
+  <a class="entry-link" aria-label="post link to How Does Retrieval Augmented Generation Work" href="http://localhost:1313/personal_website/posts/how-does-retrieval-augmented-generation-works/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 698: Partition into k equal sum subsets: The art of recursion: mastering double recursion in a single function
+    <h2 class="entry-hint-parent">How to Build Neural Networks From Scratch
     </h2>
   </header>
   <div class="entry-content">
-    <p>We need to divide the array nums into k subsets such that the sum of each subset is same.
-$$ k \times sum\ of\ each\ subset = total\ sum\ sum\ of\ each\ subset = total\ sum\ \div k\ target = total\ sum\ \div k $$
-Now our task is to find all the k subsets in nums whose sum is target.
-My idea is to structure this as multi-level recursion. We first try to find the $$k^{th}$$ subset, then $$(k-1)^{th}$$, then $$(k-2)^{th} …$$ until there is only one subset left. The last subset will naturally sum to target. You can only go to $$(k-1)^{th}$$ level when you are able to successfully find $$k^{th}$$ level subset,
+    <p>🎓 PyTorch CNN Explained from Scratch - Step by Step I’ll explain everything from the absolute basics. No prior PyTorch knowledge required!
+📚 Part 1: The Absolute Basics - Understanding the Pieces 1.1 What is a CNN? A Convolutional Neural Network (CNN) is like a detective that:
+Scans an image with small filters to find patterns (edges, textures) Combines these patterns to recognize objects Learns which patterns are important for classification Analogy: Imagine looking for a face in a crowd:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:37:44 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 698: Partition into k equal sum subsets: The art of recursion: mastering double recursion in a single function" href="http://localhost:1313/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/"></a>
+  <footer class="entry-footer"><span title='2025-12-07 13:17:50 +0100 CET'>December 7, 2025</span>&nbsp;·&nbsp;15 min&nbsp;·&nbsp;Abdul</footer>
+  <a class="entry-link" aria-label="post link to How to Build Neural Networks From Scratch" href="http://localhost:1313/personal_website/posts/how-to-build-neural-networks-from-scratch/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 745: Prefix and suffix search solution
+    <h2 class="entry-hint-parent">Widecolumn database systems
     </h2>
   </header>
   <div class="entry-content">
-    <p>For each possible word, we ask the question: What possible queries can lead to this word?.
-For example consider the word: abd. Below are the possible (prefix, suffix) queries that can return abd
-1 2 3 4 5 6 7 8 9 10 (prefix, suffix) a abd a bd a d ab abd ab bd ab d abd abd abd bd abd d Now, given word.length &lt;= 7. Each word can at maximum generate 7*7=49 such pairs. Can we store all of them in a hashmap? Yes, because the total storage = 49 * number of words = O(n) Which is acceptable for this problem.
+    <p>Introduction Wide column database systems store data in column families. Below is a small example of a NoSQL database:
+Characterstics Although, these relations look like tables, but they’re not actually tables. This is because, we cannot make arbitrary selections based on non-primary columns. For example, the following query will fail:
+Therefore, similar to key-value stores, we can only query by using primary keys.
+A primary key in a wide column database consists of one or more partition keys and zero or more clustering keys (or sorting keys).
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:30:15 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 745: Prefix and suffix search solution" href="http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/"></a>
+  <footer class="entry-footer"><span title='2025-10-01 09:26:49.794 +0000 UTC'>October 1, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to Widecolumn database systems" href="http://localhost:1313/personal_website/posts/wide_column_database_systems/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Solution to Leetcode 687: Longest Univalue Path
+    <h2 class="entry-hint-parent">Can quantum entanglement help you sync your database replicas?
     </h2>
   </header>
   <div class="entry-content">
-    <p>This problem is very similar to lc543, which is about finding the longest edge path in a tree. You can just copy over that code, and add 2 lines in it.
-Here we are doing the same thing as in lc543, however, when we encounter a non-matching child. We treat it as null.
-For example, here the longest path at root node is highlighted below in red with 6 edges.
+    <p>Introduction To ensure scalability, reliability and fault tolerance, web applications replicate data across multiple database nodes/clusters/availability zones/regions and cloud providers. However, replicating data introduces the challenge of keeping the copies in sync. In this article, we contemplate weather quantum entanglement can enable database replicas to sync instantinously. The ideas behind entanglement stem from quantum mechanics, a subfield of physics which describes the behaviour of sub atomic particles.
+In this post, we first describe the basics of database replication, then we move on the show the theoritical application of quantum entanglement in database replication.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:24:22 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Solution to Leetcode 687: Longest Univalue Path" href="http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/"></a>
+  <footer class="entry-footer"><span title='2025-09-30 14:45:02.633 +0000 UTC'>September 30, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to Can quantum entanglement help you sync your database replicas?" href="http://localhost:1313/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Leetcode 703: kth largest element in a stream solution in python
+    <h2 class="entry-hint-parent">Search completetion systems
     </h2>
   </header>
   <div class="entry-content">
-    <p>I keep track of the top k elements in sorted list. The kth largest element is the smallest of the top k elements.
-e.g. top k(=6) elements: [3,5,7,10,42,56] in sorted order. The kth largest element = 6th largest element = smallest element in above list.
-When I insert an element, I simply check if it can make it’s place among k largest elements already present in the list. Which it can, if it can defeat the smallest element in our list.
+    <p>Introduction When you type something on a search engine like google. You are continously shown search suggestions, as you type.
+API As you type in the search box, behind the scenes, google continously sends request to the backend. The requests might look like this:
+1 2 3 4 5 GET /autocomplete?q=be { // metadata such as user id etc for personalized suggestion } The backend responds with a list of suggestions, which might look something like:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-16 16:22:08 +0530 IST'>July 16, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;abdul</footer>
-  <a class="entry-link" aria-label="post link to Leetcode 703: kth largest element in a stream solution in python" href="http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/"></a>
+  <footer class="entry-footer"><span title='2025-09-27 08:44:40.978 +0000 UTC'>September 27, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;abdulrahim</footer>
+  <a class="entry-link" aria-label="post link to Search completetion systems" href="http://localhost:1313/personal_website/posts/search_completetion_systems/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:1313/personal_website/posts/page/2/">Next&nbsp;2/6&nbsp;»
+    <a class="next" href="http://localhost:1313/personal_website/posts/page/2/">Next&nbsp;2/9&nbsp;»
     </a>
   </nav>
 </footer>

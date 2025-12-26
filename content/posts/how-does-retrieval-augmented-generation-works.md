@@ -3,6 +3,7 @@ date: '2025-12-26T20:58:56+01:00'
 draft: true
 title: 'How Does Retrieval Augmented Generation Work'
 author: 'Abdul'
+math: true
 ---
 
 ### Introduction
@@ -22,7 +23,7 @@ knowledge base as much as possible.
 
 There are two components to a RAG model:
 
-1. **Retriever:** Given a query $q$, the retriever finds all documents
+1. **Retriever:** Given a query $$q$$, the retriever finds all documents
    $d \in D$ that may be relevant to the query $q$.  
 2. **Generator:** This is the text generation system—typically a large
    language model (like GPT)—that actually generates text given a

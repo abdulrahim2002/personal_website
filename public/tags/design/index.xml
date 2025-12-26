@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Design on Abdul Rahim</title>
+    <link>http://localhost:1313/personal_website/tags/design/</link>
+    <description>Recent content in Design on Abdul Rahim</description>
+    <image>
+      <title>Abdul Rahim</title>
+      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
+      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Oct 2025 09:26:49 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/personal_website/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Widecolumn database systems</title>
+      <link>http://localhost:1313/personal_website/posts/wide_column_database_systems/</link>
+      <pubDate>Wed, 01 Oct 2025 09:26:49 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/wide_column_database_systems/</guid>
+      <description>Widecolumn database systems provide many benefits over traditional SQL based relational databases such as improved availability and high throughput. In this article, let&amp;#39;s try to understand them in detail.</description>
+    </item>
+    <item>
+      <title>Can quantum entanglement help you sync your database replicas?</title>
+      <link>http://localhost:1313/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</link>
+      <pubDate>Tue, 30 Sep 2025 14:45:02 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</guid>
+      <description>Replicating data across multiple nodes/clusters/data centres is a common approach among applications that need to support scalability/fault tolerance/disaster managemenet. However, this approach also introduces the problem of keeping the replicas in sync. Existing methods use distributed consensus mechanisms to keep replicas in sync, with the latest write. In this approach, we explore an approach based on quantum mechanics that has the potential to revolutnize the field.</description>
+    </item>
+    <item>
+      <title>Search completetion systems</title>
+      <link>http://localhost:1313/personal_website/posts/search_completetion_systems/</link>
+      <pubDate>Sat, 27 Sep 2025 08:44:40 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/search_completetion_systems/</guid>
+      <description>When you type somthing on in a search engine, you will notice few search suggestions pop up. These search suggestions are populated by what is called a search completion system. In this article, lets try to decode how a search completetion system works.</description>
+    </item>
+    <item>
+      <title>Designing an E commerce platform</title>
+      <link>http://localhost:1313/personal_website/posts/designing_e_commerce_websites/</link>
+      <pubDate>Thu, 25 Sep 2025 15:48:12 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/designing_e_commerce_websites/</guid>
+      <description>E commerce platforms basically showcase products online through images and provide users the ability to click and buy the product they want...</description>
+    </item>
+    <item>
+      <title>The design of a Search Engine</title>
+      <link>http://localhost:1313/personal_website/posts/design_of_youtube/</link>
+      <pubDate>Thu, 25 Sep 2025 07:01:18 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/design_of_youtube/</guid>
+      <description>In this article, lets take a deep dive into how a system like google search actually works</description>
+    </item>
+    <item>
+      <title>Netflix CDN</title>
+      <link>http://localhost:1313/personal_website/posts/netflix_cdn/</link>
+      <pubDate>Wed, 24 Sep 2025 13:24:34 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/netflix_cdn/</guid>
+      <description>Netflix sends a lot of data to its users. Transporting millions of data packets (video data) to each user to millions of users requires an increadibly scalable and robust system.</description>
+    </item>
+    <item>
+      <title>The design of twitter</title>
+      <link>http://localhost:1313/personal_website/posts/the_design_of_twitter/</link>
+      <pubDate>Wed, 24 Sep 2025 06:55:19 +0000</pubDate>
+      <guid>http://localhost:1313/personal_website/posts/the_design_of_twitter/</guid>
+      <description>In this blog post, I try to decode how your tweets are agreegated, and how twitter does it for millions of users in a scalable way</description>
+    </item>
+  </channel>
+</rss>
