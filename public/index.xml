@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/personal_website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Does Retrieval Augmented Generation Work</title>
-      <link>http://localhost:1313/personal_website/posts/how-does-retrieval-augmented-generation-works/</link>
+      <link>http://localhost:1313/personal_website/posts/how_does_retrieval_augmented_generation_work/</link>
       <pubDate>Fri, 26 Dec 2025 20:58:56 +0100</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how-does-retrieval-augmented-generation-works/</guid>
+      <guid>http://localhost:1313/personal_website/posts/how_does_retrieval_augmented_generation_work/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;RAG (Retrieval-Augmented Generation)&lt;/strong&gt; is a technique where a model
 can generate text based on external information retrieved from a
