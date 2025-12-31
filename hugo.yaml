@@ -103,9 +103,9 @@ params:
 
   homeInfoParams:
     Title: "Abdul Rahim's Portfolio and Blog website"
-    Content: "- My name is Abdul Rahim. I am a Computer Science Engineer from India.
+    Content: "- My name is Abdul Rahim. I am currently pursuing a Masters degree at Universität Regensburg, Deutschland.
 
-              - I love tech, and I love to talk about tech. Below, you fill find some of my blogs and articles."
+              - I publish blogs and articles on this website. Please feel free to contact me at abdulrahimhere[at]yahoo.com."
   socialIcons:
     - name: github
       title: My Github account
