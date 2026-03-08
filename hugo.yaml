@@ -56,7 +56,7 @@ outputs:
     - JSON
 
 params:
-  env: production 
+  env: production
   description: "Abdul Rahim's blog and portfolio website"
   author: abdul
 
@@ -86,7 +86,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["images/banner.png"]
 
   profileMode:
     enabled: false

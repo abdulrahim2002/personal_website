@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/personal_website/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=personal_website/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -19,16 +19,16 @@ A Range Module is a data structure that tracks intervals of numbers
 using half-open ranges [left, right). It supports adding, querying,
 and removing ranges efficiently.">
 <meta name="author" content="abdul">
-<link rel="canonical" href="http://localhost:1313/personal_website/posts/leetcode_715_range_module/">
-<link crossorigin="anonymous" href="/personal_website/assets/css/stylesheet.3f7ba6a00d316a1658af1e52b60f5592bfd3f63e1683217d447958625c9fec2a.css" integrity="sha256-P3umoA0xahZYrx5Stg9Vkr/T9j4WgyF9RHlYYlyf7Co=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/personal_website/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/personal_website/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/personal_website/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/personal_website/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/personal_website/safari-pinned-tab.svg">
+<link rel="canonical" href="https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/">
+<link crossorigin="anonymous" href="/personal_website/assets/css/stylesheet.e9192539b62076251574bf8e248e392a5b47e17b6c8b1eb7e4fe5e827f0b4fb9.css" integrity="sha256-6RklObYgdiUVdL&#43;OJI45KltH4Xtsix635P5egn8LT7k=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://abdulrahim.site/personal_website/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://abdulrahim.site/personal_website/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://abdulrahim.site/personal_website/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://abdulrahim.site/personal_website/apple-touch-icon.png">
+<link rel="mask-icon" href="https://abdulrahim.site/personal_website/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/personal_website/posts/leetcode_715_range_module/">
+<link rel="alternate" hreflang="en" href="https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/">
 <noscript>
     <style>
         #theme-toggle,
@@ -65,7 +65,7 @@ and removing ranges efficiently.">
         }
 
     </style>
-</noscript><meta property="og:url" content="http://localhost:1313/personal_website/posts/leetcode_715_range_module/">
+</noscript><meta property="og:url" content="https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/">
   <meta property="og:site_name" content="Abdul Rahim">
   <meta property="og:title" content="Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified">
   <meta property="og:description" content="Leetcode 715. Range Module is one of the most convoluted problems on leetcode. And your confidence is further shattered when you find out, that it can be solved in just 6 lines of code. Upon seeing these 6 lines, you realize that this is nothing less than a rosetta stone. In this blog post, I will run the code through all possible edge cases by hand.
@@ -75,9 +75,9 @@ Range Module A Range Module is a data structure that tracks intervals of numbers
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-08-08T00:07:54+05:30">
     <meta property="article:modified_time" content="2025-08-08T00:07:54+05:30">
-      <meta property="og:image" content="http://localhost:1313/personal_website/images/papermod-cover.png">
+      <meta property="og:image" content="https://abdulrahim.site/personal_website/images/banner.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/personal_website/images/papermod-cover.png">
+<meta name="twitter:image" content="https://abdulrahim.site/personal_website/images/banner.png">
 <meta name="twitter:title" content="Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified">
 <meta name="twitter:description" content="Leetcode 715. Range
 Module is one of the most
@@ -101,13 +101,13 @@ and removing ranges efficiently.">
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/personal_website/posts/"
+      "item": "https://abdulrahim.site/personal_website/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified",
-      "item": "http://localhost:1313/personal_website/posts/leetcode_715_range_module/"
+      "item": "https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/"
     }
   ]
 }
@@ -125,7 +125,7 @@ and removing ranges efficiently.">
   "articleBody": "Leetcode 715. Range Module is one of the most convoluted problems on leetcode. And your confidence is further shattered when you find out, that it can be solved in just 6 lines of code. Upon seeing these 6 lines, you realize that this is nothing less than a rosetta stone. In this blog post, I will run the code through all possible edge cases by hand.\nRange Module A Range Module is a data structure that tracks intervals of numbers using half-open ranges [left, right). It supports adding, querying, and removing ranges efficiently.\nProblem Statement Implement the RangeModule class with the following methods:\naddRange(left, right): Adds the interval [left, right), merging overlapping ranges if needed. queryRange(left, right): Returns true if every number in [left, right) is currently tracked. removeRange(left, right): Stops tracking all numbers in [left, right). Example 1 2 3 4 5 6 rangeModule = RangeModule() rangeModule.addRange(10, 20) rangeModule.removeRange(14, 16) print(rangeModule.queryRange(10, 14)) # True print(rangeModule.queryRange(13, 15)) # False print(rangeModule.queryRange(16, 17)) # True You might want to come back to these definitions as you read through the solution:\n1 2 3 4 5 bisect_left(a, x) The return value i is such that all e in a[:i] have e \u003c x and all e in a[i:] have e \u003e= x. So if x already appears in the list, a.insert(i, x) will insert just before the leftmost x already there. 1 2 3 4 5 bisect_right(a, x) The return value i is such that all e in a[:i] have e \u003c= x and all e in a[i:] have e \u003e x. So if x already appears in the list, a.insert(i, x) will insert just after the rightmost x already there. Insertion algorithm Suppose (x, y) is the new interval. First we find\nstart pointer = s = bisect_left of x = and end pointer = e = bisect_right of y\nThe reason for this will be clear in a moment. First, we will consider movement of x only while keeping y fixed.\nCase 1: New interval overlaps with some intervals inside Now suppose, (x,y) do not overlap with any intervals on their ends, however, they contain multiple intervals inside of them. See below:\nThis applies while b \u003c x \u003c= c.\nIn this case, we can remove all the intervals that are contained inside (x,y) and replace all of them with just one interval i.e. (x, y). Here’s how the array looks after adding interval (x,y).\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 6 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 27 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[2: 8] = [ 6, 27 ] \u003e\u003e\u003e a [1,4, 6,27, 30,40] Case 2: x = start of some interval This is just a subcase of case 1. I am using it to show why we are using bisect_left for x.\nThe bisect_left on x will still provide us with s=2. Hence, we can still follow the same approach.\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 7 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 27 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[2:8] = [7, 27] \u003e\u003e\u003e a [1,4, 7,27, 30,40] Case 3: x intercepts some interval In this case, the interval (x,y) intersects some interval on the left side i.e. c \u003c x \u003c= d for some interval (c, d) in (x, y). See below:\nIn this case, we can expand the interval (c, d) -\u003e (c, y). Note that we do not need to remove c this time. We just need to add y as an ending. Hence, we basically remove all numbers in [s..e) and add y in their place.\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 8 ) \u003e\u003e\u003e s 3 \u003e\u003e\u003e e = bisect_right( a, 27 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[ 3:8 ] = [ 27 ] # do not add left since s = some interval ending \u003e\u003e\u003e a [1, 4, 7, 27, 30, 40] If we move x further to the right (d \u003c x). We basically arrive at case1 again with different intervals. So, now let’s try moving y around.\nCase 4: y = ending of some interval Suppose, we make y coincide with h. Hence, we get a situation where, y=ending of the last interval in (x,y). And note carefully here, that:\ne = bisect_right(y) = i != h, because bisect right is exclusive\nThis is why bisect_right is required for y.\nIn this situation we will follow the same approach as in case1 i.e. remove all intervals and replace with (x,y).\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 6 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 25 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[s:e] = [6,25] \u003e\u003e\u003e a [1,4, 6,25, 30,40] Case 5: y intercepts some interval If y overlaps with the last interval on the right side. We need to expand (x, y) -\u003e (x, h). As shown below:\nWe are basically just removing all numbers in [s..e) and adding x in their place.\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 6 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 23 ) \u003e\u003e\u003e e 7 \u003e\u003e\u003e a[2:7] = [ 6 ] # do not add y since, e points to end of some interval \u003e\u003e\u003e a [1,4, 6,25, 30,40] If we decrease y further to y \u003c g then we end up in the same situation as case1. Hence, we’ve covered all cases. Let’s generalize our approach:\n1 2 3 s, e = bisect_left(left), bisect_right(right) a[s:e] = [left] iff s does not point to end of some interval + [right] iff e does not point to end of some interval By now it should be clear that even indices represent start of intervals and odd indices represent end of intervals.\nCase 6: What if there are no intervals or new interval does not overlap with any interval This is an important edge case to consider. If there are no intervals, or (x,y) do not contain any intervals, then s,e will point to the same location, as shown below.\nWith a[x:x] = [left, right] python will insert [left, right] at index x. So it does not cause any problem:\n1 2 3 4 5 6 \u003e\u003e\u003e a = [] \u003e\u003e\u003e s = bisect_left( a, 3 ) \u003e\u003e\u003e e = bisect_right( a, 7 ) \u003e\u003e\u003e a[s:e] = [3] + [7] # s=e=0 here \u003e\u003e\u003e a [3, 7] Removal algorithm Case 1: Deletion interval overlaps with some intervals inside In this case, we should remove all intervals inside (x, y) as shown below:\nHere, we are just remove all numbesr in [s..e).\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 6 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 27 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[s:e] = [] # add nothing \u003e\u003e\u003e a [1,4, 30,40] Case 2: x intercepts some interval If (x, y) overlaps with some interval on the left. We need to trim that interval. For example, suppose, (x,y) intercepts some interval (c, d). See below:\nIn this case we trim (c, d) -\u003e (c, x). As shown below:\nBasically, we remove all numbers in [s..e) and add x in their place.\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 8 ) \u003e\u003e\u003e s 3 \u003e\u003e\u003e e = bisect_right( a, 27 ) \u003e\u003e\u003e e 8 \u003e\u003e\u003e a[3:8] = [ 8 ] \u003e\u003e\u003e a [1,4, 7,8, 30,40] Case 3: y intercepts some interval Suppose (x, y) overlaps with some interval (g, h) on the right. See below:\nIn this case, we need to trim the interval (g, h) -\u003e (y, h). Here, we delete all numbers in [s..e) and insert y in their place.\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 6 ) \u003e\u003e\u003e s 2 \u003e\u003e\u003e e = bisect_right( a, 23 ) \u003e\u003e\u003e e 7 \u003e\u003e\u003e a[2:7] = [ 23 ] # add y \u003e\u003e\u003e a [1, 4, 23, 25, 30, 40] Case 4: (x, y) overlap with some intervals on both sides If (x, y) intercepts some interval no both sides as shown below:\nWe need to trim both the affected intervals. For example if x intercepts (c,d) on the left. Then (c, d) is trimmed to (c, x). Similarly, if (g,h) is intercepted by y. We trim (g, h) to (g, y).\nNote that we are just removing all digits in [s..e) and adding x,y in their place.\nSample:\n1 2 3 4 5 6 7 8 9 10 \u003e\u003e\u003e a = [1,4, 7,10, 13,17, 20,25, 30,40] \u003e\u003e\u003e s = bisect_left( a, 8 ) \u003e\u003e\u003e s 3 \u003e\u003e\u003e e = bisect_right( a, 35 ) \u003e\u003e\u003e e 9 \u003e\u003e\u003e a[3:9] = [ 8 ] + [ 35 ] \u003e\u003e\u003e a [1,4, 7,8, 35,40] Hence, can generalize our approach as follows:\n1 2 3 s, e = bisect_left(left), bisect_right(right) a[s:e] = [left] iff s points to end of some interval + [right] iff e points to end of some interval Searching algorithm There is only one way for a range (x, y) to be tracked i.e. it MUST lie in one of the range intervals being tracked.\nConsider the case, where (c, d) is a range currently being tracked. If (x, y) lie inside (c, d) then:\nnext of x = s = bisect_right(x) = d next of y = e = bisect_left(y) = d\nNotice the use of bisect_right for x this time. This is because, @x=c we cannot return s=c.\nSimilarly, y uses bisect_left now. This is because, @y=d we cannot return i.\nBoth s and e must point to a single location which is ending of the current interval i.e. d.\n1 2 3 4 5 6 7 8 9 10 11 12 13 def __init__(self): self.a = [] def addRange(self, left, right): s, e = bisect_left(self.a, left), bisect_right(self.a, right) self.a[s:e] = [left] * int(s%2!=1) + [right] * int(e%2!=1) def queryRange(self, left, right): s, e = bisect_right(self.a, left), bisect_left(self.a, right) return s==e and s%2==1 def removeRange(self, left, right): s, e = bisect_left(self.a, left), bisect_right(self.a, right) self.a[s:e] = [left] * int(s%2==1) + [right] * int(e%2==1) ",
   "wordCount" : "1791",
   "inLanguage": "en",
-  "image": "http://localhost:1313/personal_website/images/papermod-cover.png","datePublished": "2025-08-08T00:07:54+05:30",
+  "image": "https://abdulrahim.site/personal_website/images/banner.png","datePublished": "2025-08-08T00:07:54+05:30",
   "dateModified": "2025-08-08T00:07:54+05:30",
   "author":{
     "@type": "Person",
@@ -133,14 +133,14 @@ and removing ranges efficiently.">
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/personal_website/posts/leetcode_715_range_module/"
+    "@id": "https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Abdul Rahim",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/personal_website/favicon.ico"
+      "url": "https://abdulrahim.site/personal_website/favicon.ico"
     }
   }
 }
@@ -162,7 +162,7 @@ and removing ranges efficiently.">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/personal_website/" accesskey="h" title="Abdul Rahim (Alt + H)">Abdul Rahim</a>
+            <a href="https://abdulrahim.site/personal_website/" accesskey="h" title="Abdul Rahim (Alt + H)">Abdul Rahim</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -188,22 +188,22 @@ and removing ranges efficiently.">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/personal_website/archives" title="Archive">
+                <a href="https://abdulrahim.site/personal_website/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/personal_website/docs/resume.pdf" title="Resume">
+                <a href="https://abdulrahim.site/personal_website/docs/resume.pdf" title="Resume">
                     <span>Resume</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/personal_website/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://abdulrahim.site/personal_website/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/personal_website/tags/" title="Tags">
+                <a href="https://abdulrahim.site/personal_website/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -239,7 +239,7 @@ and removing ranges efficiently.">
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/personal_website/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/personal_website/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://abdulrahim.site/personal_website/">Home</a>&nbsp;»&nbsp;<a href="https://abdulrahim.site/personal_website/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified
     </h1>
@@ -777,12 +777,12 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/personal_website/posts/the_design_of_twitter/">
+  <a class="prev" href="https://abdulrahim.site/personal_website/posts/the_design_of_twitter/">
     <span class="title">« Prev</span>
     <br>
     <span>The design of twitter</span>
   </a>
-  <a class="next" href="http://localhost:1313/personal_website/posts/how_to_use_psql/">
+  <a class="next" href="https://abdulrahim.site/personal_website/posts/how_to_use_psql/">
     <span class="title">Next »</span>
     <br>
     <span>How to use psql</span>
@@ -793,7 +793,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on x"
-            href="https://x.com/intent/tweet/?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;url=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&amp;hashtags=">
+            href="https://x.com/intent/tweet/?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;url=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&amp;hashtags=">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -802,7 +802,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&amp;title=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;summary=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;source=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&amp;title=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;summary=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;source=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -811,7 +811,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&title=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified">
+            href="https://reddit.com/submit?url=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f&title=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -820,7 +820,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -829,7 +829,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on whatsapp"
-            href="https://api.whatsapp.com/send?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified%20-%20http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
+            href="https://api.whatsapp.com/send?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified%20-%20https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -838,7 +838,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on telegram"
-            href="https://telegram.me/share/url?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;url=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
+            href="https://telegram.me/share/url?text=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&amp;url=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -847,7 +847,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&u=http%3a%2f%2flocalhost%3a1313%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
+            href="https://news.ycombinator.com/submitlink?t=Leetcode%20715%3a%20Range%20Module%20in%206%20line%20python.%20The%20epitome%20of%20python%20sorcery%20demystified&u=https%3a%2f%2fabdulrahim.site%2fpersonal_website%2fposts%2fleetcode_715_range_module%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path
@@ -862,7 +862,7 @@ end pointer =  <code>e</code> = <code>bisect_right</code> of <code>y</code></p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/personal_website/">Abdul Rahim</a></span> · 
+        <span>&copy; 2026 <a href="https://abdulrahim.site/personal_website/">Abdul Rahim</a></span> · 
 
     <span>
         Powered by

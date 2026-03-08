@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Abdul Rahim</title>
-    <link>http://localhost:1313/personal_website/posts/</link>
+    <link>https://abdulrahim.site/personal_website/posts/</link>
     <description>Recent content in Posts on Abdul Rahim</description>
     <image>
       <title>Abdul Rahim</title>
-      <url>http://localhost:1313/personal_website/images/papermod-cover.png</url>
-      <link>http://localhost:1313/personal_website/images/papermod-cover.png</link>
+      <url>https://abdulrahim.site/personal_website/images/banner.png</url>
+      <link>https://abdulrahim.site/personal_website/images/banner.png</link>
     </image>
-    <generator>Hugo -- 0.148.0</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Dec 2025 20:58:56 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://abdulrahim.site/personal_website/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Does Retrieval Augmented Generation Work</title>
-      <link>http://localhost:1313/personal_website/posts/how_does_retrieval_augmented_generation_work/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how_does_retrieval_augmented_generation_work/</link>
       <pubDate>Fri, 26 Dec 2025 20:58:56 +0100</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_does_retrieval_augmented_generation_work/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how_does_retrieval_augmented_generation_work/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;RAG (Retrieval-Augmented Generation)&lt;/strong&gt; is a technique where a model
 can generate text based on external information retrieved from a
@@ -32,9 +32,9 @@ knowledge base as much as possible.&lt;/p&gt;
     </item>
     <item>
       <title>How to Build Neural Networks From Scratch</title>
-      <link>http://localhost:1313/personal_website/posts/how-to-build-neural-networks-from-scratch/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how-to-build-neural-networks-from-scratch/</link>
       <pubDate>Sun, 07 Dec 2025 13:17:50 +0100</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how-to-build-neural-networks-from-scratch/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how-to-build-neural-networks-from-scratch/</guid>
       <description>&lt;h1 id=&#34;-pytorch-cnn-explained-from-scratch---step-by-step&#34;&gt;🎓 &lt;strong&gt;PyTorch CNN Explained from Scratch - Step by Step&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;I&amp;rsquo;ll explain everything from the absolute basics. No prior PyTorch knowledge required!&lt;/p&gt;
 &lt;h2 id=&#34;-part-1-the-absolute-basics---understanding-the-pieces&#34;&gt;📚 &lt;strong&gt;Part 1: The Absolute Basics - Understanding the Pieces&lt;/strong&gt;&lt;/h2&gt;
@@ -49,58 +49,58 @@ knowledge base as much as possible.&lt;/p&gt;
     </item>
     <item>
       <title>Widecolumn database systems</title>
-      <link>http://localhost:1313/personal_website/posts/wide_column_database_systems/</link>
+      <link>https://abdulrahim.site/personal_website/posts/wide_column_database_systems/</link>
       <pubDate>Wed, 01 Oct 2025 09:26:49 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/wide_column_database_systems/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/wide_column_database_systems/</guid>
       <description>Widecolumn database systems provide many benefits over traditional SQL based relational databases such as improved availability and high throughput. In this article, let&amp;#39;s try to understand them in detail.</description>
     </item>
     <item>
       <title>Can quantum entanglement help you sync your database replicas?</title>
-      <link>http://localhost:1313/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</link>
+      <link>https://abdulrahim.site/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</link>
       <pubDate>Tue, 30 Sep 2025 14:45:02 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/can_quantum_entanglement_help_you_sync_your_database_replicas/</guid>
       <description>Replicating data across multiple nodes/clusters/data centres is a common approach among applications that need to support scalability/fault tolerance/disaster managemenet. However, this approach also introduces the problem of keeping the replicas in sync. Existing methods use distributed consensus mechanisms to keep replicas in sync, with the latest write. In this approach, we explore an approach based on quantum mechanics that has the potential to revolutnize the field.</description>
     </item>
     <item>
       <title>Search completetion systems</title>
-      <link>http://localhost:1313/personal_website/posts/search_completetion_systems/</link>
+      <link>https://abdulrahim.site/personal_website/posts/search_completetion_systems/</link>
       <pubDate>Sat, 27 Sep 2025 08:44:40 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/search_completetion_systems/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/search_completetion_systems/</guid>
       <description>When you type somthing on in a search engine, you will notice few search suggestions pop up. These search suggestions are populated by what is called a search completion system. In this article, lets try to decode how a search completetion system works.</description>
     </item>
     <item>
       <title>Designing an E commerce platform</title>
-      <link>http://localhost:1313/personal_website/posts/designing_e_commerce_websites/</link>
+      <link>https://abdulrahim.site/personal_website/posts/designing_e_commerce_websites/</link>
       <pubDate>Thu, 25 Sep 2025 15:48:12 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/designing_e_commerce_websites/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/designing_e_commerce_websites/</guid>
       <description>E commerce platforms basically showcase products online through images and provide users the ability to click and buy the product they want...</description>
     </item>
     <item>
       <title>The design of a Search Engine</title>
-      <link>http://localhost:1313/personal_website/posts/design_of_youtube/</link>
+      <link>https://abdulrahim.site/personal_website/posts/design_of_youtube/</link>
       <pubDate>Thu, 25 Sep 2025 07:01:18 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/design_of_youtube/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/design_of_youtube/</guid>
       <description>In this article, lets take a deep dive into how a system like google search actually works</description>
     </item>
     <item>
       <title>Netflix CDN</title>
-      <link>http://localhost:1313/personal_website/posts/netflix_cdn/</link>
+      <link>https://abdulrahim.site/personal_website/posts/netflix_cdn/</link>
       <pubDate>Wed, 24 Sep 2025 13:24:34 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/netflix_cdn/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/netflix_cdn/</guid>
       <description>Netflix sends a lot of data to its users. Transporting millions of data packets (video data) to each user to millions of users requires an increadibly scalable and robust system.</description>
     </item>
     <item>
       <title>The design of twitter</title>
-      <link>http://localhost:1313/personal_website/posts/the_design_of_twitter/</link>
+      <link>https://abdulrahim.site/personal_website/posts/the_design_of_twitter/</link>
       <pubDate>Wed, 24 Sep 2025 06:55:19 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/the_design_of_twitter/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/the_design_of_twitter/</guid>
       <description>In this blog post, I try to decode how your tweets are agreegated, and how twitter does it for millions of users in a scalable way</description>
     </item>
     <item>
       <title>Leetcode 715: Range Module in 6 line python. The epitome of python sorcery demystified</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_715_range_module/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/</link>
       <pubDate>Fri, 08 Aug 2025 00:07:54 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_715_range_module/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_715_range_module/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/range-module/&#34;&gt;Leetcode 715. Range
 Module&lt;/a&gt; is one of the most
 convoluted problems on leetcode. And your confidence is further
@@ -115,9 +115,9 @@ and removing ranges efficiently.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to use psql</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_use_psql/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how_to_use_psql/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_use_psql/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how_to_use_psql/</guid>
       <description>&lt;h3 id=&#34;launching-psql-session&#34;&gt;Launching psql session&lt;/h3&gt;
 &lt;p&gt;In my previous blog, I described how you can set up a &lt;strong&gt;postgresql
 server&lt;/strong&gt;. In this post, we will learn, what are some of the basic
@@ -128,9 +128,9 @@ This can be done using the &lt;code&gt;su&lt;/code&gt; command.&lt;/p&gt;</descr
     </item>
     <item>
       <title>How to deply a postgresql server</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_deploy_a_postgersql_server/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how_to_deploy_a_postgersql_server/</link>
       <pubDate>Mon, 04 Aug 2025 23:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_deploy_a_postgersql_server/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how_to_deploy_a_postgersql_server/</guid>
       <description>&lt;h3 id=&#34;database-cluster&#34;&gt;Database Cluster&lt;/h3&gt;
 &lt;p&gt;A database cluster is a collection of databases that is managed by a
 single instance of a running database server. In this post, we will talk
@@ -145,9 +145,9 @@ installation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 775: Global and local inversions solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_775_global_and_local_inversions_solution/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_775_global_and_local_inversions_solution/</link>
       <pubDate>Wed, 16 Jul 2025 16:40:08 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_775_global_and_local_inversions_solution/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_775_global_and_local_inversions_solution/</guid>
       <description>&lt;p&gt;When &lt;code&gt;nums[i] &amp;gt; nums[j]&lt;/code&gt;, it is global inversion. Local inversion is special case of global inversion with &lt;code&gt;j=i+1&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Consider the array: &lt;code&gt;[0,1,2,3,4,5]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/2f3eb772-cc4d-4006-adec-d2937264734b_1752435521.47083.png&#34;&gt;&lt;/p&gt;
@@ -160,9 +160,9 @@ installation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 698: Partition into k equal sum subsets: The art of recursion: mastering double recursion in a single function</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/</link>
       <pubDate>Wed, 16 Jul 2025 16:37:44 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_698_partition_to_k_equal_sum_subsets/</guid>
       <description>&lt;p&gt;We need to divide the array &lt;code&gt;nums&lt;/code&gt; into &lt;code&gt;k&lt;/code&gt; subsets such that the sum of each subset is same.&lt;/p&gt;
 &lt;p&gt;$$
 k \times sum\ of\ each\ subset = total\ sum\
@@ -174,9 +174,9 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 745: Prefix and suffix search solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</link>
       <pubDate>Wed, 16 Jul 2025 16:30:15 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_745_prefix_and_suffix_search_solution/</guid>
       <description>&lt;p&gt;For each possible word, we ask the question: &lt;strong&gt;What possible queries can lead to this word?&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For example consider the word: &lt;code&gt;abd&lt;/code&gt;. Below are the possible (prefix, suffix) queries that can return &lt;code&gt;abd&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -209,9 +209,9 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Solution to Leetcode 687: Longest Univalue Path</title>
-      <link>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</link>
+      <link>https://abdulrahim.site/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</link>
       <pubDate>Wed, 16 Jul 2025 16:24:22 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/solution_to_leetcode_687_longest_univalue_path/</guid>
       <description>&lt;p&gt;This problem is very similar to
 &lt;a href=&#34;https://leetcode.com/problems/diameter-of-binary-tree/solutions/6824338/solution-for-dummies-by-abdulrahim2002-yzrs/&#34;&gt;lc543&lt;/a&gt;,
 which is about finding the longest edge path in a tree. You can just
@@ -222,9 +222,9 @@ copy over that code, and add 2 lines in it.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 703: kth largest element in a stream solution in python</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</link>
       <pubDate>Wed, 16 Jul 2025 16:22:08 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_703_kth_largest_element_in_a_stream/</guid>
       <description>&lt;p&gt;I keep track of the top k elements in sorted list.
 The kth largest element is the &lt;strong&gt;smallest of the top k elements&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;e.g. top k(=6) elements: &lt;code&gt;[3,5,7,10,42,56]&lt;/code&gt; in sorted order.
@@ -234,9 +234,9 @@ The kth largest element = 6th largest element = smallest element in above list.&
     </item>
     <item>
       <title>Leetcode 769: Max chunks to make sorted solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</link>
       <pubDate>Wed, 16 Jul 2025 16:20:16 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_769_max_chunks_to_make_sorted/</guid>
       <description>&lt;p&gt;When numbers from $$\in$$ &lt;code&gt;[0,n-1]&lt;/code&gt; are sorted in an array of size n. Their sorted position is equal to their index.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://assets.leetcode.com/users/images/07a3b1d2-9478-486f-9f62-3a67e6dde1b3_1752513551.205261.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Subset of numbers in &lt;code&gt;array[i:j]&lt;/code&gt; can form a partition, if all elements in &lt;code&gt;[i,j)&lt;/code&gt; are available in &lt;code&gt;array[i:j]&lt;/code&gt;.&lt;/p&gt;
@@ -246,9 +246,9 @@ The kth largest element = 6th largest element = smallest element in above list.&
     </item>
     <item>
       <title>Leetcode 676: Magic dictionary</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_676_magic_dictionary/</link>
       <pubDate>Wed, 16 Jul 2025 16:17:29 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_676_magic_dictionary/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_676_magic_dictionary/</guid>
       <description>&lt;p&gt;For each word, we basically store all versions of it after removal of 1 character. For example,&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -272,24 +272,24 @@ The kth largest element = 6th largest element = smallest element in above list.&
     </item>
     <item>
       <title>Leetcode 667: Beautiful arrangements 2</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</link>
       <pubDate>Wed, 16 Jul 2025 16:15:18 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_667_beautiful_arrangements_2_solution/</guid>
       <description>&lt;h2 id=&#34;problem-definition&#34;&gt;Problem definition:&lt;/h2&gt;
 &lt;p&gt;For the output array, you need to calculate the absolute difference of each adjacent items. The number of unique absolute differences needs to be exactly k.
 For example in [1,3,2]:
 abs(1-3) = 2
 abs(3-2) = 1
 Thus [2,1] with 2 unique values as in example 2.
-credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt;@Frans Valli&lt;/a&gt;&lt;/p&gt;
+credits: &lt;a href=&#34;https://abdulrahim.site/personal_website/u/FransV&#34;&gt;@Frans Valli&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;approach&#34;&gt;Approach:&lt;/h2&gt;
 &lt;p&gt;Divide the array into 2 halves. The left half will contain numbers continously increasing by 1. The right half will contain numbers, such that the &lt;strong&gt;differences&lt;/strong&gt; are continously decreasing by 1.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 665: Non decreasing array solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_665_non_decreasing_array/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_665_non_decreasing_array/</link>
       <pubDate>Wed, 16 Jul 2025 16:11:00 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_665_non_decreasing_array/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_665_non_decreasing_array/</guid>
       <description>&lt;p&gt;Suppose, while traversing the array you encounter a 132 pattern that violates the non-decreasing property. Now you have 2 options to fix this anomaly.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;a=1, b=3, c=2&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -301,9 +301,9 @@ credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt
     </item>
     <item>
       <title>Leetcode 677: Map sum pairs solution</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_677_map_sum_pairs/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_677_map_sum_pairs/</link>
       <pubDate>Wed, 16 Jul 2025 16:09:06 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_677_map_sum_pairs/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_677_map_sum_pairs/</guid>
       <description>&lt;p&gt;We build a simple Tri where each node&amp;rsquo;s value is the sum of all words in the Tri that have same prefix as current node.&lt;/p&gt;
 &lt;p&gt;Let me explain with a simple example. Suppose, we have an empty Tri. Insert &lt;code&gt;&amp;quot;apple&amp;quot;&lt;/code&gt; with &lt;code&gt;value=3&lt;/code&gt;. While inserting a key, we shall increase values of all intermediate nodes.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s how to Tri looks like after insertion:&lt;/p&gt;
@@ -312,9 +312,9 @@ credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt
     </item>
     <item>
       <title>Leetcode 564: Find the closest palindrome</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_564_find_the_closest_palindrome/</link>
       <pubDate>Wed, 16 Jul 2025 16:06:55 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_564_find_the_closest_palindrome/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_564_find_the_closest_palindrome/</guid>
       <description>&lt;p&gt;We are given a number &lt;code&gt;n&lt;/code&gt;. On the number line, there are infinite numbers on the right of &lt;code&gt;n&lt;/code&gt; and left of &lt;code&gt;n&lt;/code&gt; that are palindromes.&lt;/p&gt;
 &lt;p&gt;The question is asking us to find a number that is a palindrome and has the minimum distance from &lt;code&gt;n&lt;/code&gt; on the number line.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;ok&#34; loading=&#34;lazy&#34; src=&#34;https://i.ibb.co/4ZrF3Tnx/Screenshot-from-2025-06-28-18-27-24.png&#34;&gt;&lt;/p&gt;
@@ -329,9 +329,9 @@ credits: &lt;a href=&#34;http://localhost:1313/personal_website/u/FransV&#34;&gt
     </item>
     <item>
       <title>Leetcode 653: 2 sum with a BST</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_653_2_sum_with_bst/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_653_2_sum_with_bst/</link>
       <pubDate>Wed, 16 Jul 2025 16:02:05 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_653_2_sum_with_bst/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_653_2_sum_with_bst/</guid>
       <description>&lt;p&gt;I use &lt;code&gt;hcreate()&lt;/code&gt;, &lt;code&gt;hdestroy()&lt;/code&gt; and &lt;code&gt;hsearch()&lt;/code&gt; from C standard library
 for hashmap implementation.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -384,7 +384,7 @@ for hashmap implementation.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;errno.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define MAX_SIZE 1e4
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define KEY_SIZE 20
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ENTRY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;create_entry_set_number&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;TreeNode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -426,9 +426,9 @@ for hashmap implementation.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 472: Concatenated words</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_472_concatenated_words/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_472_concatenated_words/</link>
       <pubDate>Wed, 16 Jul 2025 15:59:09 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_472_concatenated_words/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_472_concatenated_words/</guid>
       <description>&lt;p&gt;consider the word &amp;ldquo;catsdogcats&amp;rdquo;. We have the dictionary: &lt;code&gt;[&amp;quot;cat&amp;quot;,&amp;quot;cats&amp;quot;,&amp;quot;catsdogcats&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;dogcatsdog&amp;quot;,&amp;quot;hippopotamuses&amp;quot;,&amp;quot;rat&amp;quot;,&amp;quot;ratcatdogcat&amp;quot;]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;We iterate over the word: &lt;code&gt;catsdogcats&lt;/code&gt; and at each iteration, we ask if the prefix is contained in dictionary.&lt;/p&gt;
 &lt;p&gt;If the prefix is in the dictionary, we recursively call the function on the remaining word (excluding matched prefix)&lt;/p&gt;
@@ -441,9 +441,9 @@ for hashmap implementation.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 623: Add one row to the tree</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_623_add_one_row_to_tree/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_623_add_one_row_to_tree/</link>
       <pubDate>Wed, 16 Jul 2025 15:57:05 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_623_add_one_row_to_tree/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_623_add_one_row_to_tree/</guid>
       <description>&lt;h1 id=&#34;level-order-traversal&#34;&gt;Level order traversal&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;traverse down the levels until we are 1 level above the level to be replaced.&lt;/li&gt;
@@ -520,9 +520,9 @@ for hashmap implementation.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 560: Subarray sum equals k</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</link>
       <pubDate>Wed, 16 Jul 2025 15:54:08 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_560_subarray_sub_equal_k_solution/</guid>
       <description>&lt;p&gt;The task is to find a subarray with &lt;code&gt;sum of elements = k&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To do this, we can build the prefix array with: $$ prefix\ [x] = \sum_{k=0}^x nums\ [k] $$&lt;/p&gt;
 &lt;p&gt;The sum of elements between subarray indices $$[i, j]$$ where $$j &amp;gt; i$$ is defined as:&lt;/p&gt;
@@ -533,9 +533,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 540: Single element in sorted array</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_540_single_element_in_sorted_arary/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_540_single_element_in_sorted_arary/</link>
       <pubDate>Wed, 16 Jul 2025 15:51:01 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_540_single_element_in_sorted_arary/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_540_single_element_in_sorted_arary/</guid>
       <description>&lt;h2 id=&#34;explanation&#34;&gt;Explanation&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -706,9 +706,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 525: Contiguous array</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_525_contiguous_array/</link>
       <pubDate>Wed, 16 Jul 2025 15:48:46 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_525_contiguous_array/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_525_contiguous_array/</guid>
       <description>&lt;p&gt;Consider the array: &lt;code&gt;[0,1,1,0,0,1,1,0,1,1] &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The idea is to turn the 0&amp;rsquo;s into -1&amp;rsquo;s&lt;/p&gt;
 &lt;p&gt;array: &lt;code&gt;[-1,1,1,-1,-1,1,1,-1,1,1]&lt;/code&gt;&lt;/p&gt;
@@ -722,9 +722,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 467: Unique Substrings in Wraparound String (Solution with intuition)</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</link>
       <pubDate>Wed, 16 Jul 2025 15:45:27 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_467_unique_substrings_in_wraparound_string_solution/</guid>
       <description>&lt;ol&gt;
 &lt;li&gt;for each character, find the length of the longest continous substring that ends with that character&lt;/li&gt;
 &lt;li&gt;for each character the number of &lt;em&gt;continous substrings&lt;/em&gt; that end in that character = length of the longest continous substring that ends in that character ( as obtained in step 1 )&lt;/li&gt;
@@ -783,9 +783,9 @@ $$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 430: Flattening a multilevel linked list</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</link>
       <pubDate>Wed, 16 Jul 2025 15:42:17 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_430_flattening_multilevel_linked_list/</guid>
       <description>&lt;p&gt;The idea is to keep 2 pointers. &lt;code&gt;trail&lt;/code&gt; pointer and &lt;code&gt;cur&lt;/code&gt; pointer. The
 list is build in recursive function &lt;code&gt;build(trail, cur)&lt;/code&gt; which returns
 last node of the list we build.&lt;/p&gt;
@@ -857,9 +857,9 @@ last node of the list we build.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 332: Reconstruct Itinerary. Eulerian path and Dfs</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_332_reconstruct_itenary/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_332_reconstruct_itenary/</link>
       <pubDate>Wed, 16 Jul 2025 15:35:54 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_332_reconstruct_itenary/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_332_reconstruct_itenary/</guid>
       <description>&lt;h2 id=&#34;dfs-intuition&#34;&gt;DFS intuition&lt;/h2&gt;
 &lt;p&gt;First we must build a graph where airports are vertices and  an edge &lt;code&gt;airport1 -&amp;gt; airport2&lt;/code&gt; denotes that the person travelled from &lt;code&gt;airport1 -&amp;gt; airport2&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To find a valid sequence of &lt;code&gt;vertices/airports&lt;/code&gt; &lt;strong&gt;that covers all the &lt;code&gt;edges/tickets&lt;/code&gt;&lt;/strong&gt;, we traverse the graph using depth first search like traversal. The idea is:&lt;/p&gt;
@@ -871,9 +871,9 @@ last node of the list we build.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 154: Find minimum in rotated sorted array</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</link>
       <pubDate>Wed, 16 Jul 2025 15:24:12 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_154_find_minimum_in_rotated_sorted_array/</guid>
       <description>&lt;p&gt;Below is my solution for the &lt;a href=&#34;https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/&#34;&gt;leetcode 154: Find minimum in rotated
 sorted array problem&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;intuition&#34;&gt;Intuition&lt;/h1&gt;
@@ -887,9 +887,9 @@ $$&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 315: Count of Smaller Numbers After Self</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</link>
       <pubDate>Wed, 16 Jul 2025 00:53:03 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_315_count_of_smaller_numbers_after_self/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s my solution to the &lt;a href=&#34;https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/&#34;&gt;Leetcode 315: Count of Smaller Numbers After
 Self problem&lt;/a&gt; using standard merge sort. I just change one line to
 count while merge procedure.&lt;/p&gt;
@@ -901,9 +901,9 @@ count while merge procedure.&lt;/p&gt;
     </item>
     <item>
       <title>Leetcode 306: Additive number</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_306_additive_number/</link>
       <pubDate>Wed, 16 Jul 2025 00:50:40 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_306_additive_number/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_306_additive_number/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s my explanation for the &lt;a href=&#34;https://leetcode.com/problems/additive-number/description/&#34;&gt;leetcode 306: Additive Number problem&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;additive-number-problem&#34;&gt;Additive Number Problem&lt;/h2&gt;
 &lt;h3 id=&#34;problem-recap&#34;&gt;Problem Recap&lt;/h3&gt;
@@ -924,9 +924,9 @@ count while merge procedure.&lt;/p&gt;
     </item>
     <item>
       <title>All possible solutions to longest increasing subsequence problem: leetcode 300</title>
-      <link>http://localhost:1313/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</link>
+      <link>https://abdulrahim.site/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</link>
       <pubDate>Wed, 16 Jul 2025 00:44:05 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/all_possible_solutions_to_longest_increasing_subsequence_problem_leetcode_300/</guid>
       <description>&lt;p&gt;Here are all possible solutions I could come up with for the longest
 increasing subsequence problem. &lt;a href=&#34;https://leetcode.com/problems/factorial-trailing-zeroes/description/&#34;&gt;leetcode
 300&lt;/a&gt;&lt;/p&gt;
@@ -945,9 +945,9 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 70: Climbing Stairs</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_70/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_70/</link>
       <pubDate>Wed, 16 Jul 2025 00:41:07 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_70/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_70/</guid>
       <description>&lt;p&gt;Problem link: &lt;a href=&#34;https://leetcode.com/problems/climbing-stairs/description/&#34;&gt;leetcode 70: climbing stairs&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;intuition&#34;&gt;Intuition&lt;/h1&gt;
 &lt;!-- Describe your first thoughts on how to solve this problem. --&gt;
@@ -967,9 +967,9 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Leetcode 135: Candy</title>
-      <link>http://localhost:1313/personal_website/posts/leetcode_135/</link>
+      <link>https://abdulrahim.site/personal_website/posts/leetcode_135/</link>
       <pubDate>Wed, 16 Jul 2025 00:37:54 +0530</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/leetcode_135/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/leetcode_135/</guid>
       <description>&lt;p&gt;Below is my C solution for the Leetcode problem &lt;a href=&#34;https://leetcode.com/problems/climbing-stairs/description/&#34;&gt;candy&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1249,30 +1249,30 @@ the increasing subsequence property.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Highlights from Linux Kernel Mentorship Program 2024 by Abdul Rahim</title>
-      <link>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
+      <link>https://abdulrahim.site/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</link>
       <pubDate>Thu, 05 Dec 2024 18:22:18 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/highlights_from_linux_kernel_mentorship_program_2024/</guid>
       <description>Linux Kernel Mentorhip Program (LKMP) or Linux Kernel Bug Fix Program provides an opportunity for aspiring kernel developers to get started in kernel development. In this post, I would discuss my experience with it and what I learned in the program</description>
     </item>
     <item>
       <title>Merkel Trees and computer memory</title>
-      <link>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</link>
+      <link>https://abdulrahim.site/personal_website/posts/merkel_trees_and_computer_memory/</link>
       <pubDate>Mon, 08 Jul 2024 17:17:28 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/merkel_trees_and_computer_memory/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/merkel_trees_and_computer_memory/</guid>
       <description>Merkel trees are data structures which store hashes insted of data. Can we use them in file systems</description>
     </item>
     <item>
       <title>How to compile vim with clipboard support</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how_to_compile_vim_with_clipboard_support/</link>
       <pubDate>Sat, 01 Jun 2024 14:22:31 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how_to_compile_vim_with_clipboard_support/</guid>
       <description>One major problem with vim is the inability to copy from/to system clipboard. In this article we discover how we can compile vim with clipboard support.</description>
     </item>
     <item>
       <title>How to turn your old smartphone into a home server</title>
-      <link>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
+      <link>https://abdulrahim.site/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</link>
       <pubDate>Tue, 20 Feb 2024 01:04:38 +0000</pubDate>
-      <guid>http://localhost:1313/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
+      <guid>https://abdulrahim.site/personal_website/posts/how_to_turn_your_old_smartphone_into_a_home_server/</guid>
       <description>Have an extra phone lying around? Use it as a remote server. SSH into it, access its terminal. Transfer files using scp. And much more...</description>
     </item>
   </channel>
