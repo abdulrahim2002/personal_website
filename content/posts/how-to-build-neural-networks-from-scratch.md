@@ -5,17 +5,17 @@ author: 'Abdul'
 title: 'How to Build Neural Networks From Scratch'
 ---
 
-# 🎓 **PyTorch CNN Explained from Scratch - Step by Step**
+## **Part 1: Understanding the Pieces**
 
-I'll explain everything from the absolute basics. No prior PyTorch knowledge required!
+A convolutional neural network (CNN) works by scanning images for certain patterns
+like edges or textures. Each such scanner is called a kernel, which is nothing but
+a small matrix (usually 3x3 or 7x7) with floating point numbers (also called parameters).
+A kernel scans an image by sliding over it pixel by pixel. At each pixel, the weighted average
+of the neighbouring pixels is calculated using the weights from the kernel. This operation is called
+convolution. It produces another new image of often smaller dimentions.
 
-## 📚 **Part 1: The Absolute Basics - Understanding the Pieces**
-
-### **1.1 What is a CNN?**
-A **Convolutional Neural Network (CNN)** is like a detective that:
-1. **Scans** an image with small filters to find patterns (edges, textures)
-2. **Combines** these patterns to recognize objects
-3. **Learns** which patterns are important for classification
+This process of scanning the image through kernels is repeated multiple times. At each layer,
+we have multiple kernels which are looking for different patterns.
 
 **Analogy**: Imagine looking for a face in a crowd:
 - First, you look for eyes (small patterns)
