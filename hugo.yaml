@@ -57,7 +57,7 @@ outputs:
 
 params:
   env: production
-  description: "Abdul Rahim's blog and portfolio website"
+  description: "Welcome to my personal website"
   author: abdul
 
   katex:
@@ -102,10 +102,14 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Abdul Rahim's Portfolio and Blog website"
-    Content: "- My name is Abdul Rahim. I am currently pursuing a Masters degree at Universität Regensburg, Deutschland.
+    Title: "Welcome to my personal website"
+    Content: "- Hi, I'm Abdul. I am currently pursuing a Masters degree at University of Regensburg
 
-              - I publish blogs and articles on this website. Please feel free to contact me at abdulrahimhere[at]yahoo.com."
+              - I publish blogs and my ideas on this website
+              
+              - You can reach out to me at abdulrahimhere[at]yahoo.com
+              
+              - Thank you for visiting and enjoy reading☕️"
   socialIcons:
     - name: github
       title: My Github account
