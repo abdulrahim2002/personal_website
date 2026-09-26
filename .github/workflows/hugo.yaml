@@ -74,7 +74,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" \
+            --baseURL "https://abdulrahim.space/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache Save
         id: cache-save

@@ -93,7 +93,7 @@ We are going to support, millions of items. Therefore, we need to index
 these items such that they can be searched quickly. It is also necessary
 to pre-compute results or store metadata about items. For more
 information on such systems, see [design of a search engine
-blog](https://abdulrahim2002.github.io/personal_website/posts/design_of_youtube/).
+blog](https://abdulrahim.space/posts/design_of_youtube/).
 
 In our e-commerce platform, we are going to use [elasti
 search](https://www.elastic.co/elasticsearch). It is increadibly
